@@ -16,6 +16,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObjects.liveguru.AboutUsPageObject;
+import pageObjects.liveguru.AdvancedSearchPageObject;
+import pageObjects.liveguru.CustomerServicePageObject;
+import pageObjects.liveguru.PageGeneratorManager;
+import pageObjects.liveguru.SearchTermPageObject;
+import pageUIs.liveguru.AbstractPageUI;
+
 public abstract class AbstractPage {
 	public void openPageUrl(WebDriver driver, String pageUrl) {
 		driver.get(pageUrl);
@@ -117,9 +124,22 @@ public abstract class AbstractPage {
 	public void clickToElement(WebDriver driver, String xpathValue) {
 		find(driver, xpathValue).click();
 	}
+	
+	public String getDynamicLocator(String value,String... dynamicValue) {
+		return String.format(value, (Object[]) dynamicValue);
+	}
+	
+	public void clickToElement(WebDriver driver, String locator, String... dynamicValue) {
+		find(driver, getDynamicLocator(locator,dynamicValue)).click();
+	}
 
 	public void sendKeysToElement(WebDriver driver, String xpathValue, String text) {
 		element = find(driver, xpathValue);
+		element.clear();
+		element.sendKeys(text);
+	}
+	public void sendKeysToElement(WebDriver driver, String locator, String text, String... dynamicValue) {
+		element = find(driver, getDynamicLocator(locator,dynamicValue));
 		element.clear();
 		element.sendKeys(text);
 	}
@@ -171,6 +191,9 @@ public abstract class AbstractPage {
 	public String getElementAttribute(WebDriver driver, String xpathValue, String attributename) {
 		return find(driver,xpathValue).getAttribute(attributename);
 	}
+	public String getElementText(WebDriver driver, String locator, String... dynamicValue) {
+		return find(driver,getDynamicLocator(locator,dynamicValue)).getText();
+	}
 	public String getElementText(WebDriver driver, String xpathValue) {
 		return find(driver,xpathValue).getText();
 	}
@@ -195,6 +218,9 @@ public abstract class AbstractPage {
 	
 	public boolean isElementDisplayed(WebDriver driver, String xpathValue) {
 		return find(driver, xpathValue).isDisplayed();
+	}
+	public boolean isElementDisplayed(WebDriver driver, String locator, String... dynamicValue) {
+		return find(driver, getDynamicLocator(locator,dynamicValue)).isDisplayed();
 	}
 	
 	public boolean isElementEnabled(WebDriver driver, String xpathValue) {
@@ -304,8 +330,20 @@ public abstract class AbstractPage {
 		explicitWait.until(ExpectedConditions.visibilityOf(element));
 		
 	}
+	public void waitElementVisible(WebDriver driver, String locator, String... dynamicValue) {
+		element = find(driver, getDynamicLocator(locator,dynamicValue));
+		explicitWait = new WebDriverWait(driver, longTimeOut);
+		explicitWait.until(ExpectedConditions.visibilityOf(element));
+		
+	}
 	public void waitElementClickable(WebDriver driver,String xpathValue) {
 		element = find(driver, xpathValue);
+		explicitWait = new WebDriverWait(driver, longTimeOut);
+		explicitWait.until(ExpectedConditions.elementToBeClickable(element));
+		
+	}
+	public void waitElementClickable(WebDriver driver,String locator, String... dynamicValue) {
+		element = find(driver, getDynamicLocator(locator,dynamicValue));
 		explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(element));
 		
@@ -322,7 +360,37 @@ public abstract class AbstractPage {
 		
 	}
 
+	public AboutUsPageObject openAboutUsPage(WebDriver driver) {
+		waitElementClickable(driver, AbstractPageUI.ABOUT_US_LINK);
+		clickToElement(driver, AbstractPageUI.ABOUT_US_LINK);
+		return PageGeneratorManager.getAboutUsPageObject(driver);
+		
+	}
+	public AdvancedSearchPageObject openAdvancedSearchPage(WebDriver driver) {
+		waitElementClickable(driver, AbstractPageUI.ADVANCED_SEARCH_LINK);
+		clickToElement(driver, AbstractPageUI.ADVANCED_SEARCH_LINK);
+		return PageGeneratorManager.getAdvancedSearchPageObject(driver);
+		
+	}
+	public SearchTermPageObject openSearchTermPage(WebDriver driver) {
+		waitElementClickable(driver, AbstractPageUI.SEARCH_TERM_LINK);
+		clickToElement(driver, AbstractPageUI.SEARCH_TERM_LINK);
+		return PageGeneratorManager.getSearchTermPageObject(driver);
+		
+	}
+	public CustomerServicePageObject openCustomerServicePage(WebDriver driver) {
+		waitElementClickable(driver, AbstractPageUI.CUSTOMER_SERVICE_LINK);
+		clickToElement(driver, AbstractPageUI.CUSTOMER_SERVICE_LINK);
+		return PageGeneratorManager.getCustomerServicePageObject(driver);
+		
+	}
 
+	public void openFooterPageByName(WebDriver driver,String pageName) {
+		waitElementClickable(driver, AbstractPageUI.FOOTER_PAGE_LINK,pageName);
+		clickToElement(driver, AbstractPageUI.FOOTER_PAGE_LINK,pageName);
+	}
+	
+	
 	public int randomNumber(WebDriver driver) {
 		Random num = new Random();
 		return num.nextInt();

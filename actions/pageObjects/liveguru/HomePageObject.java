@@ -14,9 +14,10 @@ public class HomePageObject extends AbstractPage {
 
 	}
 
-	public void clickToMyAccountLink() {
+	public LoginPageObject clickToMyAccountLink() {
 		waitElementClickable(driver,  HomePageUI.MY_ACCOUNT_LINK);
 		clickToElement(driver, HomePageUI.MY_ACCOUNT_LINK);
+		return PageGeneratorManager.getLoginPageObject(driver);
 
 	}
 

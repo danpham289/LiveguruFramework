@@ -13,9 +13,24 @@ public class MyDashboardPageObject extends AbstractPage  {
 		this.driver = driver;
 	}
 
-	public String getSuccessMsg() {
-		waitElementVisible(driver, MyDashboardPageUI.SUCCESS_MSG);
-		return getElementText(driver, MyDashboardPageUI.SUCCESS_MSG);
+	public HomePageObject clickToLogOutbutton() {
+		waitElementClickable(driver, MyDashboardPageUI.ACCOUNT_ICON);
+		clickToElement(driver, MyDashboardPageUI.ACCOUNT_ICON);
+		waitElementClickable(driver, MyDashboardPageUI.LOGOUT_LINK);
+		clickToElement(driver, MyDashboardPageUI.LOGOUT_LINK);
+		return PageGeneratorManager.getHomePageOject(driver);
+	}
+
+
+
+	public String getRegisterSuccessMsg() {
+		waitElementClickable(driver, MyDashboardPageUI.REGISTER_SUCCESS_MSG);
+		return getElementText(driver, MyDashboardPageUI.REGISTER_SUCCESS_MSG);
+	}
+
+	public String getLoginSuccessMsg() {
+		waitElementClickable(driver, MyDashboardPageUI.LOGIN_SUCCESS_MSG);
+		return getElementText(driver, MyDashboardPageUI.LOGIN_SUCCESS_MSG);
 	}
 
 }

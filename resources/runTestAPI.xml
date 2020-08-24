@@ -4,9 +4,9 @@
   <parameter name = "url" value = "http://live.demoguru99.com" />
  
   <test name="RUN ON CHROME">
-  	<parameter name = "browser" value = "Chrome" />
+  	
     <classes>
-      <class name="com.liveguru.user.User_01_Switch_Page"/>  
+      <class name="testapi.CustomDropDownList"/>  
     </classes>
   </test> 
 

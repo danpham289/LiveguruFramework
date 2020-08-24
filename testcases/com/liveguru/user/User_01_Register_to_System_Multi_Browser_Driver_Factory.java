@@ -11,6 +11,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.AbstractTest;
+import driverFactory.DriverFactory;
+import driverFactory.DriverManager;
 import pageObjects.liveguru.HomePageObject;
 import pageObjects.liveguru.LoginPageObject;
 import pageObjects.liveguru.MyAddressBookPageObject;
@@ -18,18 +20,21 @@ import pageObjects.liveguru.MyDashboardPageObject;
 import pageObjects.liveguru.RegisterPageObject;
 
 
-public class User_01_Register_to_System_Multi_Browser extends AbstractTest {
+public class User_01_Register_to_System_Multi_Browser_Driver_Factory extends AbstractTest {
 	WebDriver driver;
 	HomePageObject homePage;
 	LoginPageObject loginPage;
 	MyDashboardPageObject myDashboardPage;
 	RegisterPageObject registerPage;
 	MyAddressBookPageObject myAddressBookPage;
+	private DriverManager driverManager;
 
 	@Parameters({"browser", "url"})
 	@BeforeClass
 	public void beforeClass(String browserName, String appURL) {
-		driver = openMultiBrowser(browserName, appURL);		
+		driverManager = DriverFactory.getManager(browserName);	
+		driver = driverManager.getDriver();
+		driver.get(appURL);
 		homePage = new HomePageObject(driver);		
 		
 	}

@@ -119,7 +119,7 @@ public class User_01_Register_to_System_Level3 {
 		myDashboardPage = new MyDashboardPageObject(driver);
 		
 		// Verify data
-		Assert.assertEquals(myDashboardPage.getSuccessMsg(),"Thank you for registering with Main Website Store.");
+		Assert.assertEquals(myDashboardPage.getRegisterSuccessMsg(),"Thank you for registering with Main Website Store.");
 	}
 	
 

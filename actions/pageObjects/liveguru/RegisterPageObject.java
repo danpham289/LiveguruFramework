@@ -13,9 +13,10 @@ public class RegisterPageObject extends AbstractPage {
 		this.driver = driver;
 	}
 
-	public void clicTokRegisterButton() {
+	public MyDashboardPageObject clicTokRegisterButton() {
 		waitElementClickable(driver, RegisterPageUI.REGISTER_BUTTON);
 		clickToElement(driver, RegisterPageUI.REGISTER_BUTTON);
+		return PageGeneratorManager.getMyDashboardPageObject(driver);
 
 	}
 
