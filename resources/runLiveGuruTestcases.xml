@@ -6,7 +6,7 @@
   <test name="RUN ON CHROME">
   	<parameter name = "browser" value = "Chrome" />
     <classes>
-      <class name="com.liveguru.user.User_01_Switch_Page"/>  
+      <class name="com.liveguru.user.Admin_01_Handle_Grid_Data"/>  
     </classes>
   </test> 
 

@@ -163,14 +163,14 @@ public abstract class AbstractPage {
 		// 1 - Click vào thẻ (cha) để xổ ra tất cả các item con
 		find(driver,parentLocator).click();
 		sleepInSecond(1);
-
+		
 		// 2 - Chờ cho tất cả các item con được load ra
 		explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(childItemLocator)));
-
+		
 		// Đưa tất cả các item trong dropdown vào 1 list để kiểm tra
 		elements = finds(driver,childItemLocator);
-
+		
 		// 3 - Chạy qua tất cả các giá trị đang có trong list
 		for (WebElement item : elements) {
 			// 4 - Kiểm tra xem text của các giá trị có item nào bằng vs text mong muốn ko
@@ -179,11 +179,48 @@ public abstract class AbstractPage {
 				jsExecutor = (JavascriptExecutor) driver;
 				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", item);
 				sleepInSecond(1);
-
+				
 				// 6 - Click vào cái item này
 				item.click();
 				sleepInSecond(1);
 				break;
+			}
+		}
+	}
+	public void selectMultiItemsInCustomDropdown(WebDriver driver, String parentLocator, String childItemLocator, String[] expectedItems) {
+		// 1 - Click vào thẻ (cha) để xổ ra tất cả các item con
+		find(driver,parentLocator).click();
+		sleepInSecond(1);
+
+		// 2 - Chờ cho tất cả các item con được load ra
+		explicitWait = new WebDriverWait(driver, longTimeOut);
+		explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(childItemLocator)));
+
+		// Đưa tất cả các item trong dropdown vào 1 list để kiểm tra
+		elements = finds(driver,childItemLocator);
+		
+		// 3 - Chạy qua tất cả các giá trị đang có trong list
+		int i = 0;
+		for (WebElement item : elements) {
+			// 3a -Chạy qua các giá trị expectedItems
+			for (String expectedItem :expectedItems) {
+			// 4 - Kiểm tra xem text của các giá trị có item nào bằng vs text mong muốn ko				
+				if (item.getText().equals(expectedItem)) {
+					// 5 - Scroll xuống đến đúng item này
+					jsExecutor = (JavascriptExecutor) driver;
+					jsExecutor.executeScript("arguments[0].scrollIntoView(true);", item);
+					sleepInSecond(1);
+	
+					// 6 - Click vào cái item này
+					item.click();
+					sleepInSecond(1);
+					i++;
+				}
+			// 7 - Check số items được select = số expected items 
+				
+				if (i==expectedItems.length) {
+					break;
+				}
 			}
 		}
 	}
@@ -200,6 +237,11 @@ public abstract class AbstractPage {
 
 	public int countElementNumber(WebDriver driver, String xpathValue) {
 		return finds(driver,xpathValue).size();
+		 
+	}
+	
+	public int countElementNumber(WebDriver driver, String locator, String... dynamicValue) {
+		return finds(driver,getDynamicLocator(locator,dynamicValue)).size();
 		 
 	}
 

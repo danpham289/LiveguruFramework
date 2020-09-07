@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pageObjects.liveguru.HomePageObject;
-import pageObjects.liveguru.LoginPageObject;
+import pageObjects.liveguru.LoginUserPageObject;
 import pageObjects.liveguru.MyAddressBookPageObject;
 import pageObjects.liveguru.MyDashboardPageObject;
 import pageObjects.liveguru.RegisterPageObject;
@@ -20,7 +20,7 @@ import pageObjects.liveguru.RegisterPageObject;
 public class User_01_Register_to_System_Level3 {
 	WebDriver driver;
 	HomePageObject homePage;
-	LoginPageObject loginPage;
+	LoginUserPageObject loginPage;
 	MyDashboardPageObject myDashboardPage;
 	RegisterPageObject registerPage;
 	MyAddressBookPageObject myAddressBookPage;
@@ -44,7 +44,7 @@ public class User_01_Register_to_System_Level3 {
 	public void beforeMethod() {
 		// Click My Account -> open Login page
 		homePage.clickToMyAccountLink();
-		loginPage = new LoginPageObject(driver);
+		loginPage = new LoginUserPageObject(driver);
 		
 		// Click Create an Account -> open Register page
 		loginPage.clickCreateAccountButton();

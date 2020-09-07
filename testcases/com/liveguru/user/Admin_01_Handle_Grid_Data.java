@@ -1,6 +1,7 @@
 package com.liveguru.user;
 
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -14,17 +15,20 @@ import commons.AbstractTest;
 import driverFactory.DriverFactory;
 import driverFactory.DriverManager;
 import pageObjects.liveguru.AboutUsPageObject;
+import pageObjects.liveguru.AddNewAddressPageObject;
 import pageObjects.liveguru.AdvancedSearchPageObject;
 import pageObjects.liveguru.CustomerServicePageObject;
 import pageObjects.liveguru.HomePageObject;
+import pageObjects.liveguru.LoginAdminPageObject;
 import pageObjects.liveguru.LoginUserPageObject;
+import pageObjects.liveguru.ManageCustomersPageObject;
 import pageObjects.liveguru.MyAddressBookPageObject;
 import pageObjects.liveguru.MyDashboardPageObject;
 import pageObjects.liveguru.PageGeneratorManager;
 import pageObjects.liveguru.RegisterPageObject;
 import pageObjects.liveguru.SearchTermPageObject;
 
-public class User_01_Switch_Page extends AbstractTest {
+public class Admin_01_Handle_Grid_Data extends AbstractTest {
 	WebDriver driver;
 	
 	private DriverManager driverManager;
@@ -34,14 +38,24 @@ public class User_01_Switch_Page extends AbstractTest {
 	String password = "111111";
 	String registerSuccessMessage = "Thank you for registering with Main Website Store.";
 	String loginSuccessMessage = "Hello, " + firstName + " " + lastName + "!";
-
+	String telephone = "0905000111";
+	String address = "01 hoang van thu";
+	String city = "Da nang";
+	String country = "Vietnam";
+	String state = "Hai Chau";
+	String zip = "012345";
+	
+	String adminUser = "user01";
+	String adminPassword = "guru99com";
+	
 	@Parameters({ "browser", "url" })
 	@BeforeClass
 	public void beforeClass(String browserName, String appURL) {
 		driverManager = DriverFactory.getManager(browserName);
 		driver = driverManager.getDriver();
-		driver.get(appURL);
-		homePage = PageGeneratorManager.getHomePageOject(driver);
+		//driver.get(appURL);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//homePage = PageGeneratorManager.getHomePageOject(driver);
 
 	}
 
@@ -50,7 +64,7 @@ public class User_01_Switch_Page extends AbstractTest {
 
 	}
 
-	@Test
+	
 	public void TC01_Register_Valid_Data() {
 		// Click My Account -> open Login page
 		loginPage = homePage.clickToMyAccountLink();
@@ -71,51 +85,56 @@ public class User_01_Switch_Page extends AbstractTest {
 		// Verify register successfully
 		Assert.assertEquals(myDashboardPage.getRegisterSuccessMsg(), registerSuccessMessage);
 		
-		// click logout -> return HomePage
-		homePage = myDashboardPage.clickToLogOutbutton();
+	}
+
+	
+	public void TC02_Update_Address_Book() {
+
+		// click Manage Addresses link
+		addNewAddressPage = myDashboardPage.clickToManageAddressesLink();
+		
+		// Input Telephone, Street Address, City, State/Province, Zip, Country
+		addNewAddressPage.inputToTelephoneTextbox(telephone);
+		addNewAddressPage.inputToStreetAddressTextbox(address);
+		addNewAddressPage.inputToCityTextbox(city);
+		addNewAddressPage.inputToZipTextbox(zip);
+		addNewAddressPage.selectCountryDropDown(country);
+		addNewAddressPage.inputToStateTextbox(state);
+		
+		// click Save Address button
+		myAddressBookPage = addNewAddressPage.clickToSaveAddressButton();
+		driver.close();
+		
+
 	}
 
 	@Test
-	public void TC02_Login_Valid_Data() {
-
-		// click MyAccount link
-		loginPage = homePage.clickToMyAccountLink();
-		// Input valid email and password
-		loginPage.inputToEmailTextbox(email);
-		loginPage.inputToPasswordTextbox(password);
-		// click Login button
-		myDashboardPage = loginPage.clickToLoginButton();
-		// Verify login successfully text 'Hello, firstname lastname' display
-		Assert.assertEquals(myDashboardPage.getLoginSuccessMsg(), loginSuccessMessage);
-
-	}
-
-	@Test
-	public void TC02_Switch_Page() {
-//		aboutUsPage = myDashboardPage.openAboutUsPage(driver);
-//		advancedSearchPage = aboutUsPage.openAdvancedSearchPage(driver);
-//		customerServicePage = advancedSearchPage.openCustomerServicePage(driver);
-//		searchTermPage = customerServicePage.openSearchTermPage(driver);
-//		aboutUsPage = searchTermPage.openAboutUsPage(driver);
-//		customerServicePage = aboutUsPage.openCustomerServicePage(driver);
+	public void TC03_Handle_Grid_Data() throws InterruptedException {
+		//open url of admin page
+		driver.get("http://live.guru99.com/index.php/backendlogin");
+		loginAdminPage = PageGeneratorManager.getLoginAdminPageObject(driver);
 		
-		myDashboardPage.openFooterPageByName(driver, "About Us");
-		aboutUsPage = PageGeneratorManager.getAboutUsPageObject(driver);
+		//Input username, password
+		loginAdminPage.inputToUsernameTextbox(adminUser);
+		loginAdminPage.inputToPasswordTextbox(adminPassword);
 		
-		aboutUsPage.openFooterPageByName(driver, "Advanced Search"); 
-		advancedSearchPage = PageGeneratorManager.getAdvancedSearchPageObject(driver);
+		//Click Login button
+		manageCustomersPage = loginAdminPage.clickToLoginButton();
 		
-		advancedSearchPage.openFooterPageByName(driver, "Customer Service");
-		customerServicePage = PageGeneratorManager.getCustomerServicePageObject(driver);
-				
-		customerServicePage.openFooterPageByName(driver, "Search Terms");
-		searchTermPage = PageGeneratorManager.getSearchTermPageObject(driver);
-				
-		searchTermPage.openFooterPageByName(driver, "About Us");
-		aboutUsPage = PageGeneratorManager.getAboutUsPageObject(driver);
+		// close incoming message popup
+		manageCustomersPage.closeIncomingMessagePopUp();
 		
-		aboutUsPage.openFooterPageByName(driver, "Customer Service");
-		customerServicePage = PageGeneratorManager.getCustomerServicePageObject(driver);
+		// Input Search textbox by column name
+		manageCustomersPage.InputToSearchTextboxByColumnName("Telephone","0905000111");
+		
+		Thread.sleep(5000);
+		//Click Search button
+		manageCustomersPage.clickToSearchButton();
+		Thread.sleep(5000);
+		
+		//Verify search result display
+		Assert.assertTrue(manageCustomersPage.isValueDisplayedAtColumnNameByRowNumber("Telephone","1","0905000111"));
+		
 		
 	}
 	
@@ -139,4 +158,8 @@ public class User_01_Switch_Page extends AbstractTest {
 	MyDashboardPageObject myDashboardPage;
 	RegisterPageObject registerPage;
 	MyAddressBookPageObject myAddressBookPage;
+	AddNewAddressPageObject addNewAddressPage;
+	LoginAdminPageObject loginAdminPage;
+	ManageCustomersPageObject manageCustomersPage;
+	
 }

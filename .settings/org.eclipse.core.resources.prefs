@@ -2,3 +2,5 @@ eclipse.preferences.version=1
 encoding//actions/commons/AbstractPage.java=UTF-8
 encoding//testcases/testapi/CustomDropDownList.java=UTF-8
 encoding//testcases/testapi/InputDataIntoTextBoxInTable.java=UTF-8
+encoding//testcases/testapi/UploadFile.java=UTF-8
+encoding//testcases/testapi/WebDriver_Wait.java=UTF-8

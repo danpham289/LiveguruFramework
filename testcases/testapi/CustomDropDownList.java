@@ -24,16 +24,14 @@ public class CustomDropDownList extends AbstractPage {
 	@BeforeClass
 	public void beforeClass() {
 
-		
 		System.setProperty("webdriver.chrome.driver", ".\\browserDrivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
+
 	}
-	
-	
-	public void TC01() throws InterruptedException {
+
+	public void TC01_Jquery() throws InterruptedException {
 		url = "https://jqueryui.com/resources/demos/selectmenu/default.html";
 		driver.get(url);
 
@@ -73,8 +71,7 @@ public class CustomDropDownList extends AbstractPage {
 
 	}
 
-	
-	public void TC02() {
+	public void TC02_React() {
 		url = "https://react.semantic-ui.com/maximize/dropdown-example-selection/";
 		driver.get(url);
 		String parentLocator = "//*[@id='root']//i[@class='dropdown icon']";
@@ -88,8 +85,7 @@ public class CustomDropDownList extends AbstractPage {
 
 	}
 
-	@Test
-	public void TC03() {
+	public void TC03_Angular() {
 		url = "https://ej2.syncfusion.com/angular/demos/?_ga=2.262049992.437420821.1575083417-524628264.1575083417#/material/drop-down-list/data-binding";
 		driver.get(url);
 		String parentLocator = "//ejs-dropdownlist[@id='games']/span";
@@ -97,13 +93,46 @@ public class CustomDropDownList extends AbstractPage {
 		String expectedItem = "Football";
 
 		selectItemInCustomDropdown(driver, parentLocator, childItemLocator, expectedItem);
-		
+
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-		String text  = (String) jsExecutor.executeScript("return document.querySelector(\"ejs-dropdownlist[id='games'] option\").textContent");
-		
-		Assert.assertEquals(text,expectedItem);
+		String text = (String) jsExecutor
+				.executeScript("return document.querySelector(\"ejs-dropdownlist[id='games'] option\").textContent");
+
+		Assert.assertEquals(text, expectedItem);
 	}
 	
+	@Test
+	public void TC04_Multiple_Select() {
+		url = "http://multiple-select.wenzhixin.net.cn/examples#basic.html";
+		driver.get(url);
+		String iframeXpath = "//div[@class='container mainContainer']//iframe";
+		WebElement iframe = driver.findElement(By.xpath(iframeXpath));
+		driver.switchTo().frame(iframe);
+		String parentLocator = "//div[@id='example']/div/div[2]//button[@class='ms-choice']";
+		String childItemLocator = "//div[@id='example']/div/div[2]//div[@class='ms-drop bottom']/ul/li//span";
+		String[] expectedItems = {"January","October","April","December"};
+		
+		selectMultiItemsInCustomDropdown(driver, parentLocator, childItemLocator, expectedItems);
+		
+		// Verify data selected
+		boolean i = false;
+		WebElement selectedTextElement = driver.findElement(By.xpath("//div[@id='example']/div/div[2]//button[@class='ms-choice']/span")) ;
+		String selectedText = selectedTextElement.getText();
+
+		if (expectedItems.length <= 3) {
+			for (String item : expectedItems) {
+				if(selectedText.contains(item)) {
+					i = true;
+					break;
+				}
+			}
+			
+		}else {
+			i = selectedText.equals(expectedItems.length+" of 12 selected");
+		}
+		Assert.assertTrue(i);
+	}
+
 	@AfterClass
 	public void afterClass() {
 		driver.close();

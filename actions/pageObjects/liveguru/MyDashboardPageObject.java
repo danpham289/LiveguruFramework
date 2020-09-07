@@ -24,13 +24,19 @@ public class MyDashboardPageObject extends AbstractPage  {
 
 
 	public String getRegisterSuccessMsg() {
-		waitElementClickable(driver, MyDashboardPageUI.REGISTER_SUCCESS_MSG);
+		waitElementVisible(driver, MyDashboardPageUI.REGISTER_SUCCESS_MSG);
 		return getElementText(driver, MyDashboardPageUI.REGISTER_SUCCESS_MSG);
 	}
 
 	public String getLoginSuccessMsg() {
-		waitElementClickable(driver, MyDashboardPageUI.LOGIN_SUCCESS_MSG);
+		waitElementVisible(driver, MyDashboardPageUI.LOGIN_SUCCESS_MSG);
 		return getElementText(driver, MyDashboardPageUI.LOGIN_SUCCESS_MSG);
+	}
+
+	public AddNewAddressPageObject clickToManageAddressesLink() {
+		waitElementClickable(driver, MyDashboardPageUI.MANAGE_ADDRESSES_LINK);
+		clickToElement(driver, MyDashboardPageUI.MANAGE_ADDRESSES_LINK);
+		return PageGeneratorManager.getAddNewAddressPageObject(driver);
 	}
 
 }

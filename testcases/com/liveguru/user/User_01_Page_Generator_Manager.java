@@ -14,7 +14,7 @@ import commons.AbstractTest;
 import driverFactory.DriverFactory;
 import driverFactory.DriverManager;
 import pageObjects.liveguru.HomePageObject;
-import pageObjects.liveguru.LoginPageObject;
+import pageObjects.liveguru.LoginUserPageObject;
 import pageObjects.liveguru.MyAddressBookPageObject;
 import pageObjects.liveguru.MyDashboardPageObject;
 import pageObjects.liveguru.PageGeneratorManager;
@@ -23,7 +23,7 @@ import pageObjects.liveguru.RegisterPageObject;
 public class User_01_Page_Generator_Manager extends AbstractTest {
 	WebDriver driver;
 	HomePageObject homePage;
-	LoginPageObject loginPage;
+	LoginUserPageObject loginPage;
 	MyDashboardPageObject myDashboardPage;
 	RegisterPageObject registerPage;
 	MyAddressBookPageObject myAddressBookPage;
