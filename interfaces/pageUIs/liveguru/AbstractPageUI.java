@@ -6,5 +6,6 @@ public class AbstractPageUI {
 	public static final String SEARCH_TERM_LINK = "//div[@class='footer']//a[(text()='Search Terms')]";
 	public static final String CUSTOMER_SERVICE_LINK = "//div[@class='footer']//a[(text()='Customer Service')]";
 	public static final String FOOTER_PAGE_LINK = "//div[@class='footer']//a[(text()='%s')]";
+	public static final String UPLOAD_FILE_TYPE = "//input[@type='file']";
 
 }

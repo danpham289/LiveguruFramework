@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="LiveGuru" parallel="false">
+
+  <parameter name = "url" value = "http://blueimp.github.io/jQuery-File-Upload/" />
+ 
+  <test name="RUN ON CHROME">
+  	<parameter name = "browser" value = "Chrome" />
+    <classes>
+      <class name="com.jquery.upload.Upload_Multiple_Files"/>  
+    </classes>
+  </test> 
+
+
+    
+
+  
+</suite> 
