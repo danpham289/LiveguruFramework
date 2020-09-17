@@ -2,6 +2,8 @@ package commons;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -15,6 +17,12 @@ public class AbstractTest {
 
 	private WebDriver driver;
 	private long longTimeOut = 30;
+	
+	protected final Log log;
+	
+	protected AbstractTest() {
+		log = LogFactory.getLog(getClass());
+	}
 
 	protected WebDriver openMultiBrowser(String browserName) {
 		Browser browser = Browser.valueOf(browserName.toUpperCase());
@@ -65,7 +73,11 @@ public class AbstractTest {
 	private boolean checkTrue(boolean condition) {
 		boolean pass = true;
 		try {
-			
+			if (condition == true) {
+				log.info(" -------------------------- PASSED -------------------------- ");
+			} else {
+				log.info(" -------------------------- FAILED -------------------------- ");
+			}
 			Assert.assertTrue(condition);
 		} catch (Throwable e) {
 			pass = false;
@@ -84,7 +96,11 @@ public class AbstractTest {
 	private boolean checkFailed(boolean condition) {
 		boolean pass = true;
 		try {
-			
+			if (condition == true) {
+				log.info(" -------------------------- PASSED -------------------------- ");
+			} else {
+				log.info(" -------------------------- FAILED -------------------------- ");
+			}
 			Assert.assertFalse(condition);
 		} catch (Throwable e) {
 			pass = false;
@@ -102,10 +118,10 @@ public class AbstractTest {
 		boolean pass = true;
 		try {
 			Assert.assertEquals(actual, expected);
-			
+			log.info(" -------------------------- PASSED -------------------------- ");
 		} catch (Throwable e) {
 			pass = false;
-			
+			log.info(" -------------------------- FAILED -------------------------- ");
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
 			Reporter.getCurrentTestResult().setThrowable(e);
 		}
