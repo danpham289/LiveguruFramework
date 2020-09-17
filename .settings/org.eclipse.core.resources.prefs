@@ -1,8 +1,10 @@
 eclipse.preferences.version=1
 encoding//actions/commons/AbstractPage.java=UTF-8
+encoding//actions/commons/AbstractTest.java=UTF-8
 encoding//testcases/testapi/CustomDropDownList.java=UTF-8
 encoding//testcases/testapi/InputDataIntoTextBoxInTable.java=UTF-8
-encoding//testcases/testapi/Popup_iframe_alert.java=UTF-8
+encoding//testcases/testapi/Javascript_Executor.java=UTF-8
+encoding//testcases/testapi/Popup_iframe_window.java=UTF-8
 encoding//testcases/testapi/Radio_Checkbox_Alert.java=UTF-8
 encoding//testcases/testapi/UploadFile.java=UTF-8
 encoding//testcases/testapi/WebDriver_Wait.java=UTF-8

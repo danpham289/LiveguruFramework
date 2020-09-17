@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="LiveGuru" parallel="false">
 
-  <parameter name = "url" value = "http://live.demoguru99.com" />
- 
-  <test name="RUN ON CHROME">
-  	<parameter name = "browser" value = "Chrome" />
+  <parameter name = "url" value = "http://demo.guru99.com/v4/" />
+<!--  <listeners> -->
+<!--  	<listener class-name = "commons.MethodListener" /> -->
+<!--  </listeners> -->
+
+  <test name="RUN ON FIREFOX">
+  	<parameter name = "browser" value = "Firefox" />
     <classes>
-      <class name="com.liveguru.user.Admin_01_Handle_Grid_Data"/>  
+      <class name="com.liveguru.user.Assert_Verify"/>  
     </classes>
   </test> 
 
