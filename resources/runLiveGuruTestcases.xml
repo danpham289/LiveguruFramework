@@ -4,6 +4,7 @@
 	<parameter name="url" value="http://live.demoguru99.com/" />
 	<listeners>
 		<listener class-name="commons.MethodListener" />
+		<listener class-name="reportConfig.ExtentListener" />
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 <!-- 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> -->
 
