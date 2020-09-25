@@ -33,6 +33,12 @@ public class TC03_User extends AbstractTest {
 		
 		log.info("Step 2: Get Cost of SONY XPERIA on list");
 //		String costOfSonyInList = mobilePage.getCostOfSonyOnList();
+		
+		log.info("Step 3: Click SONY XPERIA detail");
+		
+		log.info("Step 4: Get Cost of SONY XPERIA on detail");
+		
+		log.info("Step 5: Compare cost at step 2 & 4");
 	}
 
 	@AfterClass
