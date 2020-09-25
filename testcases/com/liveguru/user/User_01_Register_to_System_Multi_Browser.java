@@ -29,7 +29,7 @@ public class User_01_Register_to_System_Multi_Browser extends AbstractTest {
 	@Parameters({"browser", "url"})
 	@BeforeClass
 	public void beforeClass(String browserName, String appURL) {
-		driver = openMultiBrowser(browserName, appURL);		
+		driver = getBrowserDriver(browserName, appURL);		
 		homePage = new HomePageObject(driver);		
 		
 	}

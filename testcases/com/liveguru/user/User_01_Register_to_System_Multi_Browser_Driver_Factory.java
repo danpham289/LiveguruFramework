@@ -34,6 +34,7 @@ public class User_01_Register_to_System_Multi_Browser_Driver_Factory extends Abs
 	public void beforeClass(String browserName, String appURL) {
 		driverManager = DriverFactory.getManager(browserName);	
 		driver = driverManager.getDriver();
+		log.info("Pre-condition - Step 01: Open browser and application.");
 		driver.get(appURL);
 		homePage = new HomePageObject(driver);		
 		
@@ -42,10 +43,12 @@ public class User_01_Register_to_System_Multi_Browser_Driver_Factory extends Abs
 	@BeforeMethod
 	public void beforeMethod() {
 		// Click My Account -> open Login page
+		log.info("Pre-condition - Step 02: Click My Account link.");
 		homePage.clickToMyAccountLink();
 		loginPage = new LoginUserPageObject(driver);
 		
 		// Click Create an Account -> open Register page
+		log.info("Pre-condition - Step 03: Click Create an Account button.");
 		loginPage.clickCreateAccountButton();
 		registerPage = new RegisterPageObject(driver);
 	}
@@ -53,6 +56,7 @@ public class User_01_Register_to_System_Multi_Browser_Driver_Factory extends Abs
 	@Test
 	public void Register_01_Empty_Data() {
 		//click Register button
+		log.info("Register_01 - Step 01: Click Register button.");
 		registerPage.clicTokRegisterButton();
 
 		// Verify data

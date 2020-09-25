@@ -35,8 +35,7 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
-			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1)" view='testrunner-logs-view'><i class='material-icons'>note</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -46,7 +45,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Sep 21, 2020 08:58:20 AM</span>
+			<span class='label blue darken-3 suite-start-time'>Sep 25, 2020 04:30:08 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -62,7 +61,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -105,10 +103,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>4</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -126,17 +124,17 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Register_01_Empty_Data</span>
-						<span class='test-time'>Sep 21, 2020 08:58:05 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>TC02_Verify_User_Information_Is_Correct_After_Registered_Successfully</span>
+						<span class='test-time'>Sep 25, 2020 04:30:05 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 21, 2020 08:58:05 AM</span>
-	<span class='label end-time'>Sep 21, 2020 08:58:21 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+585ms</span>
+	<span class='label start-time'>Sep 25, 2020 04:30:05 PM</span>
+	<span class='label end-time'>Sep 25, 2020 04:30:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+173ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -148,119 +146,11 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>8:58:21 AM</td>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:30:08 PM</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.Throwable: Mulitple failures (3):
-Failure 1 of 3
-java.lang.AssertionError: expected [This is a required field] but found [This is a required field.]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:442)
-	at commons.AbstractTest.checkEquals(AbstractTest.java:120)
-	at commons.AbstractTest.verifyEquals(AbstractTest.java:132)
-	at com.liveguru.user.Assert_Verify.Register_01_Empty_Data(Assert_Verify.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-Failure 2 of 3
-java.lang.AssertionError: expected [This is a required field] but found [This is a required field.]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:442)
-	at commons.AbstractTest.checkEquals(AbstractTest.java:120)
-	at commons.AbstractTest.verifyEquals(AbstractTest.java:132)
-	at com.liveguru.user.Assert_Verify.Register_01_Empty_Data(Assert_Verify.java:67)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-Failure 3 of 3
-java.lang.AssertionError: expected [This is a required field] but found [This is a required field.]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:442)
-	at commons.AbstractTest.checkEquals(AbstractTest.java:120)
-	at commons.AbstractTest.verifyEquals(AbstractTest.java:132)
-	at com.liveguru.user.Assert_Verify.Register_01_Empty_Data(Assert_Verify.java:68)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</textarea>
+						Test passed
 					
 				</td>
 			</tr>
@@ -271,15 +161,15 @@ java.lang.AssertionError: expected [This is a required field] but found [This is
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>Register_04_Confirm_Password_Not_Matching_Password</span>
-						<span class='test-time'>Sep 21, 2020 08:58:14 AM</span>
+						<span class='test-name'>TC01_Register_Success_To_System</span>
+						<span class='test-time'>Sep 25, 2020 04:30:01 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 21, 2020 08:58:14 AM</span>
-	<span class='label end-time'>Sep 21, 2020 08:58:21 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+563ms</span>
+	<span class='label start-time'>Sep 25, 2020 04:30:01 PM</span>
+	<span class='label end-time'>Sep 25, 2020 04:30:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+720ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -293,112 +183,7 @@ java.lang.AssertionError: expected [This is a required field] but found [This is
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>8:58:21 AM</td>
-				<td class='step-details'>
-						Test passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>Register_03_Password_Less_Than_6_Chars</span>
-						<span class='test-time'>Sep 21, 2020 08:58:11 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Sep 21, 2020 08:58:11 AM</span>
-	<span class='label end-time'>Sep 21, 2020 08:58:21 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+541ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>8:58:21 AM</td>
-				<td class='step-details'>
-						Test passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>Register_05_Valid_Data</span>
-						<span class='test-time'>Sep 21, 2020 08:58:17 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Sep 21, 2020 08:58:17 AM</span>
-	<span class='label end-time'>Sep 21, 2020 08:58:21 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+403ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>8:58:21 AM</td>
-				<td class='step-details'>
-						Test passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>Register_02_Invalid_Email</span>
-						<span class='test-time'>Sep 21, 2020 08:58:08 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Sep 21, 2020 08:58:08 AM</span>
-	<span class='label end-time'>Sep 21, 2020 08:58:21 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+452ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>8:58:21 AM</td>
+				<td class='timestamp'>4:30:08 PM</td>
 				<td class='step-details'>
 						Test passed
 					
@@ -429,170 +214,7 @@ java.lang.AssertionError: expected [This is a required field] but found [This is
 	</div>
 	<!-- subview right -->
 </div>
-<!-- test view --><!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.Throwable</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Sep 21, 2020 08:58:05 AM</td>
-										<td class='linked' test-id='1'>Register_01_Empty_Data</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.Throwable: Mulitple failures (3):
-Failure 1 of 3
-java.lang.AssertionError: expected [This is a required field] but found [This is a required field.]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:442)
-	at commons.AbstractTest.checkEquals(AbstractTest.java:120)
-	at commons.AbstractTest.verifyEquals(AbstractTest.java:132)
-	at com.liveguru.user.Assert_Verify.Register_01_Empty_Data(Assert_Verify.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-Failure 2 of 3
-java.lang.AssertionError: expected [This is a required field] but found [This is a required field.]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:442)
-	at commons.AbstractTest.checkEquals(AbstractTest.java:120)
-	at commons.AbstractTest.verifyEquals(AbstractTest.java:132)
-	at com.liveguru.user.Assert_Verify.Register_01_Empty_Data(Assert_Verify.java:67)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-Failure 3 of 3
-java.lang.AssertionError: expected [This is a required field] but found [This is a required field.]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:442)
-	at commons.AbstractTest.checkEquals(AbstractTest.java:120)
-	at commons.AbstractTest.verifyEquals(AbstractTest.java:132)
-	at com.liveguru.user.Assert_Verify.Register_01_Empty_Data(Assert_Verify.java:68)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -600,7 +222,7 @@ java.lang.AssertionError: expected [This is a required field] but found [This is
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -612,19 +234,19 @@ java.lang.AssertionError: expected [This is a required field] but found [This is
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 21, 2020 08:58:20 AM</div>
+					<div class='panel-lead'>Sep 25, 2020 04:30:08 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 21, 2020 08:58:21 AM</div>
+			 		<div class='panel-lead'>Sep 25, 2020 04:30:08 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 0s+65ms</div>
+					<div class='panel-lead'>0h 0m 0s+78ms</div>
 				</div>
 			</div>
 		</div>
@@ -636,59 +258,23 @@ java.lang.AssertionError: expected [This is a required field] but found [This is
 		<h5>TestRunner Logs</h5>
 		
 		<div class='card-panel'>
-				2020-09-21 08:57:59,929 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 01: Open browser and application.
+				2020-09-25 16:29:53,309 INFO  com.liveguru.user.TC_01_02_Register - Precondition: Open LiveGuru99 site
 
-				2020-09-21 08:58:03,158 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+				2020-09-25 16:30:01,884 INFO  com.liveguru.user.TC_01_02_Register - Step 1: Click ACCOUNT menu
 
-				2020-09-21 08:58:04,292 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+				2020-09-25 16:30:02,060 INFO  com.liveguru.user.TC_01_02_Register - Step 2: Click Register link -> open Register Page
 
-				2020-09-21 08:58:05,463 INFO  com.liveguru.user.Assert_Verify - Register_01 - Step 01: Click Register button.
+				2020-09-25 16:30:03,049 INFO  com.liveguru.user.TC_01_02_Register - Step 3: Input all valid data to form
 
-				2020-09-21 08:58:05,610 INFO  com.liveguru.user.Assert_Verify - Register_01 - Step 02: Verify the validation message display for the blank fields
+				2020-09-25 16:30:03,893 INFO  com.liveguru.user.TC_01_02_Register - Step 3: Click Register button -> open My Dashboard Page
 
-				2020-09-21 08:58:05,712 INFO  com.liveguru.user.Assert_Verify -  -------------------------- PASSED -------------------------- 
+				2020-09-25 16:30:05,223 INFO  com.liveguru.user.TC_01_02_Register - Step 4: Verify text displays after registered successfully
 
-				2020-09-21 08:58:05,846 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+				2020-09-25 16:30:05,390 INFO  com.liveguru.user.TC_01_02_Register - Step 1: Click MY ACCOUNT link
 
-				2020-09-21 08:58:05,940 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+				2020-09-25 16:30:06,436 INFO  com.liveguru.user.TC_01_02_Register - Step 2: Click ACCOUNT INFORMATION link -> open Account Information page
 
-				2020-09-21 08:58:06,034 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
-
-				2020-09-21 08:58:06,124 INFO  com.liveguru.user.Assert_Verify -  -------------------------- PASSED -------------------------- 
-
-				2020-09-21 08:58:06,128 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
-
-				2020-09-21 08:58:07,527 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
-
-				2020-09-21 08:58:08,600 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 01: Input data into Email textbox
-
-				2020-09-21 08:58:08,786 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 02: Click Register button
-
-				2020-09-21 08:58:08,931 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 03: Verify validation msg displays for email field
-
-				2020-09-21 08:58:09,028 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
-
-				2020-09-21 08:58:10,445 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
-
-				2020-09-21 08:58:11,511 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 01: Input data into Password textbox
-
-				2020-09-21 08:58:11,688 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 02: Click Register button
-
-				2020-09-21 08:58:11,834 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 03: Verify validation msg displays for Password field
-
-				2020-09-21 08:58:11,934 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
-
-				2020-09-21 08:58:13,384 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
-
-				2020-09-21 08:58:14,488 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 01: Input data into Password and ConfirmPassword textbox
-
-				2020-09-21 08:58:14,846 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 02: Click Register button
-
-				2020-09-21 08:58:14,988 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 03: Verify validation msg displays for Password field
-
-				2020-09-21 08:58:15,083 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
-
-				2020-09-21 08:58:16,511 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+				2020-09-25 16:30:07,431 INFO  com.liveguru.user.TC_01_02_Register - Step 3: Verify firstname, lastname, email are correct
 
 		</div>
 	</div>
@@ -697,14 +283,14 @@ java.lang.AssertionError: expected [This is a required field] but found [This is
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 5,
-				passParent: 4,
-				failParent: 1,
+                parentCount: 2,
+				passParent: 2,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -729,7 +315,7 @@ java.lang.AssertionError: expected [This is a required field] but found [This is
 		</script>
 		<script>
 			var timeline = {
-			        "Register_01_Empty_Data":15.585,"Register_04_Confirm_Password_Not_Matching_Password":6.563,"Register_03_Password_Less_Than_6_Chars":9.541,"Register_05_Valid_Data":3.403,"Register_02_Invalid_Email":12.452
+			        "TC02_Verify_User_Information_Is_Correct_After_Registered_Successfully":3.173,"TC01_Register_Success_To_System":6.72
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>

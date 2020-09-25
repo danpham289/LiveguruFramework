@@ -3,6 +3,7 @@ package pageObjects.liveguru;
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
+import pageUIs.liveguru.AbstractPageUI;
 import pageUIs.liveguru.MyDashboardPageUI;
 
 
@@ -38,5 +39,16 @@ public class MyDashboardPageObject extends AbstractPage  {
 		clickToElement(driver, MyDashboardPageUI.MANAGE_ADDRESSES_LINK);
 		return PageGeneratorManager.getAddNewAddressPageObject(driver);
 	}
+
+//	public void clickToMyAccountLink() {
+//		waitElementClickable(driver, AbstractPageUI.DYNAMIC_FOOTER_PAGE_LINK, "My Account");
+//		clickToElement(driver, AbstractPageUI.DYNAMIC_FOOTER_PAGE_LINK, "My Account");
+//		
+//	}
+//
+//	public AccountInformationPageObject clickToAccountInformationLink() {
+//		// TODO Auto-generated method stub
+//		return PageGeneratorManager.getAccountInformationPageObject(driver);
+//	}
 
 }

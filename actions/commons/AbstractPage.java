@@ -19,6 +19,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import pageObjects.liveguru.AboutUsPageObject;
 import pageObjects.liveguru.AdvancedSearchPageObject;
 import pageObjects.liveguru.CustomerServicePageObject;
+import pageObjects.liveguru.MobilePageObject;
 import pageObjects.liveguru.PageGeneratorManager;
 import pageObjects.liveguru.SearchTermPageObject;
 import pageUIs.liveguru.AbstractPageUI;
@@ -430,6 +431,12 @@ public abstract class AbstractPage {
 
 	}
 
+	public MobilePageObject clickMobileMenu(WebDriver driver) {
+		waitElementClickable(driver, AbstractPageUI.MOBILE_LINK);
+		clickToElement(driver, AbstractPageUI.MOBILE_LINK);
+		return PageGeneratorManager.getMobilePageObject(driver);
+		
+	}
 	public AboutUsPageObject openAboutUsPage(WebDriver driver) {
 		waitElementClickable(driver, AbstractPageUI.ABOUT_US_LINK);
 		clickToElement(driver, AbstractPageUI.ABOUT_US_LINK);
@@ -459,10 +466,15 @@ public abstract class AbstractPage {
 	}
 
 	public void openFooterPageByName(WebDriver driver, String pageName) {
-		waitElementClickable(driver, AbstractPageUI.FOOTER_PAGE_LINK, pageName);
-		clickToElement(driver, AbstractPageUI.FOOTER_PAGE_LINK, pageName);
+		waitElementClickable(driver, AbstractPageUI.DYNAMIC_FOOTER_PAGE_LINK, pageName);
+		clickToElement(driver, AbstractPageUI.DYNAMIC_FOOTER_PAGE_LINK, pageName);
 	}
 
+	public void openLeftMenuPageByName(WebDriver driver, String pageName) {
+		waitElementClickable(driver, AbstractPageUI.DYNAMIC_LEFT_MENU_LINK, pageName);
+		clickToElement(driver, AbstractPageUI.DYNAMIC_LEFT_MENU_LINK, pageName);
+	}
+	
 	public void uploadMultipleFiles(WebDriver driver, String... filenames) {
 		String filePath = System.getProperty("user.dir") + getDirectorySlash("uploadFiles");
 		String fileFullPath = "";

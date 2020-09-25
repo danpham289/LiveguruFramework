@@ -44,4 +44,10 @@ public class PageGeneratorManager {
 	public static LoginAdminPageObject getLoginAdminPageObject(WebDriver driver) {
 		return new LoginAdminPageObject(driver);
 	}
+	public static AccountInformationPageObject getAccountInformationPageObject(WebDriver driver) {
+		return new AccountInformationPageObject(driver);
+	}
+	public static MobilePageObject getMobilePageObject(WebDriver driver) {
+		return new MobilePageObject(driver);
+	}
 }

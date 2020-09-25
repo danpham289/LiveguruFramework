@@ -37,5 +37,34 @@
 	<classpathentry kind="lib" path="libExtendReportV4/jcommander-1.48.jar"/>
 	<classpathentry kind="lib" path="libExtendReportV4/mongodb-driver-3.3.0.jar"/>
 	<classpathentry kind="lib" path="libExtendReportV4/mongodb-driver-core-3.3.0.jar"/>
+	<classpathentry kind="lib" path="libAllure/allure-java-commons-2.13.5.jar"/>
+	<classpathentry kind="lib" path="libAllure/allure-model-2.13.5.jar"/>
+	<classpathentry kind="lib" path="libAllure/allure-testng-2.13.5.jar"/>
+	<classpathentry kind="lib" path="libAllure/aspectjrt-1.9.4.jar"/>
+	<classpathentry kind="lib" path="libAllure/aspectjweaver-1.9.4.jar"/>
+	<classpathentry kind="lib" path="libAllure/assertj-core-3.11.1.jar"/>
+	<classpathentry kind="lib" path="libAllure/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="libAllure/commons-lang3-3.8.1.jar"/>
+	<classpathentry kind="lib" path="libAllure/compile-testing-0.15.jar"/>
+	<classpathentry kind="lib" path="libAllure/freemarker-2.3.28.jar"/>
+	<classpathentry kind="lib" path="libAllure/groovy-all-2.5.6-sources.jar"/>
+	<classpathentry kind="lib" path="libAllure/guice-4.2.2.jar"/>
+	<classpathentry kind="lib" path="libAllure/httpclient-4.5.7.jar"/>
+	<classpathentry kind="lib" path="libAllure/jackson-annotations-2.11.2.jar"/>
+	<classpathentry kind="lib" path="libAllure/jackson-core-2.11.2.jar"/>
+	<classpathentry kind="lib" path="libAllure/jackson-databind-2.11.2.jar"/>
+	<classpathentry kind="lib" path="libAllure/jaxb-api-2.3.1.jar"/>
+	<classpathentry kind="lib" path="libAllure/joor-java-8-0.9.10.jar"/>
+	<classpathentry kind="lib" path="libAllure/junit-extensions-2.3.0.jar"/>
+	<classpathentry kind="lib" path="libAllure/mockito-core-2.24.0.jar"/>
+	<classpathentry kind="lib" path="libAllure/mockserver-netty-5.5.1.jar"/>
+	<classpathentry kind="lib" path="libAllure/random-beans-3.8.0.jar"/>
+	<classpathentry kind="lib" path="libAllure/resteasy-client-3.6.2.Final.jar"/>
+	<classpathentry kind="lib" path="libAllure/retrofit-2.5.0.jar"/>
+	<classpathentry kind="lib" path="libAllure/slf4j-api-1.7.30.jar"/>
+	<classpathentry kind="lib" path="libAllure/slf4j-nop-1.7.30.jar"/>
+	<classpathentry kind="lib" path="libAllure/slf4j-simple-1.7.30.jar"/>
+	<classpathentry kind="lib" path="libAllure/tika-core-1.20.jar"/>
+	<classpathentry kind="lib" path="libAllure/wiremock-2.21.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

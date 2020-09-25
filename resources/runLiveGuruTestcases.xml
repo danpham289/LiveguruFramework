@@ -5,6 +5,7 @@
 	<listeners>
 		<listener class-name="commons.MethodListener" />
 		<listener class-name="reportConfig.ExtentListener" />
+		<listener class-name="reportConfig.AllureTestListener" />
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 <!-- 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> -->
 
@@ -14,7 +15,7 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class
-				name="com.liveguru.user.Assert_Verify" />
+				name="com.liveguru.user.TC_01_02_Register" />
 		</classes>
 	</test>
 
@@ -22,7 +23,7 @@
 <!-- 		<parameter name="browser" value="firefox" /> -->
 <!-- 		<classes> -->
 <!-- 			<class -->
-<!-- 				name="com.liveguru.user.User_01_Register_to_System_Multi_Browser" /> -->
+<!-- 				name="com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory" /> -->
 <!-- 		</classes> -->
 <!-- 	</test> -->
 

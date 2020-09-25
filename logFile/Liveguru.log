@@ -431,3 +431,309 @@
 2020-09-21 08:58:14,988 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 03: Verify validation msg displays for Password field
 2020-09-21 08:58:15,083 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
 2020-09-21 08:58:16,511 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 08:20:14,274 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 01: Open browser and application.
+2020-09-25 08:20:19,911 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 08:20:21,501 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 08:20:22,613 INFO  com.liveguru.user.Assert_Verify - Register_01 - Step 01: Click Register button.
+2020-09-25 08:20:22,784 INFO  com.liveguru.user.Assert_Verify - Register_01 - Step 02: Verify the validation message display for the blank fields
+2020-09-25 08:20:22,906 INFO  com.liveguru.user.Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-09-25 08:20:23,014 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 08:20:23,125 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 08:20:23,233 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 08:20:23,339 INFO  com.liveguru.user.Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-09-25 08:20:23,344 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 08:20:24,811 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 08:20:25,879 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 01: Input data into Email textbox
+2020-09-25 08:20:26,088 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 02: Click Register button
+2020-09-25 08:20:26,257 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 03: Verify validation msg displays for email field
+2020-09-25 08:20:26,375 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 08:20:27,797 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 08:20:28,876 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 01: Input data into Password textbox
+2020-09-25 08:20:29,085 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 02: Click Register button
+2020-09-25 08:20:29,247 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 03: Verify validation msg displays for Password field
+2020-09-25 08:20:29,356 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 08:20:30,675 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 08:20:31,736 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 01: Input data into Password and ConfirmPassword textbox
+2020-09-25 08:20:32,116 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 02: Click Register button
+2020-09-25 08:20:32,301 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 03: Verify validation msg displays for Password field
+2020-09-25 08:20:32,419 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 08:20:33,728 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 08:21:02,650 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 01: Open browser and application.
+2020-09-25 08:21:06,074 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 08:21:07,417 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 08:21:08,511 INFO  com.liveguru.user.Assert_Verify - Register_01 - Step 01: Click Register button.
+2020-09-25 08:21:08,698 INFO  com.liveguru.user.Assert_Verify - Register_01 - Step 02: Verify the validation message display for the blank fields
+2020-09-25 08:21:08,817 INFO  com.liveguru.user.Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-09-25 08:21:08,989 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 08:21:09,101 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 08:21:09,200 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 08:21:09,303 INFO  com.liveguru.user.Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-09-25 08:21:09,307 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 08:21:10,674 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 08:21:11,689 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 01: Input data into Email textbox
+2020-09-25 08:21:11,896 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 02: Click Register button
+2020-09-25 08:21:12,051 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 03: Verify validation msg displays for email field
+2020-09-25 08:21:12,171 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 08:21:13,577 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 08:21:14,721 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 01: Input data into Password textbox
+2020-09-25 08:21:14,931 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 02: Click Register button
+2020-09-25 08:21:15,089 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 03: Verify validation msg displays for Password field
+2020-09-25 08:21:15,193 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 08:21:16,636 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 08:21:17,715 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 01: Input data into Password and ConfirmPassword textbox
+2020-09-25 08:21:18,097 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 02: Click Register button
+2020-09-25 08:21:18,244 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 03: Verify validation msg displays for Password field
+2020-09-25 08:21:18,366 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 08:21:19,847 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:46:58,142 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 01: Open browser and application.
+2020-09-25 10:47:01,389 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:47:02,877 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:47:04,137 INFO  com.liveguru.user.Assert_Verify - Register_01 - Step 01: Click Register button.
+2020-09-25 10:47:04,310 INFO  com.liveguru.user.Assert_Verify - Register_01 - Step 02: Verify the validation message display for the blank fields
+2020-09-25 10:47:04,426 INFO  com.liveguru.user.Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-09-25 10:47:04,526 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 10:47:04,643 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 10:47:04,927 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 10:47:05,033 INFO  com.liveguru.user.Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-09-25 10:47:05,050 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:47:06,768 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:47:07,855 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 01: Input data into Email textbox
+2020-09-25 10:47:08,118 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 02: Click Register button
+2020-09-25 10:47:08,261 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 03: Verify validation msg displays for email field
+2020-09-25 10:47:08,379 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:47:09,785 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:47:10,872 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 01: Input data into Password textbox
+2020-09-25 10:47:11,054 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 02: Click Register button
+2020-09-25 10:47:11,235 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 03: Verify validation msg displays for Password field
+2020-09-25 10:47:11,342 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:47:12,684 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:47:13,736 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 01: Input data into Password and ConfirmPassword textbox
+2020-09-25 10:47:14,095 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 02: Click Register button
+2020-09-25 10:47:14,230 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 03: Verify validation msg displays for Password field
+2020-09-25 10:47:14,330 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:47:15,718 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:51:52,770 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 01: Open browser and application.
+2020-09-25 10:51:55,904 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:51:57,337 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:51:58,532 INFO  com.liveguru.user.Assert_Verify - Register_01 - Step 01: Click Register button.
+2020-09-25 10:51:58,690 INFO  com.liveguru.user.Assert_Verify - Register_01 - Step 02: Verify the validation message display for the blank fields
+2020-09-25 10:51:58,814 INFO  com.liveguru.user.Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-09-25 10:51:58,918 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 10:51:59,019 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 10:51:59,119 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 10:51:59,228 INFO  com.liveguru.user.Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-09-25 10:51:59,243 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:52:01,014 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:52:02,110 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 01: Input data into Email textbox
+2020-09-25 10:52:02,307 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 02: Click Register button
+2020-09-25 10:52:02,447 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 03: Verify validation msg displays for email field
+2020-09-25 10:52:02,550 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:52:03,886 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:52:05,967 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 01: Input data into Password textbox
+2020-09-25 10:52:06,198 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 02: Click Register button
+2020-09-25 10:52:06,337 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 03: Verify validation msg displays for Password field
+2020-09-25 10:52:06,435 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:52:07,769 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:52:08,806 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 01: Input data into Password and ConfirmPassword textbox
+2020-09-25 10:52:09,191 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 02: Click Register button
+2020-09-25 10:52:09,374 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 03: Verify validation msg displays for Password field
+2020-09-25 10:52:09,489 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:52:10,834 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:55:48,622 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 01: Open browser and application.
+2020-09-25 10:55:49,475 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 01: Open browser and application.
+2020-09-25 10:55:52,606 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:55:54,023 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:55:54,509 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:55:55,214 INFO  com.liveguru.user.Assert_Verify - Register_01 - Step 01: Click Register button.
+2020-09-25 10:55:55,370 INFO  com.liveguru.user.Assert_Verify - Register_01 - Step 02: Verify the validation message display for the blank fields
+2020-09-25 10:55:55,511 INFO  com.liveguru.user.Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-09-25 10:55:55,613 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 10:55:55,712 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 10:55:55,811 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 10:55:55,953 INFO  com.liveguru.user.Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-09-25 10:55:55,965 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:55:57,386 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:55:57,888 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:55:58,483 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 01: Input data into Email textbox
+2020-09-25 10:55:58,835 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 02: Click Register button
+2020-09-25 10:55:58,975 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 03: Verify validation msg displays for email field
+2020-09-25 10:55:59,071 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:56:00,437 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:56:00,653 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Register_01 - Step 01: Click Register button.
+2020-09-25 10:56:01,484 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:56:01,509 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 01: Input data into Password textbox
+2020-09-25 10:56:01,703 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 02: Click Register button
+2020-09-25 10:56:01,857 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 03: Verify validation msg displays for Password field
+2020-09-25 10:56:01,990 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:56:03,363 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:56:04,421 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 01: Input data into Password and ConfirmPassword textbox
+2020-09-25 10:56:04,488 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:56:04,883 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 02: Click Register button
+2020-09-25 10:56:05,025 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 03: Verify validation msg displays for Password field
+2020-09-25 10:56:05,228 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:56:06,602 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:56:08,152 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:56:10,882 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:56:13,773 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:56:16,761 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 10:56:19,850 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 02: Click My Account link.
+2020-09-25 10:56:23,338 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 14:51:05,933 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 01: Open browser and application.
+2020-09-25 14:51:09,439 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 14:51:10,742 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 14:51:11,882 INFO  com.liveguru.user.Assert_Verify - Register_01 - Step 01: Click Register button.
+2020-09-25 14:51:12,039 INFO  com.liveguru.user.Assert_Verify - Register_01 - Step 02: Verify the validation message display for the blank fields
+2020-09-25 14:51:12,145 INFO  com.liveguru.user.Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-09-25 14:51:12,243 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 14:51:12,340 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 14:51:12,431 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 14:51:12,523 INFO  com.liveguru.user.Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-09-25 14:51:12,540 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 14:51:13,744 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 14:51:14,729 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 01: Input data into Email textbox
+2020-09-25 14:51:14,917 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 02: Click Register button
+2020-09-25 14:51:15,065 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 03: Verify validation msg displays for email field
+2020-09-25 14:51:15,168 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 14:51:16,389 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 14:51:17,361 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 01: Input data into Password textbox
+2020-09-25 14:51:17,543 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 02: Click Register button
+2020-09-25 14:51:17,683 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 03: Verify validation msg displays for Password field
+2020-09-25 14:51:17,777 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 14:51:18,978 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 14:51:19,951 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 01: Input data into Password and ConfirmPassword textbox
+2020-09-25 14:51:20,293 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 02: Click Register button
+2020-09-25 14:51:20,445 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 03: Verify validation msg displays for Password field
+2020-09-25 14:51:20,539 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 14:51:21,742 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 14:51:31,829 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 01: Open browser and application.
+2020-09-25 14:51:34,120 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 02: Click My Account link.
+2020-09-25 14:51:36,428 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 14:51:38,275 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Register_01 - Step 01: Click Register button.
+2020-09-25 14:51:39,071 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 02: Click My Account link.
+2020-09-25 14:51:41,733 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 14:51:44,170 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 02: Click My Account link.
+2020-09-25 14:51:46,461 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 14:51:49,518 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 02: Click My Account link.
+2020-09-25 14:51:51,927 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 14:51:54,694 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 02: Click My Account link.
+2020-09-25 14:51:56,880 INFO  com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 14:58:57,461 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 01: Open browser and application.
+2020-09-25 14:59:01,845 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 02: Click My Account link.
+2020-09-25 14:59:03,112 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 14:59:04,229 INFO  com.liveguru.user.Allure_Report - Register_01 - Step 01: Click Register button.
+2020-09-25 14:59:04,384 INFO  com.liveguru.user.Allure_Report - Register_01 - Step 02: Verify the validation message display for the blank fields
+2020-09-25 14:59:04,609 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 02: Click My Account link.
+2020-09-25 14:59:05,831 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 14:59:06,813 INFO  com.liveguru.user.Allure_Report - Register_02 - Step 01: Input data into Email textbox
+2020-09-25 14:59:07,001 INFO  com.liveguru.user.Allure_Report - Register_02 - Step 02: Click Register button
+2020-09-25 14:59:07,144 INFO  com.liveguru.user.Allure_Report - Register_02 - Step 03: Verify validation msg displays for email field
+2020-09-25 14:59:07,252 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 02: Click My Account link.
+2020-09-25 14:59:08,497 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 14:59:09,476 INFO  com.liveguru.user.Allure_Report - Register_03 - Step 01: Input data into Password textbox
+2020-09-25 14:59:09,655 INFO  com.liveguru.user.Allure_Report - Register_03 - Step 02: Click Register button
+2020-09-25 14:59:09,795 INFO  com.liveguru.user.Allure_Report - Register_03 - Step 03: Verify validation msg displays for Password field
+2020-09-25 14:59:09,892 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 02: Click My Account link.
+2020-09-25 14:59:11,109 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 14:59:12,096 INFO  com.liveguru.user.Allure_Report - Register_04 - Step 01: Input data into Password and ConfirmPassword textbox
+2020-09-25 14:59:12,438 INFO  com.liveguru.user.Allure_Report - Register_04 - Step 02: Click Register button
+2020-09-25 14:59:12,594 INFO  com.liveguru.user.Allure_Report - Register_04 - Step 03: Verify validation msg displays for Password field
+2020-09-25 14:59:12,692 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 02: Click My Account link.
+2020-09-25 14:59:13,929 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 15:04:59,873 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 01: Open browser and application.
+2020-09-25 15:04:59,881 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 02: Click My Account link.
+2020-09-25 15:05:01,169 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 15:05:02,308 INFO  com.liveguru.user.Allure_Report - Register_01 - Step 01: Click Register button.
+2020-09-25 15:05:02,448 INFO  com.liveguru.user.Allure_Report - Register_01 - Step 02: Verify the validation message display for the blank fields
+2020-09-25 15:05:03,217 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 02: Click My Account link.
+2020-09-25 15:05:04,433 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 15:05:05,441 INFO  com.liveguru.user.Allure_Report - Register_02 - Step 01: Input data into Email textbox
+2020-09-25 15:05:05,635 INFO  com.liveguru.user.Allure_Report - Register_02 - Step 02: Click Register button
+2020-09-25 15:05:05,772 INFO  com.liveguru.user.Allure_Report - Register_02 - Step 03: Verify validation msg displays for email field
+2020-09-25 15:05:05,874 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 02: Click My Account link.
+2020-09-25 15:05:07,125 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 15:05:08,142 INFO  com.liveguru.user.Allure_Report - Register_03 - Step 01: Input data into Password textbox
+2020-09-25 15:05:08,320 INFO  com.liveguru.user.Allure_Report - Register_03 - Step 02: Click Register button
+2020-09-25 15:05:08,458 INFO  com.liveguru.user.Allure_Report - Register_03 - Step 03: Verify validation msg displays for Password field
+2020-09-25 15:05:08,557 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 02: Click My Account link.
+2020-09-25 15:05:09,784 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 15:05:10,775 INFO  com.liveguru.user.Allure_Report - Register_04 - Step 01: Input data into Password and ConfirmPassword textbox
+2020-09-25 15:05:11,130 INFO  com.liveguru.user.Allure_Report - Register_04 - Step 02: Click Register button
+2020-09-25 15:05:11,280 INFO  com.liveguru.user.Allure_Report - Register_04 - Step 03: Verify validation msg displays for Password field
+2020-09-25 15:05:11,380 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 02: Click My Account link.
+2020-09-25 15:05:12,617 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 15:10:41,003 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 01: Open browser and application.
+2020-09-25 15:10:43,514 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 15:10:44,780 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 15:10:45,894 INFO  com.liveguru.user.Assert_Verify - Register_01 - Step 01: Click Register button.
+2020-09-25 15:10:46,041 INFO  com.liveguru.user.Assert_Verify - Register_01 - Step 02: Verify the validation message display for the blank fields
+2020-09-25 15:10:46,167 INFO  com.liveguru.user.Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-09-25 15:10:46,277 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 15:10:46,374 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 15:10:46,470 INFO  com.liveguru.user.Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-09-25 15:10:46,567 INFO  com.liveguru.user.Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-09-25 15:10:46,583 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 15:10:47,806 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 15:10:48,791 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 01: Input data into Email textbox
+2020-09-25 15:10:48,975 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 02: Click Register button
+2020-09-25 15:10:49,123 INFO  com.liveguru.user.Assert_Verify - Register_02 - Step 03: Verify validation msg displays for email field
+2020-09-25 15:10:49,226 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 15:10:50,464 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 15:10:51,483 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 01: Input data into Password textbox
+2020-09-25 15:10:51,665 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 02: Click Register button
+2020-09-25 15:10:51,805 INFO  com.liveguru.user.Assert_Verify - Register_03 - Step 03: Verify validation msg displays for Password field
+2020-09-25 15:10:51,902 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 15:10:53,108 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 15:10:54,092 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 01: Input data into Password and ConfirmPassword textbox
+2020-09-25 15:10:54,445 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 02: Click Register button
+2020-09-25 15:10:54,596 INFO  com.liveguru.user.Assert_Verify - Register_04 - Step 03: Verify validation msg displays for Password field
+2020-09-25 15:10:54,696 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 02: Click My Account link.
+2020-09-25 15:10:55,908 INFO  com.liveguru.user.Assert_Verify - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 15:12:54,249 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 01: Open browser and application.
+2020-09-25 15:12:54,257 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 02: Click My Account link.
+2020-09-25 15:12:55,533 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 15:12:56,664 INFO  com.liveguru.user.Allure_Report - Register_01 - Step 01: Click Register button.
+2020-09-25 15:12:56,803 INFO  com.liveguru.user.Allure_Report - Register_01 - Step 02: Verify the validation message display for the blank fields
+2020-09-25 15:12:57,565 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 02: Click My Account link.
+2020-09-25 15:12:58,801 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 15:12:59,807 INFO  com.liveguru.user.Allure_Report - Register_02 - Step 01: Input data into Email textbox
+2020-09-25 15:13:00,006 INFO  com.liveguru.user.Allure_Report - Register_02 - Step 02: Click Register button
+2020-09-25 15:13:00,150 INFO  com.liveguru.user.Allure_Report - Register_02 - Step 03: Verify validation msg displays for email field
+2020-09-25 15:13:00,249 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 02: Click My Account link.
+2020-09-25 15:13:01,512 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 15:13:02,501 INFO  com.liveguru.user.Allure_Report - Register_03 - Step 01: Input data into Password textbox
+2020-09-25 15:13:02,681 INFO  com.liveguru.user.Allure_Report - Register_03 - Step 02: Click Register button
+2020-09-25 15:13:02,825 INFO  com.liveguru.user.Allure_Report - Register_03 - Step 03: Verify validation msg displays for Password field
+2020-09-25 15:13:02,918 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 02: Click My Account link.
+2020-09-25 15:13:04,140 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 15:13:05,144 INFO  com.liveguru.user.Allure_Report - Register_04 - Step 01: Input data into Password and ConfirmPassword textbox
+2020-09-25 15:13:05,482 INFO  com.liveguru.user.Allure_Report - Register_04 - Step 02: Click Register button
+2020-09-25 15:13:05,626 INFO  com.liveguru.user.Allure_Report - Register_04 - Step 03: Verify validation msg displays for Password field
+2020-09-25 15:13:05,727 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 02: Click My Account link.
+2020-09-25 15:13:06,970 INFO  com.liveguru.user.Allure_Report - Pre-condition - Step 03: Click Create an Account button.
+2020-09-25 16:21:09,621 INFO  com.liveguru.user.TC_01_02_Register - Precondition: Open LiveGuru99 site
+2020-09-25 16:21:18,552 INFO  com.liveguru.user.TC_01_02_Register - Step 1: Click ACCOUNT menu
+2020-09-25 16:21:18,725 INFO  com.liveguru.user.TC_01_02_Register - Step 2: Click Register link -> open Register Page
+2020-09-25 16:21:19,735 INFO  com.liveguru.user.TC_01_02_Register - Step 3: Input all valid data to form
+2020-09-25 16:21:20,570 INFO  com.liveguru.user.TC_01_02_Register - Step 3: Click Register button -> open My Dashboard Page
+2020-09-25 16:21:22,017 INFO  com.liveguru.user.TC_01_02_Register - Step 4: Verify text displays after registered successfully
+2020-09-25 16:21:22,188 INFO  com.liveguru.user.TC_01_02_Register - Step 1: Click MY ACCOUNT link
+2020-09-25 16:21:23,224 INFO  com.liveguru.user.TC_01_02_Register - Step 2: Click ACCOUNT INFORMATION link -> open Account Information page
+2020-09-25 16:21:24,238 INFO  com.liveguru.user.TC_01_02_Register - Step 3: Verify firstname, lastname, email are correct
+2020-09-25 16:25:56,818 INFO  com.liveguru.user.TC_01_02_Register - Precondition: Open LiveGuru99 site
+2020-09-25 16:26:05,490 INFO  com.liveguru.user.TC_01_02_Register - Step 1: Click ACCOUNT menu
+2020-09-25 16:26:05,664 INFO  com.liveguru.user.TC_01_02_Register - Step 2: Click Register link -> open Register Page
+2020-09-25 16:26:06,707 INFO  com.liveguru.user.TC_01_02_Register - Step 3: Input all valid data to form
+2020-09-25 16:26:07,620 INFO  com.liveguru.user.TC_01_02_Register - Step 3: Click Register button -> open My Dashboard Page
+2020-09-25 16:26:09,039 INFO  com.liveguru.user.TC_01_02_Register - Step 4: Verify text displays after registered successfully
+2020-09-25 16:26:09,198 INFO  com.liveguru.user.TC_01_02_Register - Step 1: Click MY ACCOUNT link
+2020-09-25 16:26:10,130 INFO  com.liveguru.user.TC_01_02_Register - Step 2: Click ACCOUNT INFORMATION link -> open Account Information page
+2020-09-25 16:26:11,044 INFO  com.liveguru.user.TC_01_02_Register - Step 3: Verify firstname, lastname, email are correct
+2020-09-25 16:29:53,309 INFO  com.liveguru.user.TC_01_02_Register - Precondition: Open LiveGuru99 site
+2020-09-25 16:30:01,884 INFO  com.liveguru.user.TC_01_02_Register - Step 1: Click ACCOUNT menu
+2020-09-25 16:30:02,060 INFO  com.liveguru.user.TC_01_02_Register - Step 2: Click Register link -> open Register Page
+2020-09-25 16:30:03,049 INFO  com.liveguru.user.TC_01_02_Register - Step 3: Input all valid data to form
+2020-09-25 16:30:03,893 INFO  com.liveguru.user.TC_01_02_Register - Step 3: Click Register button -> open My Dashboard Page
+2020-09-25 16:30:05,223 INFO  com.liveguru.user.TC_01_02_Register - Step 4: Verify text displays after registered successfully
+2020-09-25 16:30:05,390 INFO  com.liveguru.user.TC_01_02_Register - Step 1: Click MY ACCOUNT link
+2020-09-25 16:30:06,436 INFO  com.liveguru.user.TC_01_02_Register - Step 2: Click ACCOUNT INFORMATION link -> open Account Information page
+2020-09-25 16:30:07,431 INFO  com.liveguru.user.TC_01_02_Register - Step 3: Verify firstname, lastname, email are correct

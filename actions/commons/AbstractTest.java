@@ -13,9 +13,9 @@ import org.testng.Reporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class AbstractTest {
-
-	private WebDriver driver;
+public abstract class AbstractTest {
+	protected static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<WebDriver>();
+	//private WebDriver driver;
 	private long longTimeOut = 30;
 	
 	protected final Log log;
@@ -24,50 +24,63 @@ public class AbstractTest {
 		log = LogFactory.getLog(getClass());
 	}
 
-	protected WebDriver openMultiBrowser(String browserName) {
+	protected WebDriver getBrowserDriver(String browserName) {
 		Browser browser = Browser.valueOf(browserName.toUpperCase());
 
 		if (browser == Browser.FIREFOX) {
 //			System.setProperty("webdriver.gecko.driver", ".\\browserDrivers\\geckodriver.exe");
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			setDriver(new FirefoxDriver());
 		} else if (browser == Browser.CHROME) {
 //			System.setProperty("webdriver.chrome.driver", ".\\browserDrivers\\chromedriver.exe");
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			setDriver(new ChromeDriver());
 		} else {
 			throw new RuntimeException("Please input correct browser name.");
 		}
 
-		driver.manage().window().maximize();
-		driver.get("http://live.demoguru99.com");
-		driver.manage().timeouts().implicitlyWait(longTimeOut, TimeUnit.SECONDS);
-		return driver;
+		getDriver().manage().window().maximize();
+		getDriver().get("http://live.demoguru99.com");
+		getDriver().manage().timeouts().implicitlyWait(longTimeOut, TimeUnit.SECONDS);
+		return getDriver();
 	}
 
-	protected WebDriver openMultiBrowser(String browserName, String appURL) {
+	protected WebDriver getBrowserDriver(String browserName, String appURL) {
 		Browser browser = Browser.valueOf(browserName.toUpperCase());
 
 		if (browser == Browser.FIREFOX) {
 			//System.setProperty("webdriver.gecko.driver", ".\\browserDrivers\\geckodriver.exe");
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			setDriver(new FirefoxDriver());
 		} else if (browser == Browser.CHROME) {
 			//System.setProperty("webdriver.chrome.driver", ".\\browserDrivers\\chromedriver.exe");
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			setDriver(new ChromeDriver());
 		} else if (browser == Browser.EDGE) {
 			//System.setProperty("webdriver.edge.driver", ".\\browserDrivers\\chromedriver.exe");
 			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
+			setDriver(new EdgeDriver());
 		} else {
 			throw new RuntimeException("Please input correct browser name.");
 		}
 
-		driver.manage().timeouts().implicitlyWait(longTimeOut, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		driver.get(appURL);
-		return driver;
+		getDriver().manage().timeouts().implicitlyWait(longTimeOut, TimeUnit.SECONDS);
+		getDriver().manage().window().maximize();
+		getDriver().get(appURL);
+		return getDriver();
+	}
+	
+	protected void removeDriver() {
+		getDriver().quit();
+		threadLocalDriver.remove();
+	}
+	
+	public WebDriver getDriver() {
+		return threadLocalDriver.get();
+	}
+	
+	private void setDriver(WebDriver driver) {
+		threadLocalDriver.set(driver);
 	}
 	
 	private boolean checkTrue(boolean condition) {

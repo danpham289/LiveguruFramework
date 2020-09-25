@@ -21,4 +21,16 @@ public class HomePageObject extends AbstractPage {
 
 	}
 
+	public void clickToAccountMenu() {
+		waitElementClickable(driver,  HomePageUI.ACCOUNT_MENU);
+		clickToElement(driver, HomePageUI.ACCOUNT_MENU);
+		
+	}
+
+	public RegisterPageObject clickToRegisterLink() {
+		waitElementClickable(driver,  HomePageUI.REGISTER_LINK);
+		clickToElement(driver, HomePageUI.REGISTER_LINK);
+		return PageGeneratorManager.getRegisterPageObject(driver);
+	}
+
 }
