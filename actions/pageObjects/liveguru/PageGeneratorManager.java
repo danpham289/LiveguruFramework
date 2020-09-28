@@ -50,4 +50,10 @@ public class PageGeneratorManager {
 	public static MobilePageObject getMobilePageObject(WebDriver driver) {
 		return new MobilePageObject(driver);
 	}
+	public static SonyDetailPageObject getSonyDetailPageObject(WebDriver driver) {
+		return new SonyDetailPageObject(driver);
+	}
+	public static ShoppingCartPageObject getShoppingCartPageObject(WebDriver driver) {
+		return new ShoppingCartPageObject(driver);
+	}
 }

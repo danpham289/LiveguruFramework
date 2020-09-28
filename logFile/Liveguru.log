@@ -737,3 +737,27 @@
 2020-09-25 16:30:05,390 INFO  com.liveguru.user.TC_01_02_Register - Step 1: Click MY ACCOUNT link
 2020-09-25 16:30:06,436 INFO  com.liveguru.user.TC_01_02_Register - Step 2: Click ACCOUNT INFORMATION link -> open Account Information page
 2020-09-25 16:30:07,431 INFO  com.liveguru.user.TC_01_02_Register - Step 3: Verify firstname, lastname, email are correct
+2020-09-28 09:20:27,261 INFO  com.liveguru.user.TC03_User - Precondition: Open LiveGuru99 site
+2020-09-28 09:20:38,399 INFO  com.liveguru.user.TC03_User - Step 1: Click Mobile menu
+2020-09-28 09:20:40,882 INFO  com.liveguru.user.TC03_User - Step 2: Get Cost of SONY XPERIA on list
+2020-09-28 09:21:13,046 INFO  com.liveguru.user.TC03_User - Precondition: Open LiveGuru99 site
+2020-09-28 09:21:22,128 INFO  com.liveguru.user.TC03_User - Step 1: Click Mobile menu
+2020-09-28 09:21:23,591 INFO  com.liveguru.user.TC03_User - Step 2: Get Cost of SONY XPERIA on list
+2020-09-28 09:21:23,694 INFO  com.liveguru.user.TC03_User - Step 3: Click SONY XPERIA detail
+2020-09-28 09:21:40,945 INFO  com.liveguru.user.TC03_User - Precondition: Open LiveGuru99 site
+2020-09-28 09:21:50,034 INFO  com.liveguru.user.TC03_User - Step 1: Click Mobile menu
+2020-09-28 09:21:51,518 INFO  com.liveguru.user.TC03_User - Step 2: Get Cost of SONY XPERIA on list
+2020-09-28 09:21:51,622 INFO  com.liveguru.user.TC03_User - Step 3: Click SONY XPERIA detail
+2020-09-28 09:21:53,803 INFO  com.liveguru.user.TC03_User - Step 4: Get Cost of SONY XPERIA on detail
+2020-09-28 09:21:53,909 INFO  com.liveguru.user.TC03_User - Step 5: Compare cost at step 2 & 4
+2020-09-28 10:18:35,495 INFO  com.liveguru.user.TC03_TC04_User - Precondition - 1: Open LiveGuru99 site
+2020-09-28 10:18:44,639 INFO  com.liveguru.user.TC03_TC04_User - Precondition - 2: Click Mobile menu
+2020-09-28 10:18:46,222 INFO  com.liveguru.user.TC03_TC04_User - Step 1: Get Cost of SONY XPERIA on list
+2020-09-28 10:18:46,326 INFO  com.liveguru.user.TC03_TC04_User - Step 2: Click SONY XPERIA detail
+2020-09-28 10:18:48,255 INFO  com.liveguru.user.TC03_TC04_User - Step 3: Get Cost of SONY XPERIA on detail
+2020-09-28 10:18:48,355 INFO  com.liveguru.user.TC03_TC04_User - Step 4: Compare cost at step 2 & 4
+2020-09-28 10:18:48,367 INFO  com.liveguru.user.TC03_TC04_User - Precondition - 2: Click Mobile menu
+2020-09-28 10:18:49,525 INFO  com.liveguru.user.TC03_TC04_User - Step 2: Add IPHONE to cart
+2020-09-28 10:18:51,406 INFO  com.liveguru.user.TC03_TC04_User - VP: Verify Iphone is added to your shopping cart
+2020-09-28 10:18:51,513 INFO  com.liveguru.user.TC03_TC04_User - Step 3: Enter COUPON CODE
+2020-09-28 10:18:53,302 INFO  com.liveguru.user.TC03_TC04_User - VP: Verify discount Text displays

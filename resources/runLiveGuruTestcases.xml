@@ -15,7 +15,7 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class
-				name="com.liveguru.user.TC_01_02_Register" />
+				name="com.liveguru.user.TC03_TC04_User" />
 		</classes>
 	</test>
 
