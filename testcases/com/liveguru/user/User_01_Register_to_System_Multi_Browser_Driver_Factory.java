@@ -1,7 +1,5 @@
 package com.liveguru.user;
 
-import java.util.Random;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -130,9 +128,6 @@ public class User_01_Register_to_System_Multi_Browser_Driver_Factory extends Abs
 		driver.quit();
 	}
 	
-	public int randomNumber() {
-		Random num = new Random();
-		return num.nextInt();
-	}
+
 
 }

@@ -33,4 +33,10 @@ public class HomePageObject extends AbstractPage {
 		return PageGeneratorManager.getRegisterPageObject(driver);
 	}
 
+	public LoginUserPageObject clickToLogInLink() {
+		waitElementClickable(driver,  HomePageUI.LOG_IN_LINK);
+		clickToElement(driver, HomePageUI.LOG_IN_LINK);
+		return PageGeneratorManager.getLoginPageObject(driver);
+	}
+
 }

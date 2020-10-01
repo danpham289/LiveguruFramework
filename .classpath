@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="testcases"/>
+	<classpathentry kind="src" path="testdata"/>
 	<classpathentry kind="src" path="actions"/>
 	<classpathentry kind="src" path="interfaces"/>
 	<classpathentry kind="src" path="resources"/>
@@ -66,5 +67,8 @@
 	<classpathentry kind="lib" path="libAllure/slf4j-simple-1.7.30.jar"/>
 	<classpathentry kind="lib" path="libAllure/tika-core-1.20.jar"/>
 	<classpathentry kind="lib" path="libAllure/wiremock-2.21.0.jar"/>
+	<classpathentry kind="lib" path="libMail/javax.mail-1.6.2.jar"/>
+	<classpathentry kind="lib" path="libMail/javax.mail-api-1.6.2.jar"/>
+	<classpathentry kind="lib" path="libMail/smtp-1.6.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

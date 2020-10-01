@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="LiveGuru" parallel="false">
 
-	<parameter name="url" value="http://live.demoguru99.com/" />
+	<parameter name="url" value="https://zingpoll.com/" />
 	<listeners>
 		<listener class-name="commons.MethodListener" />
 		<listener class-name="reportConfig.ExtentListener" />
@@ -14,18 +14,16 @@
 	<test name="RUN ON CHROME">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.liveguru.commons.Common_01_Register_User" />
-<!-- 			<class name="com.liveguru.user.TC03_TC04_TC05_TC06_Mobile" /> -->
-			<class name="com.liveguru.user.TC07_TC08_TV" />
+			<class
+				name="com.zingpoll.user.TC02_Sign_In" />
 		</classes>
 	</test>
 
 <!-- 	<test name="RUN ON FIREFOX"> -->
 <!-- 		<parameter name="browser" value="firefox" /> -->
 <!-- 		<classes> -->
-<!-- 			<class name="com.liveguru.commons.Common_01_Register_User" /> -->
-<!-- 			<class name="com.liveguru.user.TC03_TC04_TC05_TC06_Mobile" /> -->
-<!-- 			<class name="com.liveguru.user.TC07_TC08_TV" /> -->
+<!-- 			<class -->
+<!-- 				name="com.liveguru.user.User_01_Register_to_System_Multi_Browser_Driver_Factory" /> -->
 <!-- 		</classes> -->
 <!-- 	</test> -->
 

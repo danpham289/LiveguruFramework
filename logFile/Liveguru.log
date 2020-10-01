@@ -761,3 +761,325 @@
 2020-09-28 10:18:51,406 INFO  com.liveguru.user.TC03_TC04_User - VP: Verify Iphone is added to your shopping cart
 2020-09-28 10:18:51,513 INFO  com.liveguru.user.TC03_TC04_User - Step 3: Enter COUPON CODE
 2020-09-28 10:18:53,302 INFO  com.liveguru.user.TC03_TC04_User - VP: Verify discount Text displays
+2020-09-29 09:47:16,028 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Precondition - 1: Open LiveGuru99 site
+2020-09-29 09:47:26,356 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Precondition - 2: Click Mobile menu
+2020-09-29 09:47:28,228 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Step 1: Add SONY XPERIA to cart
+2020-09-29 09:47:29,957 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Step 2: Change QTY to 501 and click UPDATE button
+2020-09-29 09:47:31,669 INFO  com.liveguru.user.TC03_TC04_TC05_Product - VP: Verify error message
+2020-09-29 09:47:31,779 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Step 3: Click 'Empty cart' link
+2020-09-29 09:47:33,165 INFO  com.liveguru.user.TC03_TC04_TC05_Product - VP: Verify cart is empty
+2020-09-29 10:06:20,470 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Precondition - 1: Open LiveGuru99 site
+2020-09-29 10:06:29,367 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Precondition - 2: Click Mobile menu
+2020-09-29 10:06:31,137 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Step 1: Get Cost of SONY XPERIA on list
+2020-09-29 10:06:31,239 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Step 2: Click SONY XPERIA detail
+2020-09-29 10:06:33,537 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Step 3: Get Cost of SONY XPERIA on detail
+2020-09-29 10:06:33,631 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Step 4: Compare cost at step 2 & 4
+2020-09-29 10:06:33,646 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Precondition - 2: Click Mobile menu
+2020-09-29 10:06:34,653 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Step 1: Add IPHONE to cart
+2020-09-29 10:06:36,442 INFO  com.liveguru.user.TC03_TC04_TC05_Product - VP: Verify Iphone is added to your shopping cart
+2020-09-29 10:06:36,551 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Step 2: Enter COUPON CODE
+2020-09-29 10:06:38,125 INFO  com.liveguru.user.TC03_TC04_TC05_Product - VP: Verify discount Text displays
+2020-09-29 10:06:38,229 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Precondition - 2: Click Mobile menu
+2020-09-29 10:06:39,290 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Step 1: Add SONY XPERIA to cart
+2020-09-29 10:06:40,707 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Step 2: Change QTY to 501 and click UPDATE button
+2020-09-29 10:06:42,325 INFO  com.liveguru.user.TC03_TC04_TC05_Product - VP: Verify error message
+2020-09-29 10:06:42,450 INFO  com.liveguru.user.TC03_TC04_TC05_Product - Step 3: Click 'Empty cart' link
+2020-09-29 10:06:43,735 INFO  com.liveguru.user.TC03_TC04_TC05_Product - VP: Verify cart is empty
+2020-09-29 11:21:10,722 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Precondition - 1: Open LiveGuru99 site
+2020-09-29 11:21:25,437 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Precondition - 2: Click Mobile menu
+2020-09-29 11:21:36,983 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Step 1: Add SONY XPERIA to cart
+2020-09-29 11:21:39,124 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Step 2: Change QTY to 501 and click UPDATE button
+2020-09-29 11:21:40,942 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - VP: Verify error message
+2020-09-29 11:21:41,058 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Step 3: Click 'Empty cart' link
+2020-09-29 11:21:42,390 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - VP: Verify cart is empty
+2020-09-29 11:21:42,633 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Precondition - 2: Click Mobile menu
+2020-09-29 11:21:45,516 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Step 1: Click 'Add to compare' on SONY XPERIA and IPHONE
+2020-09-29 11:21:48,278 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - VP: Verify message
+2020-09-29 11:21:48,278 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Step 2: Click 'COMPARE' button
+2020-09-29 11:22:24,334 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - VP: Verify popup window open with heading as COMPARE PRODUCT and selected products display
+2020-09-29 11:29:48,171 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Precondition - 1: Open LiveGuru99 site
+2020-09-29 11:29:59,358 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Precondition - 2: Click Mobile menu
+2020-09-29 11:30:07,432 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Step 1: Click 'Add to compare' on SONY XPERIA and IPHONE
+2020-09-29 11:30:10,514 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - VP: Verify message
+2020-09-29 11:31:58,191 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Precondition - 1: Open LiveGuru99 site
+2020-09-29 11:32:09,285 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Precondition - 2: Click Mobile menu
+2020-09-29 11:32:18,679 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Step 1: Click 'Add to compare' on SONY XPERIA and IPHONE
+2020-09-29 11:32:18,679 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - VP: Verify message
+2020-09-29 11:32:22,734 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Step 2: Click 'COMPARE' button
+2020-09-29 11:32:25,767 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - VP: Verify popup window open with heading as COMPARE PRODUCT and selected products display
+2020-09-29 11:32:40,188 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Precondition - 1: Open LiveGuru99 site
+2020-09-29 11:32:49,162 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Precondition - 2: Click Mobile menu
+2020-09-29 11:32:52,584 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Step 1: Click 'Add to compare' on SONY XPERIA and IPHONE
+2020-09-29 11:32:52,584 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - VP: Verify message
+2020-09-29 11:32:55,783 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - Step 2: Click 'COMPARE' button
+2020-09-29 11:32:58,078 INFO  com.liveguru.user.TC03_TC04_TC05_TC_06_Product - VP: Verify popup window open with heading as COMPARE PRODUCT and selected products display
+2020-09-30 11:40:20,381 INFO  com.liveguru.user.TC_01_02_User_Register - Precondition: Open LiveGuru99 site
+2020-09-30 11:40:31,977 INFO  com.liveguru.user.TC_01_02_User_Register - Step 1: Click ACCOUNT menu
+2020-09-30 11:40:32,154 INFO  com.liveguru.user.TC_01_02_User_Register - Step 2: Click Register link -> open Register Page
+2020-09-30 11:40:33,282 INFO  com.liveguru.user.TC_01_02_User_Register - Step 3: Input all valid data to form
+2020-09-30 11:40:34,165 INFO  com.liveguru.user.TC_01_02_User_Register - Step 4: Click Register button -> open My Dashboard Page
+2020-09-30 11:40:35,658 INFO  com.liveguru.user.TC_01_02_User_Register - Step 5: Verify text displays after registered successfully
+2020-09-30 11:40:35,840 INFO  com.liveguru.user.TC_01_02_User_Register - Step 1: Click MY ACCOUNT link
+2020-09-30 11:40:36,870 INFO  com.liveguru.user.TC_01_02_User_Register - Step 2: Click ACCOUNT INFORMATION link -> open Account Information page
+2020-09-30 11:40:37,907 INFO  com.liveguru.user.TC_01_02_User_Register - Step 3: Verify firstname, lastname, email are correct
+2020-09-30 11:40:38,882 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1: Open LiveGuru99 site
+2020-09-30 11:40:47,002 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 11:40:48,578 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Get Cost of SONY XPERIA on list
+2020-09-30 11:40:48,675 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click SONY XPERIA detail
+2020-09-30 11:40:50,575 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Get Cost of SONY XPERIA on detail
+2020-09-30 11:40:50,670 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 4: Compare cost at step 2 & 4
+2020-09-30 11:40:50,686 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 11:40:51,740 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add IPHONE to cart
+2020-09-30 11:40:53,468 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify Iphone is added to your shopping cart
+2020-09-30 11:40:53,581 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Enter COUPON CODE
+2020-09-30 11:40:55,248 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify discount Text displays
+2020-09-30 11:40:55,357 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 11:40:56,510 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add SONY XPERIA to cart
+2020-09-30 11:40:58,054 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Change QTY to 501 and click UPDATE button
+2020-09-30 11:40:59,751 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify error message
+2020-09-30 11:40:59,860 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Click 'Empty cart' link
+2020-09-30 11:41:01,253 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify cart is empty
+2020-09-30 11:41:01,474 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 11:41:02,555 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Click 'Add to compare' on SONY XPERIA and IPHONE
+2020-09-30 11:41:02,555 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify message
+2020-09-30 11:41:05,636 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click 'COMPARE' button
+2020-09-30 11:41:07,977 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify popup window open with heading as COMPARE PRODUCT and selected products display
+2020-09-30 11:41:08,995 INFO  com.liveguru.user.TC_01_02_User_Register - Precondition: Open LiveGuru99 site
+2020-09-30 11:44:15,126 INFO  com.liveguru.user.TC_01_02_User_Register - Precondition: Open LiveGuru99 site
+2020-09-30 11:44:24,147 INFO  com.liveguru.user.TC_01_02_User_Register - Step 1: Click ACCOUNT menu
+2020-09-30 11:44:24,307 INFO  com.liveguru.user.TC_01_02_User_Register - Step 2: Click Register link -> open Register Page
+2020-09-30 11:44:25,460 INFO  com.liveguru.user.TC_01_02_User_Register - Step 3: Input all valid data to form
+2020-09-30 11:44:26,330 INFO  com.liveguru.user.TC_01_02_User_Register - Step 4: Click Register button -> open My Dashboard Page
+2020-09-30 11:44:28,163 INFO  com.liveguru.user.TC_01_02_User_Register - Step 5: Verify text displays after registered successfully
+2020-09-30 11:44:28,327 INFO  com.liveguru.user.TC_01_02_User_Register - Step 1: Click MY ACCOUNT link
+2020-09-30 11:44:29,464 INFO  com.liveguru.user.TC_01_02_User_Register - Step 2: Click ACCOUNT INFORMATION link -> open Account Information page
+2020-09-30 11:44:30,867 INFO  com.liveguru.user.TC_01_02_User_Register - Step 3: Verify firstname, lastname, email are correct
+2020-09-30 11:44:31,173 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1: Open LiveGuru99 site
+2020-09-30 11:44:39,347 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 11:44:40,824 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Get Cost of SONY XPERIA on list
+2020-09-30 11:44:40,921 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click SONY XPERIA detail
+2020-09-30 11:44:42,747 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Get Cost of SONY XPERIA on detail
+2020-09-30 11:44:42,847 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 4: Compare cost at step 2 & 4
+2020-09-30 11:44:42,849 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 11:44:44,009 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add IPHONE to cart
+2020-09-30 11:44:45,722 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify Iphone is added to your shopping cart
+2020-09-30 11:44:45,827 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Enter COUPON CODE
+2020-09-30 11:44:47,464 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify discount Text displays
+2020-09-30 11:44:47,568 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 11:44:48,685 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add SONY XPERIA to cart
+2020-09-30 11:44:50,203 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Change QTY to 501 and click UPDATE button
+2020-09-30 11:44:51,903 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify error message
+2020-09-30 11:44:52,011 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Click 'Empty cart' link
+2020-09-30 11:44:53,487 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify cart is empty
+2020-09-30 11:44:53,703 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 11:44:54,883 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Click 'Add to compare' on SONY XPERIA and IPHONE
+2020-09-30 11:44:54,884 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify message
+2020-09-30 11:44:58,121 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click 'COMPARE' button
+2020-09-30 11:45:00,400 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify popup window open with heading as COMPARE PRODUCT and selected products display
+2020-09-30 11:45:00,738 INFO  com.liveguru.user.TC_01_02_User_Register - Precondition: Open LiveGuru99 site
+2020-09-30 11:45:14,290 INFO  com.liveguru.user.TC_01_02_User_Register - Step 1: Click ACCOUNT menu
+2020-09-30 11:45:14,619 INFO  com.liveguru.user.TC_01_02_User_Register - Step 2: Click Register link -> open Register Page
+2020-09-30 11:45:18,409 INFO  com.liveguru.user.TC_01_02_User_Register - Step 3: Input all valid data to form
+2020-09-30 11:45:18,990 INFO  com.liveguru.user.TC_01_02_User_Register - Step 4: Click Register button -> open My Dashboard Page
+2020-09-30 11:45:22,407 INFO  com.liveguru.user.TC_01_02_User_Register - Step 5: Verify text displays after registered successfully
+2020-09-30 11:45:22,510 INFO  com.liveguru.user.TC_01_02_User_Register - Step 1: Click MY ACCOUNT link
+2020-09-30 11:45:25,561 INFO  com.liveguru.user.TC_01_02_User_Register - Step 2: Click ACCOUNT INFORMATION link -> open Account Information page
+2020-09-30 11:45:28,457 INFO  com.liveguru.user.TC_01_02_User_Register - Step 3: Verify firstname, lastname, email are correct
+2020-09-30 11:45:28,751 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1: Open LiveGuru99 site
+2020-09-30 11:45:42,211 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 11:45:48,507 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Get Cost of SONY XPERIA on list
+2020-09-30 11:45:48,604 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click SONY XPERIA detail
+2020-09-30 11:45:55,484 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Get Cost of SONY XPERIA on detail
+2020-09-30 11:45:55,575 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 4: Compare cost at step 2 & 4
+2020-09-30 11:45:55,576 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 11:45:59,592 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add IPHONE to cart
+2020-09-30 11:46:03,865 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify Iphone is added to your shopping cart
+2020-09-30 11:46:03,974 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Enter COUPON CODE
+2020-09-30 11:46:08,202 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify discount Text displays
+2020-09-30 11:46:08,291 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 11:46:11,731 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add SONY XPERIA to cart
+2020-09-30 11:46:17,771 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Change QTY to 501 and click UPDATE button
+2020-09-30 11:46:24,385 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify error message
+2020-09-30 11:46:24,502 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Click 'Empty cart' link
+2020-09-30 11:46:29,163 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify cart is empty
+2020-09-30 11:46:29,383 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 11:46:33,076 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Click 'Add to compare' on SONY XPERIA and IPHONE
+2020-09-30 11:46:33,076 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify message
+2020-09-30 11:46:44,441 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click 'COMPARE' button
+2020-09-30 11:46:44,921 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify popup window open with heading as COMPARE PRODUCT and selected products display
+2020-09-30 13:36:51,778 INFO  com.liveguru.user.TC_01_02_User_Register - Precondition: Open LiveGuru99 site
+2020-09-30 13:37:00,844 INFO  com.liveguru.user.TC_01_02_User_Register - Step 1: Click ACCOUNT menu
+2020-09-30 13:37:01,009 INFO  com.liveguru.user.TC_01_02_User_Register - Step 2: Click Register link -> open Register Page
+2020-09-30 13:37:02,046 INFO  com.liveguru.user.TC_01_02_User_Register - Step 3: Input all valid data to form
+2020-09-30 13:37:02,919 INFO  com.liveguru.user.TC_01_02_User_Register - Step 4: Click Register button -> open My Dashboard Page
+2020-09-30 13:37:04,407 INFO  com.liveguru.user.TC_01_02_User_Register - Step 5: Verify text displays after registered successfully
+2020-09-30 13:37:04,585 INFO  com.liveguru.user.TC_01_02_User_Register - Step 1: Click MY ACCOUNT link
+2020-09-30 13:37:05,628 INFO  com.liveguru.user.TC_01_02_User_Register - Step 2: Click ACCOUNT INFORMATION link -> open Account Information page
+2020-09-30 13:37:06,664 INFO  com.liveguru.user.TC_01_02_User_Register - Step 3: Verify firstname, lastname, email are correct
+2020-09-30 13:37:07,641 INFO  com.liveguru.user.TC_01_02_User_Register - Browser Driver is chromedriver: chrome on windows (null)
+2020-09-30 13:37:07,654 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1: Open LiveGuru99 site
+2020-09-30 13:37:15,859 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 13:37:17,204 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Get Cost of SONY XPERIA on list
+2020-09-30 13:37:17,304 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click SONY XPERIA detail
+2020-09-30 13:37:19,240 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Get Cost of SONY XPERIA on detail
+2020-09-30 13:37:19,340 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 4: Compare cost at step 2 & 4
+2020-09-30 13:37:19,342 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 13:37:20,413 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add IPHONE to cart
+2020-09-30 13:37:22,174 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify Iphone is added to your shopping cart
+2020-09-30 13:37:22,284 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Enter COUPON CODE
+2020-09-30 13:37:23,961 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify discount Text displays
+2020-09-30 13:37:24,071 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 13:37:25,210 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add SONY XPERIA to cart
+2020-09-30 13:37:26,815 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Change QTY to 501 and click UPDATE button
+2020-09-30 13:37:28,633 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify error message
+2020-09-30 13:37:28,739 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Click 'Empty cart' link
+2020-09-30 13:37:30,248 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify cart is empty
+2020-09-30 13:37:30,464 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 13:37:31,561 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Click 'Add to compare' on SONY XPERIA and IPHONE
+2020-09-30 13:37:31,561 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify message
+2020-09-30 13:37:34,968 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click 'COMPARE' button
+2020-09-30 13:37:37,290 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify popup window open with heading as COMPARE PRODUCT and selected products display
+2020-09-30 13:37:38,244 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Browser Driver is chromedriver: chrome on windows (null)
+2020-09-30 13:37:38,274 INFO  com.liveguru.user.TC_01_02_User_Register - Precondition: Open LiveGuru99 site
+2020-09-30 13:37:48,660 INFO  com.liveguru.user.TC_01_02_User_Register - Step 1: Click ACCOUNT menu
+2020-09-30 13:37:48,988 INFO  com.liveguru.user.TC_01_02_User_Register - Step 2: Click Register link -> open Register Page
+2020-09-30 13:37:51,228 INFO  com.liveguru.user.TC_01_02_User_Register - Step 3: Input all valid data to form
+2020-09-30 13:37:51,852 INFO  com.liveguru.user.TC_01_02_User_Register - Step 4: Click Register button -> open My Dashboard Page
+2020-09-30 13:37:54,557 INFO  com.liveguru.user.TC_01_02_User_Register - Step 5: Verify text displays after registered successfully
+2020-09-30 13:37:54,650 INFO  com.liveguru.user.TC_01_02_User_Register - Step 1: Click MY ACCOUNT link
+2020-09-30 13:37:56,666 INFO  com.liveguru.user.TC_01_02_User_Register - Step 2: Click ACCOUNT INFORMATION link -> open Account Information page
+2020-09-30 13:37:58,578 INFO  com.liveguru.user.TC_01_02_User_Register - Step 3: Verify firstname, lastname, email are correct
+2020-09-30 13:37:59,645 INFO  com.liveguru.user.TC_01_02_User_Register - Browser Driver is firefoxdriver: firefox on windows (null)
+2020-09-30 13:37:59,685 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1: Open LiveGuru99 site
+2020-09-30 13:38:08,439 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 13:38:10,658 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Get Cost of SONY XPERIA on list
+2020-09-30 13:38:10,751 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click SONY XPERIA detail
+2020-09-30 13:38:13,261 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Get Cost of SONY XPERIA on detail
+2020-09-30 13:38:13,357 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 4: Compare cost at step 2 & 4
+2020-09-30 13:38:13,360 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 13:38:15,615 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add IPHONE to cart
+2020-09-30 13:38:18,579 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify Iphone is added to your shopping cart
+2020-09-30 13:38:18,689 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Enter COUPON CODE
+2020-09-30 13:38:21,449 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify discount Text displays
+2020-09-30 13:38:21,541 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 13:38:24,055 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add SONY XPERIA to cart
+2020-09-30 13:38:26,998 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Change QTY to 501 and click UPDATE button
+2020-09-30 13:38:29,532 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify error message
+2020-09-30 13:38:29,648 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Click 'Empty cart' link
+2020-09-30 13:38:32,122 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify cart is empty
+2020-09-30 13:38:32,340 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 13:38:34,748 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Click 'Add to compare' on SONY XPERIA and IPHONE
+2020-09-30 13:38:34,748 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify message
+2020-09-30 13:38:40,402 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click 'COMPARE' button
+2020-09-30 13:38:40,949 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify popup window open with heading as COMPARE PRODUCT and selected products display
+2020-09-30 13:38:43,876 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Browser Driver is firefoxdriver: firefox on windows (null)
+2020-09-30 13:45:49,012 INFO  com.liveguru.user.TC_01_02_User_Register - Precondition: Open LiveGuru99 site
+2020-09-30 13:45:58,576 INFO  com.liveguru.user.TC_01_02_User_Register - Step 1: Click ACCOUNT menu
+2020-09-30 13:45:58,739 INFO  com.liveguru.user.TC_01_02_User_Register - Step 2: Click Register link -> open Register Page
+2020-09-30 13:45:59,975 INFO  com.liveguru.user.TC_01_02_User_Register - Step 3: Input all valid data to form
+2020-09-30 13:46:00,800 INFO  com.liveguru.user.TC_01_02_User_Register - Step 4: Click Register button -> open My Dashboard Page
+2020-09-30 13:46:02,789 INFO  com.liveguru.user.TC_01_02_User_Register - Step 5: Verify text displays after registered successfully
+2020-09-30 13:46:02,955 INFO  com.liveguru.user.TC_01_02_User_Register - Step 1: Click MY ACCOUNT link
+2020-09-30 13:46:04,131 INFO  com.liveguru.user.TC_01_02_User_Register - Step 2: Click ACCOUNT INFORMATION link -> open Account Information page
+2020-09-30 13:46:05,294 INFO  com.liveguru.user.TC_01_02_User_Register - Step 3: Verify firstname, lastname, email are correct
+2020-09-30 13:46:06,251 INFO  com.liveguru.user.TC_01_02_User_Register - Browser Driver is chromedriver: chrome on windows (null)
+2020-09-30 13:46:06,270 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1: Open LiveGuru99 site
+2020-09-30 13:46:15,957 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 13:46:20,812 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Get Cost of SONY XPERIA on list
+2020-09-30 13:46:20,907 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click SONY XPERIA detail
+2020-09-30 13:46:24,287 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Get Cost of SONY XPERIA on detail
+2020-09-30 13:46:24,380 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 4: Compare cost at step 2 & 4
+2020-09-30 13:46:24,383 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 13:46:25,681 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add IPHONE to cart
+2020-09-30 13:46:27,962 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify Iphone is added to your shopping cart
+2020-09-30 13:46:28,069 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Enter COUPON CODE
+2020-09-30 13:46:30,019 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify discount Text displays
+2020-09-30 13:46:30,118 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 13:46:31,403 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add SONY XPERIA to cart
+2020-09-30 13:46:33,211 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Change QTY to 501 and click UPDATE button
+2020-09-30 13:46:35,082 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify error message
+2020-09-30 13:46:35,184 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Click 'Empty cart' link
+2020-09-30 13:46:36,802 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify cart is empty
+2020-09-30 13:46:37,019 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 13:46:38,289 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Click 'Add to compare' on SONY XPERIA and IPHONE
+2020-09-30 13:46:38,290 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify message
+2020-09-30 13:46:41,777 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click 'COMPARE' button
+2020-09-30 13:46:44,075 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify popup window open with heading as COMPARE PRODUCT and selected products display
+2020-09-30 13:46:45,046 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Browser Driver is chromedriver: chrome on windows (null)
+2020-09-30 13:46:45,091 INFO  com.liveguru.user.TC_01_02_User_Register - Precondition: Open LiveGuru99 site
+2020-09-30 13:46:55,240 INFO  com.liveguru.user.TC_01_02_User_Register - Step 1: Click ACCOUNT menu
+2020-09-30 13:46:55,569 INFO  com.liveguru.user.TC_01_02_User_Register - Step 2: Click Register link -> open Register Page
+2020-09-30 13:46:57,740 INFO  com.liveguru.user.TC_01_02_User_Register - Step 3: Input all valid data to form
+2020-09-30 13:46:58,358 INFO  com.liveguru.user.TC_01_02_User_Register - Step 4: Click Register button -> open My Dashboard Page
+2020-09-30 13:47:01,127 INFO  com.liveguru.user.TC_01_02_User_Register - Step 5: Verify text displays after registered successfully
+2020-09-30 13:47:01,222 INFO  com.liveguru.user.TC_01_02_User_Register - Step 1: Click MY ACCOUNT link
+2020-09-30 13:47:03,564 INFO  com.liveguru.user.TC_01_02_User_Register - Step 2: Click ACCOUNT INFORMATION link -> open Account Information page
+2020-09-30 13:47:06,469 INFO  com.liveguru.user.TC_01_02_User_Register - Step 3: Verify firstname, lastname, email are correct
+2020-09-30 13:47:07,539 INFO  com.liveguru.user.TC_01_02_User_Register - Browser Driver is firefoxdriver: firefox on windows (null)
+2020-09-30 13:47:07,551 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1: Open LiveGuru99 site
+2020-09-30 13:47:17,155 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 13:47:19,455 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Get Cost of SONY XPERIA on list
+2020-09-30 13:47:19,548 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click SONY XPERIA detail
+2020-09-30 13:47:22,919 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Get Cost of SONY XPERIA on detail
+2020-09-30 13:47:23,013 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 4: Compare cost at step 2 & 4
+2020-09-30 13:47:23,016 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 13:47:25,270 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add IPHONE to cart
+2020-09-30 13:47:27,918 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify Iphone is added to your shopping cart
+2020-09-30 13:47:28,024 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Enter COUPON CODE
+2020-09-30 13:47:30,527 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify discount Text displays
+2020-09-30 13:47:30,618 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 13:47:32,592 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add SONY XPERIA to cart
+2020-09-30 13:47:35,843 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Change QTY to 501 and click UPDATE button
+2020-09-30 13:47:38,835 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify error message
+2020-09-30 13:47:38,945 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Click 'Empty cart' link
+2020-09-30 13:47:41,684 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify cart is empty
+2020-09-30 13:47:41,902 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 13:47:44,275 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Click 'Add to compare' on SONY XPERIA and IPHONE
+2020-09-30 13:47:44,276 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify message
+2020-09-30 13:47:49,641 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click 'COMPARE' button
+2020-09-30 13:47:50,159 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify popup window open with heading as COMPARE PRODUCT and selected products display
+2020-09-30 13:47:52,373 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Browser Driver is firefoxdriver: firefox on windows (null)
+2020-09-30 14:57:54,889 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1a: Open LiveGuru99 site
+2020-09-30 14:58:03,015 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1b: Login
+2020-09-30 14:58:35,422 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Browser Driver is chromedriver: chrome on windows (null)
+2020-09-30 14:58:35,438 INFO  com.liveguru.user.TC07_TC08_TV - Precondition - 1: Open LiveGuru99 site
+2020-09-30 14:58:38,600 INFO  com.liveguru.user.TC07_TC08_TV - Precondition - 1b: Login
+2020-09-30 14:58:54,136 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1a: Open LiveGuru99 site
+2020-09-30 14:59:03,550 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1b: Login
+2020-09-30 14:59:11,219 INFO  com.liveguru.user.TC07_TC08_TV - Precondition - 1: Open LiveGuru99 site
+2020-09-30 14:59:15,506 INFO  com.liveguru.user.TC07_TC08_TV - Precondition - 1b: Login
+2020-09-30 15:00:36,101 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1a: Open LiveGuru99 site
+2020-09-30 15:00:44,429 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1b: Login
+2020-09-30 15:03:05,709 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1a: Open LiveGuru99 site
+2020-09-30 15:03:13,844 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1b: Login
+2020-09-30 15:03:16,770 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 15:03:18,957 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Get Cost of SONY XPERIA on list
+2020-09-30 15:03:19,045 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click SONY XPERIA detail
+2020-09-30 15:03:21,997 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Get Cost of SONY XPERIA on detail
+2020-09-30 15:03:22,093 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 4: Compare cost at step 2 & 4
+2020-09-30 15:03:22,104 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 15:03:23,173 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add IPHONE to cart
+2020-09-30 15:03:24,907 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify Iphone is added to your shopping cart
+2020-09-30 15:03:25,013 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Enter COUPON CODE
+2020-09-30 15:03:26,969 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify discount Text displays
+2020-09-30 15:03:27,069 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 15:03:28,193 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add SONY XPERIA to cart
+2020-09-30 15:03:30,008 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Change QTY to 501 and click UPDATE button
+2020-09-30 15:03:32,083 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify error message
+2020-09-30 15:03:32,190 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Click 'Empty cart' link
+2020-09-30 15:03:33,601 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify cart is empty
+2020-09-30 15:03:33,810 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-09-30 15:03:34,896 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Click 'Add to compare' on SONY XPERIA and IPHONE
+2020-09-30 15:03:34,896 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify message
+2020-09-30 15:03:38,026 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click 'COMPARE' button
+2020-09-30 15:03:40,312 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify popup window open with heading as COMPARE PRODUCT and selected products display
+2020-09-30 15:03:41,295 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Browser Driver is chromedriver: chrome on windows (null)
+2020-09-30 15:03:41,316 INFO  com.liveguru.user.TC07_TC08_TV - Precondition - 1: Open LiveGuru99 site
+2020-09-30 15:03:44,561 INFO  com.liveguru.user.TC07_TC08_TV - Precondition - 1b: Login
+2020-09-30 15:05:56,570 INFO  com.liveguru.user.TC07_TC08_TV - Precondition - 1: Open LiveGuru99 site
+2020-09-30 15:06:03,255 INFO  com.liveguru.user.TC07_TC08_TV - Precondition - 1b: Login
+2020-09-30 15:06:06,231 INFO  com.liveguru.user.TC07_TC08_TV - Precondition - 2: Click TV menu
+2020-09-30 15:06:07,033 INFO  com.liveguru.user.TC07_TC08_TV - Browser Driver is chromedriver: chrome on windows (null)
+2020-09-30 15:07:38,726 INFO  com.liveguru.user.TC07_TC08_TV - Precondition - 1: Open LiveGuru99 site
+2020-09-30 15:07:41,947 INFO  com.liveguru.user.TC07_TC08_TV - Precondition - 1b: Login
+2020-09-30 15:07:42,740 INFO  com.liveguru.user.TC07_TC08_TV - Browser Driver is chromedriver: chrome on windows (null)

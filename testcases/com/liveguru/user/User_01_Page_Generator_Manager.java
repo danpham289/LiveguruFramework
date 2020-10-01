@@ -1,7 +1,5 @@
 package com.liveguru.user;
 
-import java.util.Random;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -91,11 +89,6 @@ public class User_01_Page_Generator_Manager extends AbstractTest {
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
-	}
-
-	public int randomNumber() {
-		Random num = new Random();
-		return num.nextInt();
 	}
 
 }

@@ -31,4 +31,27 @@ public class MobilePageObject extends AbstractPage {
 		return PageGeneratorManager.getShoppingCartPageObject(driver);
 	}
 
+	public ShoppingCartPageObject clickToAddToCartButtonByProduct(String product) {
+		waitElementClickable(driver, MobilePageUI.DYNAMIC_ADD_TO_CART_BY_PRODUCT, product);
+		clickToElement(driver, MobilePageUI.DYNAMIC_ADD_TO_CART_BY_PRODUCT, product);
+		return PageGeneratorManager.getShoppingCartPageObject(driver);
+	}
+
+	public void clickToAddToCompareByProduct(String product) {
+		waitElementClickable(driver, MobilePageUI.DYNAMIC_ADD_TO_COMPARE_BY_PRODUCT, product);
+		clickToElement(driver, MobilePageUI.DYNAMIC_ADD_TO_COMPARE_BY_PRODUCT, product);		
+	}
+
+	public CompareProductPageObject clickToCompareButton() {
+		waitElementClickable(driver, MobilePageUI.COMPARE_BUTTON);
+		clickToElement(driver, MobilePageUI.COMPARE_BUTTON);
+		swicthToWindowByTitle(driver, "Products Comparison List - Magento Commerce");
+		return PageGeneratorManager.getCompareProductPageObject(driver);
+	}
+
+	public boolean isProductAddedToComparisonListMsgDisplayed(String product) {
+		waitElementVisible(driver, MobilePageUI.DYNAMIC_PRODUCT_ADDED_TO_COMPARE_LIST_MSG, product);
+		return isElementDisplayed(driver, MobilePageUI.DYNAMIC_PRODUCT_ADDED_TO_COMPARE_LIST_MSG, product);
+	}
+
 }

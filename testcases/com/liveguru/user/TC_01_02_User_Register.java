@@ -1,5 +1,10 @@
 package com.liveguru.user;
 
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.AbstractTest;
@@ -10,17 +15,6 @@ import pageObjects.liveguru.MyAddressBookPageObject;
 import pageObjects.liveguru.MyDashboardPageObject;
 import pageObjects.liveguru.PageGeneratorManager;
 import pageObjects.liveguru.RegisterPageObject;
-
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
-
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 
 public class TC_01_02_User_Register extends AbstractTest {
 	WebDriver driver;
@@ -33,7 +27,7 @@ public class TC_01_02_User_Register extends AbstractTest {
 
 	String firstName = "Dan";
 	String lastName = "Pham";
-	String email = "dan" + randomNumber() + "@gmail.com";
+	String email = "dan" + randomNumber() + "@mailinator.com";
 	String password = "111111";
 	String registerSuccessMessage = "Thank you for registering with Main Website Store.";
 
@@ -42,8 +36,8 @@ public class TC_01_02_User_Register extends AbstractTest {
 	public void beforeClass(String browserName, String appURL) {
 		log.info("Precondition: Open LiveGuru99 site");
 		driver = getBrowserDriver(browserName, appURL);
-		homePage = new HomePageObject(driver);
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS) ;
+		homePage = PageGeneratorManager.getHomePageOject(driver);
+		
 	}
 
 	@Test
@@ -83,13 +77,10 @@ public class TC_01_02_User_Register extends AbstractTest {
 		Assert.assertEquals(accountInformationPage.getEmail(), email);
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void afterClass() {
-		removeDriver();
+		closeBrowserAndDriver(driver);
 	}
 
-	private int randomNumber() {
-		Random num = new Random();
-		return num.nextInt();
-	}
+
 }
