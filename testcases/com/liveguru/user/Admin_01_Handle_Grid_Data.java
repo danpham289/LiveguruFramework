@@ -1,6 +1,5 @@
 package com.liveguru.user;
 
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -144,11 +143,6 @@ public class Admin_01_Handle_Grid_Data extends AbstractTest {
 		driver.quit();
 	}
 
-	public int randomNumber() {
-		Random num = new Random();
-		return num.nextInt();
-	}
-	
 	AboutUsPageObject aboutUsPage;
 	AdvancedSearchPageObject advancedSearchPage;
 	CustomerServicePageObject customerServicePage;

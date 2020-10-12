@@ -1,7 +1,5 @@
 package com.liveguru.user;
 
-import java.util.Random;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -87,7 +85,7 @@ public class Assert_Verify extends AbstractTest {
 		
 		// Verify data
 		log.info("Register_02 - Step 03: Verify validation msg displays for email field");
-		Assert.assertEquals(registerPage.getAdviceValidateErrorMsgAtEmail(),"Please enter a valid email address. For example johndoe@domain.com.");
+		verifyEquals(registerPage.getAdviceValidateErrorMsgAtEmail(),"Please enter a valid email address. For example johndoe@domain.com.");
 	}
 
 	@Test
@@ -102,7 +100,7 @@ public class Assert_Verify extends AbstractTest {
 
 		// Verify data
 		log.info("Register_03 - Step 03: Verify validation msg displays for Password field");
-		Assert.assertEquals(registerPage.getAdviceValidateErrorMsgAtPassword(),"Please enter 6 or more characters without leading or trailing spaces.");
+		verifyEquals(registerPage.getAdviceValidateErrorMsgAtPassword(),"Please enter 6 or more characters without leading or trailing spaces.");
 
 	}
 
@@ -119,7 +117,7 @@ public class Assert_Verify extends AbstractTest {
 		
 		// Verify data
 		log.info("Register_04 - Step 03: Verify validation msg displays for Password field");
-		Assert.assertEquals(registerPage.getAdviceValidateErrorMsgAtConfirmPassword(),"Please make sure your passwords match.");
+		verifyEquals(registerPage.getAdviceValidateErrorMsgAtConfirmPassword(),"Please make sure your passwords match.");
 			
 	}
 
@@ -137,7 +135,7 @@ public class Assert_Verify extends AbstractTest {
 		myDashboardPage = new MyDashboardPageObject(driver);
 		
 		// Verify data
-		Assert.assertEquals(myDashboardPage.getRegisterSuccessMsg(),"Thank you for registering with Main Website Store.");
+		verifyEquals(myDashboardPage.getRegisterSuccessMsg(),"Thank you for registering with Main Website Store.");
 	}
 	
 
@@ -145,10 +143,6 @@ public class Assert_Verify extends AbstractTest {
 	public void afterClass() {
 		driver.quit();
 	}
-	
-	public int randomNumber() {
-		Random num = new Random();
-		return num.nextInt();
-	}
+
 
 }

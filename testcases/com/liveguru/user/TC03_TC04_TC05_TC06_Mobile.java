@@ -11,6 +11,9 @@ import org.testng.annotations.Test;
 import com.liveguru.commons.Common_01_Register_User;
 
 import commons.AbstractTest;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import pageObjects.liveguru.CompareProductPageObject;
 import pageObjects.liveguru.HomePageObject;
 import pageObjects.liveguru.LoginUserPageObject;
@@ -20,6 +23,8 @@ import pageObjects.liveguru.PageGeneratorManager;
 import pageObjects.liveguru.ShoppingCartPageObject;
 import pageObjects.liveguru.SonyDetailPageObject;
 
+@Epic("First Test")
+@Feature("Mobile")
 public class TC03_TC04_TC05_TC06_Mobile extends AbstractTest {
 	WebDriver driver;
 	HomePageObject homePage;
@@ -39,20 +44,21 @@ public class TC03_TC04_TC05_TC06_Mobile extends AbstractTest {
 		homePage = PageGeneratorManager.getHomePageOject(driver);
 		
 		log.info("Precondition - 1b: Login");
-		homePage.clickToAccountMenu();
-		loginPage = homePage.clickToLogInLink();
-		loginPage.inputToEmailTextbox(Common_01_Register_User.email);
-		loginPage.inputToPasswordTextbox(Common_01_Register_User.password);
-		myDashboardPage = loginPage.clickToLoginButton();
+//		homePage.clickToAccountMenu();
+//		loginPage = homePage.clickToLogInLink();
+//		loginPage.inputToEmailTextbox(Common_01_Register_User.email);
+//		loginPage.inputToPasswordTextbox(Common_01_Register_User.password);
+//		myDashboardPage = loginPage.clickToLoginButton();
 		
 	}
 
 	@BeforeMethod
 	public void beforeMethod() {
 		log.info("Precondition - 2: Click Mobile menu");
-		mobilePage = myDashboardPage.clickMobileMenu(driver);
+		mobilePage = homePage.clickMobileMenu(driver);
 	}
 	
+	@Description("Verify Product Cost In List Page And Details Page Are Equal")
 	@Test
 	public void TC03_Product_Cost_In_List_Page_And_Details_Page_Are_Equal() {
 		log.info("Step 1: Get Cost of SONY XPERIA on list");
@@ -65,7 +71,7 @@ public class TC03_TC04_TC05_TC06_Mobile extends AbstractTest {
 		String costOfSonyInDetail = sonyDetailPage.getCostOfSonyOnDetail();
 		
 		log.info("Step 4: Compare cost at step 2 & 4");
-		Assert.assertEquals(costOfSonyInList, costOfSonyInDetail);
+		verifyEquals(costOfSonyInList, costOfSonyInDetail);
 	}
 	
 	@Test
@@ -74,14 +80,14 @@ public class TC03_TC04_TC05_TC06_Mobile extends AbstractTest {
 		shoppingCartPage = mobilePage.clickToIphoneAddToCartButton();
 		
 		log.info("VP: Verify Iphone is added to your shopping cart");
-		Assert.assertTrue(shoppingCartPage.isIphoneAddedToCartSuccessMsgDisplay());
+		verifyTrue(shoppingCartPage.isIphoneAddedToCartSuccessMsgDisplay());
 		
 		log.info("Step 2: Enter COUPON CODE");
 		shoppingCartPage.sendKeysToDiscountCodesTextbox(couponCode);
 		shoppingCartPage.clickToApplyButton();
 		
 		log.info("VP: Verify discount Text displays");
-		Assert.assertEquals(shoppingCartPage.getDiscountText(), "-$25.00");
+		verifyEquals(shoppingCartPage.getDiscountText(), "-$25.00");
 	}
 
 	@Test
@@ -94,14 +100,14 @@ public class TC03_TC04_TC05_TC06_Mobile extends AbstractTest {
 		shoppingCartPage.clickToUpdateButtonByProduct("Sony Xperia");
 		
 		log.info("VP: Verify error message");
-		Assert.assertTrue(shoppingCartPage.isMaximunQuantityErrorMessageDisplayed());
+		verifyTrue(shoppingCartPage.isMaximunQuantityErrorMessageDisplayed());
 		
 		log.info("Step 3: Click 'Empty cart' link");
 		shoppingCartPage.clickToEmptyCartLink();
 		
 		log.info("VP: Verify cart is empty");
-		Assert.assertTrue(shoppingCartPage.isEmptyCartMessageDisplayed());
-		Assert.assertTrue(shoppingCartPage.isNoItemMessageDisplayed());
+		verifyTrue(shoppingCartPage.isEmptyCartMessageDisplayed());
+		verifyTrue(shoppingCartPage.isNoItemMessageDisplayed());
 	}
 	
 	@Test
@@ -117,9 +123,9 @@ public class TC03_TC04_TC05_TC06_Mobile extends AbstractTest {
 		compareProductPage = mobilePage.clickToCompareButton();
 		
 		log.info("VP: Verify popup window open with heading as COMPARE PRODUCT and selected products display");
-		Assert.assertTrue(compareProductPage.isCompareProductHeadingDisplayed());
-		Assert.assertTrue(compareProductPage.isSelectedProductDisplayed("Sony Xperia"));
-		Assert.assertTrue(compareProductPage.isSelectedProductDisplayed("IPhone"));
+		verifyTrue(compareProductPage.isCompareProductHeadingDisplayed());
+		verifyTrue(compareProductPage.isSelectedProductDisplayed("Sony Xperia"));
+		verifyTrue(compareProductPage.isSelectedProductDisplayed("IPhone"));
 	}
 	
 	@AfterClass(alwaysRun = true)

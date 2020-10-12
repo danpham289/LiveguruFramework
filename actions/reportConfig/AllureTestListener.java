@@ -1,5 +1,4 @@
 package reportConfig;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -16,14 +15,14 @@ public class AllureTestListener implements ITestListener {
 		return iTestResult.getMethod().getConstructorOrMethod().getName();
 	}
 
-	// Text attachments for Allure
-	@Attachment(value = "Page screenshot", type = "image/png")
-	public byte[] saveScreenshotPNG(WebDriver driver) {
-		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+	// Screenshot attachments for Allure
+	@Attachment(value = "Screenshot of {0}", type = "image/png")
+	public static byte[] saveScreenshotPNG(String testName, WebDriver driver) {
+		return (byte[]) ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 	}
 
 	// Text attachments for Allure
-	@Attachment(value = "{0}", type = "text/plain")
+	@Attachment(value = "Text attachment of {0}", type = "text/plain")
 	public static String saveTextLog(String message) {
 		return message;
 	}
@@ -35,24 +34,15 @@ public class AllureTestListener implements ITestListener {
 	}
 
 	@Override
-	public void onStart(ITestContext iTestContext) {}
-
-
-	@Override
 	public void onTestFailure(ITestResult iTestResult) {
-
-		// Get driver from BaseTest and assign to local webdriver variable.
-		Object testClass = iTestResult.getInstance();
-		WebDriver driver = ((AbstractTest) testClass).getDriver();
-
-		// Allure ScreenShotRobot and SaveTestLog
-		if (driver instanceof WebDriver) {
-			System.out.println("Screenshot captured for test case:" + getTestMethodName(iTestResult));
-			saveScreenshotPNG(driver);
-		}
-
-		// Save a log on allure.
+		WebDriver driver = AbstractTest.getDriver();
+		saveScreenshotPNG(iTestResult.getName(), driver);
 		saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");
+	}
+	
+	@Override
+	public void onStart(ITestContext iTestContext) {
+		// TODO Auto-generated method stub
 	}
 
 	@Override
@@ -68,7 +58,7 @@ public class AllureTestListener implements ITestListener {
 	@Override
 	public void onFinish(ITestContext arg0) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override

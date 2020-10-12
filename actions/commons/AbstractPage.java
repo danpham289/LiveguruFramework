@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.qameta.allure.Step;
 import pageObjects.liveguru.AboutUsPageObject;
 import pageObjects.liveguru.AdvancedSearchPageObject;
 import pageObjects.liveguru.CustomerServicePageObject;
@@ -364,6 +365,9 @@ public abstract class AbstractPage {
 	public void clickToElementByJS(WebDriver driver, String xpathValue) {
 		executeJavascriptToElement(driver, "arguments[0].click();", xpathValue);
 	}
+	public void clickToElementByJS(WebDriver driver, String locator, String... dynamicValue) {
+		executeJavascriptToElement(driver, "arguments[0].click();", getDynamicLocator(locator, dynamicValue));
+	}
 
 	public void sendkeyToElementByJS(WebDriver driver, String xpathValue, String value) {
 		executeJavascriptToElement(driver, "arguments[0].setAttribute('value', '" + value + "')", xpathValue);
@@ -431,6 +435,7 @@ public abstract class AbstractPage {
 
 	}
 
+	@Step("Click Mobile menu")
 	public MobilePageObject clickMobileMenu(WebDriver driver) {
 		waitElementClickable(driver, AbstractPageUI.MOBILE_LINK);
 		clickToElement(driver, AbstractPageUI.MOBILE_LINK);
@@ -481,7 +486,7 @@ public abstract class AbstractPage {
 		for (String filename : filenames) {
 			fileFullPath = fileFullPath + filePath + filename + "\n";
 		}
-		fileFullPath.trim();
+		fileFullPath=fileFullPath.trim();
 		//waitElementVisible(driver, AbstractPageUI.UPLOAD_FILE_TYPE);
 		System.out.println(fileFullPath);
 		sendKeysToElement(driver, AbstractPageUI.UPLOAD_FILE_TYPE, fileFullPath);

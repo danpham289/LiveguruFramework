@@ -1,7 +1,5 @@
 package com.liveguru.user;
 
-import java.util.Random;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -11,7 +9,6 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.AbstractTest;
-import driverFactory.DriverFactory;
 import driverFactory.DriverManager;
 import pageObjects.liveguru.HomePageObject;
 import pageObjects.liveguru.LoginUserPageObject;
@@ -144,11 +141,6 @@ public class Allure_Report extends AbstractTest {
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
-	}
-	
-	public int randomNumber() {
-		Random num = new Random();
-		return num.nextInt();
 	}
 
 }

@@ -18,8 +18,6 @@ import driverFactory.DriverManager;
 import pageObjects.jquery.PageGeneratorManager;
 import pageObjects.jquery.UploadPageObject;
 
-
-@Test
 public class Upload_Multiple_Files extends AbstractTest {
 	WebDriver driver;
 	String imageFile1 = "image1.png";

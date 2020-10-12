@@ -1,5 +1,7 @@
 package commons;
 
+import java.io.IOException;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
@@ -75,7 +77,7 @@ public abstract class AbstractTest {
 		threadLocalDriver.remove();
 	}
 	
-	public WebDriver getDriver() {
+	public static WebDriver getDriver() {
 		return threadLocalDriver.get();
 	}
 	
@@ -109,7 +111,7 @@ public abstract class AbstractTest {
 	private boolean checkFailed(boolean condition) {
 		boolean pass = true;
 		try {
-			if (condition == true) {
+			if (condition == false) {
 				log.info(" -------------------------- PASSED -------------------------- ");
 			} else {
 				log.info(" -------------------------- FAILED -------------------------- ");
@@ -145,4 +147,48 @@ public abstract class AbstractTest {
 		return checkEquals(actual, expected);
 	}
 
+	public static int randomNumber() {
+		Random random = new Random();
+		return random.nextInt();
+	}
+	
+	public void sleepInSeconds(int timeout) {
+		try {
+			Thread.sleep(timeout*1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	protected void closeBrowserAndDriver(WebDriver driver) {
+
+		try {
+			if (driver != null) {
+				driver.quit();
+			}
+
+			String osName = System.getProperty("os.name").toLowerCase();
+
+			String cmd = null;
+			if (driver.toString().toLowerCase().contains("chromedriver")) {
+				log.info("Browser Driver is " + driver.toString().toLowerCase());
+				if (osName.contains("mac")) {
+					cmd = "pkill chromedriver";
+				} else if (osName.contains("window")) {
+					cmd = "taskkill /F/FI \"IMAGENAME eq chromedriver*\"";
+				}
+			} else if (driver.toString().toLowerCase().contains("firefox")) {
+				log.info("Browser Driver is " + driver.toString().toLowerCase());
+				if (osName.contains("mac")) {
+					cmd = "pkill geckodriver";
+				} else if (osName.contains("window")) {
+					cmd = "taskkill /F/FI \"IMAGENAME eq geckodriver*\"";
+				}
+			}
+
+			Runtime.getRuntime().exec(cmd);
+		} catch (IOException e) {
+			log.info(e.getMessage());
+		}
+	}
 }

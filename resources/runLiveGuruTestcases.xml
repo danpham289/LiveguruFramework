@@ -3,20 +3,18 @@
 
 	<parameter name="url" value="http://live.demoguru99.com/" />
 	<listeners>
-		<listener class-name="commons.MethodListener" />
-		<listener class-name="reportConfig.ExtentListener" />
-		<listener class-name="reportConfig.AllureTestListener" />
-		<listener class-name="org.uncommons.reportng.HTMLReporter" />
-<!-- 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> -->
+ 		<listener class-name="commons.MethodListener" />
+		<listener class-name="reportConfig.ExtentListener" /> 
+		<listener class-name="reportConfig.AllureTestListener" /> 
+		<listener class-name="org.uncommons.reportng.HTMLReporter" /> 
+ 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> 
 
 	</listeners>
 
 	<test name="RUN ON CHROME">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.liveguru.commons.Common_01_Register_User" />
-<!-- 			<class name="com.liveguru.user.TC03_TC04_TC05_TC06_Mobile" /> -->
-			<class name="com.liveguru.user.TC07_TC08_TV" />
+			<class name="com.liveguru.user.TC03_TC04_TC05_TC06_Mobile" />
 		</classes>
 	</test>
 

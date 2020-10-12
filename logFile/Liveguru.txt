@@ -1,3 +1,33 @@
-2020-09-30 15:07:38,726 INFO  com.liveguru.user.TC07_TC08_TV - Precondition - 1: Open LiveGuru99 site
-2020-09-30 15:07:41,947 INFO  com.liveguru.user.TC07_TC08_TV - Precondition - 1b: Login
-2020-09-30 15:07:42,740 INFO  com.liveguru.user.TC07_TC08_TV - Browser Driver is chromedriver: chrome on windows (null)
+2020-10-09 08:37:59,711 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1a: Open LiveGuru99 site
+2020-10-09 08:38:09,198 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1b: Login
+2020-10-09 08:38:09,207 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-10-09 08:38:10,753 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Get Cost of SONY XPERIA on list
+2020-10-09 08:38:10,855 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click SONY XPERIA detail
+2020-10-09 08:38:12,926 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Get Cost of SONY XPERIA on detail
+2020-10-09 08:38:13,020 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 4: Compare cost at step 2 & 4
+2020-10-09 08:38:13,022 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- PASSED -------------------------- 
+2020-10-09 08:38:13,036 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-10-09 08:38:13,959 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add IPHONE to cart
+2020-10-09 08:38:15,453 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify Iphone is added to your shopping cart
+2020-10-09 08:38:15,550 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- PASSED -------------------------- 
+2020-10-09 08:38:15,550 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Enter COUPON CODE
+2020-10-09 08:38:16,996 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify discount Text displays
+2020-10-09 08:38:17,091 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- FAILED -------------------------- 
+2020-10-09 08:38:17,640 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-10-09 08:38:18,558 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add SONY XPERIA to cart
+2020-10-09 08:38:19,886 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Change QTY to 501 and click UPDATE button
+2020-10-09 08:38:21,385 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify error message
+2020-10-09 08:38:21,496 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- PASSED -------------------------- 
+2020-10-09 08:38:21,497 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Click 'Empty cart' link
+2020-10-09 08:38:22,686 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify cart is empty
+2020-10-09 08:38:22,796 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- PASSED -------------------------- 
+2020-10-09 08:38:22,898 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- PASSED -------------------------- 
+2020-10-09 08:38:22,901 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
+2020-10-09 08:38:23,805 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Click 'Add to compare' on SONY XPERIA and IPHONE
+2020-10-09 08:38:23,805 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify message
+2020-10-09 08:38:26,487 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click 'COMPARE' button
+2020-10-09 08:38:28,813 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify popup window open with heading as COMPARE PRODUCT and selected products display
+2020-10-09 08:38:28,931 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- PASSED -------------------------- 
+2020-10-09 08:38:29,029 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- PASSED -------------------------- 
+2020-10-09 08:38:29,127 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- PASSED -------------------------- 
+2020-10-09 08:38:29,816 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Browser Driver is chromedriver: chrome on windows (null)
