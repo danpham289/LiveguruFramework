@@ -12,6 +12,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -23,6 +24,7 @@ import pageObjects.liveguru.CustomerServicePageObject;
 import pageObjects.liveguru.MobilePageObject;
 import pageObjects.liveguru.PageGeneratorManager;
 import pageObjects.liveguru.SearchTermPageObject;
+import pageObjects.liveguru.TVPageObject;
 import pageUIs.liveguru.AbstractPageUI;
 
 public abstract class AbstractPage {
@@ -408,6 +410,13 @@ public abstract class AbstractPage {
 		explicitWait.until(ExpectedConditions.visibilityOf(element));
 
 	}
+	
+	public void waitElementsVisible(WebDriver driver, String xpathValue) {
+		elements = finds(driver, xpathValue);
+		explicitWait = new WebDriverWait(driver, longTimeOut);
+		explicitWait.until(ExpectedConditions.visibilityOfAllElements(elements));
+
+	}
 
 	public void waitElementClickable(WebDriver driver, String xpathValue) {
 		element = find(driver, xpathValue);
@@ -435,13 +444,50 @@ public abstract class AbstractPage {
 
 	}
 
+	public boolean waitForJStoLoad(WebDriver driver) {
+
+		explicitWait = new WebDriverWait(driver, 30);
+		jsExecutor = (JavascriptExecutor) driver;
+
+		// wait for jQuery to load
+		ExpectedCondition<Boolean> jQueryLoad = new ExpectedCondition<Boolean>() {
+			@Override
+			public Boolean apply(WebDriver driver) {
+				try {
+					return ((Long) jsExecutor.executeScript("return jQuery.active") == 0);
+				} catch (Exception e) {
+					return true;
+				}
+			}
+		};
+
+		// wait for Javascript to load
+		ExpectedCondition<Boolean> jsLoad = new ExpectedCondition<Boolean>() {
+			@Override
+			public Boolean apply(WebDriver driver) {
+				return jsExecutor.executeScript("return document.readyState").toString().equals("complete");
+			}
+		};
+
+		return explicitWait.until(jQueryLoad) && explicitWait.until(jsLoad);
+	}
+	
 	@Step("Click Mobile menu")
-	public MobilePageObject clickMobileMenu(WebDriver driver) {
+	public MobilePageObject clickToMobileMenu(WebDriver driver) {
 		waitElementClickable(driver, AbstractPageUI.MOBILE_LINK);
 		clickToElement(driver, AbstractPageUI.MOBILE_LINK);
 		return PageGeneratorManager.getMobilePageObject(driver);
 		
 	}
+	
+	@Step("Click TV menu")
+	public TVPageObject clickToTVMenu(WebDriver driver) {
+		waitElementClickable(driver, AbstractPageUI.TV_LINK);
+		clickToElement(driver, AbstractPageUI.TV_LINK);
+		return PageGeneratorManager.getTVPageObject(driver);
+		
+	}
+	
 	public AboutUsPageObject openAboutUsPage(WebDriver driver) {
 		waitElementClickable(driver, AbstractPageUI.ABOUT_US_LINK);
 		clickToElement(driver, AbstractPageUI.ABOUT_US_LINK);

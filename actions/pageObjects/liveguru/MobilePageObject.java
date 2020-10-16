@@ -21,10 +21,10 @@ public class MobilePageObject extends AbstractPage {
 		return getElementText(driver, MobilePageUI.DYNAMIC_COST_BY_PRODUCT, "Sony Xperia");
 	}
 	@Step("click To Sony Detail Link")
-	public SonyDetailPageObject clickToSonyDetailLink() {
+	public ProductDetailPageObject clickToSonyDetailLink() {
 		waitElementClickable(driver, MobilePageUI.DYNAMIC_PRODUCT_LINK, "Sony Xperia");
 		clickToElement(driver, MobilePageUI.DYNAMIC_PRODUCT_LINK, "Sony Xperia");
-		return PageGeneratorManager.getSonyDetailPageObject(driver);
+		return PageGeneratorManager.getProductDetailPageObject(driver);
 	}
 	
 	@Step("click To Iphone Add To Cart Button and navigate to Shopping Cart page")

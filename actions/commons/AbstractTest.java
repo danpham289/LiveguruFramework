@@ -8,6 +8,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -37,7 +38,13 @@ public abstract class AbstractTest {
 //			System.setProperty("webdriver.chrome.driver", ".\\browserDrivers\\chromedriver.exe");
 			WebDriverManager.chromedriver().setup();
 			setDriver(new ChromeDriver());
-		} else {
+		} else if (browser == Browser.CHROMEHEADLESS) {
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("headless");
+			options.addArguments("window-size=1366x768");
+			setDriver(new ChromeDriver(options));
+		}else {
 			throw new RuntimeException("Please input correct browser name.");
 		}
 

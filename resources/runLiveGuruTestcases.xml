@@ -12,9 +12,10 @@
 	</listeners>
 
 	<test name="RUN ON CHROME">
-		<parameter name="browser" value="chrome" />
+		<parameter name="browser" value="CHROMEHEADLESS" />
 		<classes>
-			<class name="com.liveguru.user.TC03_TC04_TC05_TC06_Mobile" />
+<!-- 			<class name="com.liveguru.commons.Common_01_Register_User" /> -->
+			<class name="com.liveguru.user.TC08_TC10" />
 		</classes>
 	</test>
 

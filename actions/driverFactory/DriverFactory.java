@@ -11,7 +11,9 @@ public class DriverFactory {
 			driverManager = new ChromeDriverManager();
 		} else if (browser == Browser.FIREFOX) {
 			driverManager = new FirefoxDriverManager();
-		}   else {
+		} else if (browser == Browser.CHROMEHEADLESS) {
+			driverManager = new ChromeHeadlessDriverManager();
+		}  else {
 			throw new RuntimeException("Please input correct browser name.");
 		}
 		return driverManager;

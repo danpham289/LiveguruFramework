@@ -67,6 +67,65 @@ public class ShoppingCartPageObject extends AbstractPage {
 		return isElementDisplayed(driver, ShoppingCartPageUI.NO_ITEMS_MESSAGE);
 	}
 
+	public void selectCountryDropdown(String country) {
+		waitElementVisible(driver, ShoppingCartPageUI.COUNTRY_DROPDOWN);
+		selectItemInDropdown(driver, ShoppingCartPageUI.COUNTRY_DROPDOWN, country);
+	}
+
+	public void selectStateDropdown(String state) {
+		waitElementVisible(driver, ShoppingCartPageUI.STATE_DROPDOWN);
+		selectItemInDropdown(driver, ShoppingCartPageUI.STATE_DROPDOWN, state);
+	}
+
+	public void inputToZipTextbox(String zip) {
+		waitElementVisible(driver, ShoppingCartPageUI.ZIP_TEXTBOX);
+		sendKeysToElement(driver, ShoppingCartPageUI.ZIP_TEXTBOX, zip);
+	}
+
+	public void clickToEstimateButton() {
+		waitElementClickable(driver, ShoppingCartPageUI.ESTIMATE_BUTTON);
+		clickToElement(driver, ShoppingCartPageUI.ESTIMATE_BUTTON);
+		
+	}
+
+	public String getFlatRateShippingPrice() {
+		waitElementVisible(driver, ShoppingCartPageUI.FLAT_RATE_SHIPPING_TEXT);
+		return getElementText(driver, ShoppingCartPageUI.FLAT_RATE_SHIPPING_TEXT);
+	}
+
+	public void clickToFlatRateShippingCostRadiobutton() {
+		waitElementClickable(driver, ShoppingCartPageUI.FLAT_RATE_SHIPPING_RADIOBUTTON);
+		clickToElement(driver, ShoppingCartPageUI.FLAT_RATE_SHIPPING_RADIOBUTTON);
+	}
+
+	public void clickToUpdateTotalButton() {
+		waitElementClickable(driver, ShoppingCartPageUI.UPDATE_TOTAL_BUTTON);
+		clickToElement(driver, ShoppingCartPageUI.UPDATE_TOTAL_BUTTON);
+	}
+
+	public String getSubtotalPrice() {
+		waitElementVisible(driver, ShoppingCartPageUI.SUBTOTAL_PRICE_TEXT);
+		return getElementText(driver, ShoppingCartPageUI.SUBTOTAL_PRICE_TEXT);
+	}
+	
+	public String getGrandtotalPrice() {
+		waitElementVisible(driver, ShoppingCartPageUI.GRANDTOTAL_PRICE_TEXT);
+		return getElementText(driver, ShoppingCartPageUI.GRANDTOTAL_PRICE_TEXT);
+	}
+	
+	public boolean isShippingCostAddedToTotalCost() {
+		double shippingCost = Double.parseDouble(getFlatRateShippingPrice().substring(1));   
+		double subtotalPrice = Double.parseDouble(getSubtotalPrice().substring(1));   
+		double grandtotalPrice = Double.parseDouble(getGrandtotalPrice().substring(1));   
+		return (shippingCost+subtotalPrice==grandtotalPrice);
+	}
+
+	public CheckoutPageObject clickToProceedToCheckoutButton() {
+		waitElementClickable(driver, ShoppingCartPageUI.PROCEED_TO_CHECKOUT_BUTTON);
+		clickToElement(driver, ShoppingCartPageUI.PROCEED_TO_CHECKOUT_BUTTON);
+		return PageGeneratorManager.getCheckoutPageObject(driver);
+	}
+
 
 	
 }

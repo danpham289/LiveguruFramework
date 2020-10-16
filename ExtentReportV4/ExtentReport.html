@@ -46,7 +46,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Oct 9, 2020 08:38:29 AM</span>
+			<span class='label blue darken-3 suite-start-time'>Oct 15, 2020 11:49:46 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -61,8 +61,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -105,10 +104,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>2</span> others
                 </div>
             </div>
         </div>
@@ -126,17 +125,17 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  skip' status='skip' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>TC04_Verify_Discount_Coupon_Works</span>
-						<span class='test-time'>Oct 9, 2020 08:38:13 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>TC08_Add_Your_Review</span>
+						<span class='test-time'>Oct 15, 2020 11:49:45 AM</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 9, 2020 08:38:13 AM</span>
-	<span class='label end-time'>Oct 9, 2020 08:38:30 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+105ms</span>
+	<span class='label start-time'>Oct 15, 2020 11:49:45 AM</span>
+	<span class='label end-time'>Oct 15, 2020 11:49:46 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+343ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -148,29 +147,24 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>8:38:30 AM</td>
+			<tr class='log' status='skip'>
+				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+				<td class='timestamp'>11:49:46 AM</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: expected [00] but found [-$25.00]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:442)
-	at commons.AbstractTest.checkEquals(AbstractTest.java:135)
-	at commons.AbstractTest.verifyEquals(AbstractTest.java:147)
-	at com.liveguru.user.TC03_TC04_TC05_TC06_Mobile.TC04_Verify_Discount_Coupon_Works(TC03_TC04_TC05_TC06_Mobile.java:90)
+						<textarea disabled class="code-block">java.lang.RuntimeException: Please input correct browser name.
+	at driverFactory.DriverFactory.getManager(DriverFactory.java:15)
+	at com.liveguru.user.TC08_TC10.beforeClass(TC08_TC10.java:47)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -195,17 +189,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active  skip' status='skip' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>TC06_Compare_Two_Products</span>
-						<span class='test-time'>Oct 9, 2020 08:38:23 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>TC10_Advance_Search</span>
+						<span class='test-time'>Oct 15, 2020 11:49:45 AM</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 9, 2020 08:38:23 AM</span>
-	<span class='label end-time'>Oct 9, 2020 08:38:30 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+272ms</span>
+	<span class='label start-time'>Oct 15, 2020 11:49:45 AM</span>
+	<span class='label end-time'>Oct 15, 2020 11:49:46 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+342ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -217,81 +211,40 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>8:38:30 AM</td>
+			<tr class='log' status='skip'>
+				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+				<td class='timestamp'>11:49:46 AM</td>
 				<td class='step-details'>
-						Test passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>TC03_Product_Cost_In_List_Page_And_Details_Page_Are_Equal</span>
-						<span class='test-time'>Oct 9, 2020 08:38:10 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 9, 2020 08:38:10 AM</span>
-	<span class='label end-time'>Oct 9, 2020 08:38:30 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+368ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>8:38:30 AM</td>
-				<td class='step-details'>
-						Test passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>TC05_Cannot_Add_More_500_Items_Of_Product</span>
-						<span class='test-time'>Oct 9, 2020 08:38:18 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 9, 2020 08:38:18 AM</span>
-	<span class='label end-time'>Oct 9, 2020 08:38:30 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+520ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>8:38:30 AM</td>
-				<td class='step-details'>
-						Test passed
+						<textarea disabled class="code-block">java.lang.RuntimeException: Please input correct browser name.
+	at driverFactory.DriverFactory.getManager(DriverFactory.java:15)
+	at com.liveguru.user.TC08_TC10.beforeClass(TC08_TC10.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
 					
 				</td>
 			</tr>
@@ -340,8 +293,8 @@
 			<ul id='exception-collection' class='exception-collection'>
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.AssertionError</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+						<span class='exception-name'>java.lang.RuntimeException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
 					</div>
 					<div class='exception-content hide'>
 						<div class='exception-tests'>
@@ -355,28 +308,59 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 9, 2020 08:38:13 AM</td>
-										<td class='linked' test-id='1'>TC04_Verify_Discount_Coupon_Works</td>
+										<td>Oct 15, 2020 11:49:45 AM</td>
+										<td class='linked' test-id='1'>TC08_Add_Your_Review</td>
 										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: expected [00] but found [-$25.00]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:442)
-	at commons.AbstractTest.checkEquals(AbstractTest.java:135)
-	at commons.AbstractTest.verifyEquals(AbstractTest.java:147)
-	at com.liveguru.user.TC03_TC04_TC05_TC06_Mobile.TC04_Verify_Discount_Coupon_Works(TC03_TC04_TC05_TC06_Mobile.java:90)
+											<textarea disabled class="code-block">java.lang.RuntimeException: Please input correct browser name.
+	at driverFactory.DriverFactory.getManager(DriverFactory.java:15)
+	at com.liveguru.user.TC08_TC10.beforeClass(TC08_TC10.java:47)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Oct 15, 2020 11:49:45 AM</td>
+										<td class='linked' test-id='2'>TC10_Advance_Search</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.RuntimeException: Please input correct browser name.
+	at driverFactory.DriverFactory.getManager(DriverFactory.java:15)
+	at com.liveguru.user.TC08_TC10.beforeClass(TC08_TC10.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -417,7 +401,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -429,19 +413,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 9, 2020 08:38:29 AM</div>
+					<div class='panel-lead'>Oct 15, 2020 11:49:46 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 9, 2020 08:38:30 AM</div>
+			 		<div class='panel-lead'>Oct 15, 2020 11:49:46 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 0s+139ms</div>
+					<div class='panel-lead'>0h 0m 0s+84ms</div>
 				</div>
 			</div>
 		</div>
@@ -453,71 +437,7 @@
 		<h5>TestRunner Logs</h5>
 		
 		<div class='card-panel'>
-				2020-10-09 08:37:59,711 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1a: Open LiveGuru99 site
-
-				2020-10-09 08:38:09,198 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 1b: Login
-
-				2020-10-09 08:38:09,207 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
-
-				2020-10-09 08:38:10,753 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Get Cost of SONY XPERIA on list
-
-				2020-10-09 08:38:10,855 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click SONY XPERIA detail
-
-				2020-10-09 08:38:12,926 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Get Cost of SONY XPERIA on detail
-
-				2020-10-09 08:38:13,020 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 4: Compare cost at step 2 & 4
-
-				2020-10-09 08:38:13,022 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- PASSED -------------------------- 
-
-				2020-10-09 08:38:13,036 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
-
-				2020-10-09 08:38:13,959 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add IPHONE to cart
-
-				2020-10-09 08:38:15,453 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify Iphone is added to your shopping cart
-
-				2020-10-09 08:38:15,550 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- PASSED -------------------------- 
-
-				2020-10-09 08:38:15,550 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Enter COUPON CODE
-
-				2020-10-09 08:38:16,996 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify discount Text displays
-
-				2020-10-09 08:38:17,091 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- FAILED -------------------------- 
-
-				2020-10-09 08:38:17,640 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
-
-				2020-10-09 08:38:18,558 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Add SONY XPERIA to cart
-
-				2020-10-09 08:38:19,886 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Change QTY to 501 and click UPDATE button
-
-				2020-10-09 08:38:21,385 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify error message
-
-				2020-10-09 08:38:21,496 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- PASSED -------------------------- 
-
-				2020-10-09 08:38:21,497 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 3: Click 'Empty cart' link
-
-				2020-10-09 08:38:22,686 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify cart is empty
-
-				2020-10-09 08:38:22,796 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- PASSED -------------------------- 
-
-				2020-10-09 08:38:22,898 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- PASSED -------------------------- 
-
-				2020-10-09 08:38:22,901 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Precondition - 2: Click Mobile menu
-
-				2020-10-09 08:38:23,805 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 1: Click 'Add to compare' on SONY XPERIA and IPHONE
-
-				2020-10-09 08:38:23,805 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify message
-
-				2020-10-09 08:38:26,487 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Step 2: Click 'COMPARE' button
-
-				2020-10-09 08:38:28,813 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - VP: Verify popup window open with heading as COMPARE PRODUCT and selected products display
-
-				2020-10-09 08:38:28,931 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- PASSED -------------------------- 
-
-				2020-10-09 08:38:29,029 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- PASSED -------------------------- 
-
-				2020-10-09 08:38:29,127 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile -  -------------------------- PASSED -------------------------- 
-
-				2020-10-09 08:38:29,816 INFO  com.liveguru.user.TC03_TC04_TC05_TC06_Mobile - Browser Driver is chromedriver: chrome on windows (null)
+				2020-10-15 11:49:45,629 INFO  com.liveguru.user.TC08_TC10 - Precondition - 1: Open LiveGuru99 site
 
 		</div>
 	</div>
@@ -526,14 +446,14 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 4,
-				passParent: 3,
-				failParent: 1,
+                parentCount: 2,
+				passParent: 0,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
-				exceptionsParent: 1,
+				skipParent: 2,
+				exceptionsParent: 2,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -558,7 +478,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "TC04_Verify_Discount_Coupon_Works":16.105,"TC06_Compare_Two_Products":6.272,"TC03_Product_Cost_In_List_Page_And_Details_Page_Are_Equal":19.368,"TC05_Cannot_Add_More_500_Items_Of_Product":11.52
+			        "TC08_Add_Your_Review":0.343,"TC10_Advance_Search":0.342
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>

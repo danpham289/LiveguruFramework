@@ -8,8 +8,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.liveguru.commons.Common_01_Register_User;
-
 import commons.AbstractTest;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -20,8 +18,8 @@ import pageObjects.liveguru.LoginUserPageObject;
 import pageObjects.liveguru.MobilePageObject;
 import pageObjects.liveguru.MyDashboardPageObject;
 import pageObjects.liveguru.PageGeneratorManager;
+import pageObjects.liveguru.ProductDetailPageObject;
 import pageObjects.liveguru.ShoppingCartPageObject;
-import pageObjects.liveguru.SonyDetailPageObject;
 
 @Epic("First Test")
 @Feature("Mobile")
@@ -29,7 +27,7 @@ public class TC03_TC04_TC05_TC06_Mobile extends AbstractTest {
 	WebDriver driver;
 	HomePageObject homePage;
 	MobilePageObject mobilePage;
-	SonyDetailPageObject sonyDetailPage;
+	ProductDetailPageObject sonyDetailPage;
 	ShoppingCartPageObject shoppingCartPage;
 	CompareProductPageObject compareProductPage;
 	LoginUserPageObject loginPage;
@@ -55,7 +53,7 @@ public class TC03_TC04_TC05_TC06_Mobile extends AbstractTest {
 	@BeforeMethod
 	public void beforeMethod() {
 		log.info("Precondition - 2: Click Mobile menu");
-		mobilePage = homePage.clickMobileMenu(driver);
+		mobilePage = homePage.clickToMobileMenu(driver);
 	}
 	
 	@Description("Verify Product Cost In List Page And Details Page Are Equal")

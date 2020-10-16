@@ -50,8 +50,8 @@ public class PageGeneratorManager {
 	public static MobilePageObject getMobilePageObject(WebDriver driver) {
 		return new MobilePageObject(driver);
 	}
-	public static SonyDetailPageObject getSonyDetailPageObject(WebDriver driver) {
-		return new SonyDetailPageObject(driver);
+	public static ProductDetailPageObject getProductDetailPageObject(WebDriver driver) {
+		return new ProductDetailPageObject(driver);
 	}
 	public static ShoppingCartPageObject getShoppingCartPageObject(WebDriver driver) {
 		return new ShoppingCartPageObject(driver);
@@ -61,5 +61,20 @@ public class PageGeneratorManager {
 	}
 	public static TVPageObject getTVPageObject(WebDriver driver) {
 		return new TVPageObject(driver);
+	}
+	public static MyWishlistPageObject getMyWishlistPageObject(WebDriver driver) {
+		return new MyWishlistPageObject(driver);
+	}
+	public static ShareYourWishlistPageObject getShareYourWishlistPageObject(WebDriver driver) {
+		return new ShareYourWishlistPageObject(driver);
+	}
+	public static ProductReviewsPageObject getProductReviewsPageObject(WebDriver driver) {
+		return new ProductReviewsPageObject(driver);
+	}
+	public static CheckoutPageObject getCheckoutPageObject(WebDriver driver) {
+		return new CheckoutPageObject(driver);
+	}
+	public static SearchResultPageObject getSearchResultPageObject(WebDriver driver) {
+		return new SearchResultPageObject(driver);
 	}
 }

@@ -11,5 +11,15 @@ public class ShoppingCartPageUI {
 	public static final String MAXIMUM_QUANTITY_ERROR_MESSAGE = "//p[@class='item-msg error' and contains(text(),'The maximum quantity allowed for purchase is 500.')]";
 	public static final String EMPTY_CART_MESSAGE = "//h1[contains(text(),'Shopping Cart is Empty')]";
 	public static final String NO_ITEMS_MESSAGE = "//div[@class='cart-empty']//p[contains(text(),'You have no items in your shopping cart.')]";
+	public static final String COUNTRY_DROPDOWN = "//select[@id='country']";
+	public static final String STATE_DROPDOWN = "//select[@id='region_id']";
+	public static final String ZIP_TEXTBOX = "//input[@id='postcode']";
+	public static final String ESTIMATE_BUTTON = "//span[text()='Estimate']";
+	public static final String FLAT_RATE_SHIPPING_TEXT = "//label[@for='s_method_flatrate_flatrate']/span[@class='price']";
+	public static final String FLAT_RATE_SHIPPING_RADIOBUTTON = "//input[@id='s_method_flatrate_flatrate']";
+	public static final String UPDATE_TOTAL_BUTTON = "//span[text()='Update Total']";
+	public static final String SUBTOTAL_PRICE_TEXT = "//td[contains(text(),'Subtotal')]/following-sibling::td//span[@class='price']";
+	public static final String GRANDTOTAL_PRICE_TEXT = "//strong[contains(text(),'Grand Total')]/parent::td/following-sibling::td//span[@class='price']";
+	public static final String PROCEED_TO_CHECKOUT_BUTTON = "//button[@title='Proceed to Checkout']";
 
 }
