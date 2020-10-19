@@ -1,5 +1,7 @@
 package commons;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
@@ -314,6 +316,12 @@ public abstract class AbstractPage {
 		action = new Actions(driver);
 		action.moveToElement(element).perform();
 	}
+	
+	public void hoverMouseToElement(WebDriver driver, String locator, String... dynamicValue ) {
+		element = find(driver, getDynamicLocator(locator, dynamicValue));
+		action = new Actions(driver);
+		action.moveToElement(element).perform();
+	}
 
 	public void rightClickToElement(WebDriver driver, String xpathValue) {
 		element = find(driver, xpathValue);
@@ -526,6 +534,13 @@ public abstract class AbstractPage {
 		clickToElement(driver, AbstractPageUI.DYNAMIC_LEFT_MENU_LINK, pageName);
 	}
 	
+	
+	public void openSubMenuPageInAdminByItems(WebDriver driver, String level1Item,String level2Item) {
+		hoverMouseToElement(driver, AbstractPageUI.DYNAMIC_LEVEL1_TOP_MENU_LINK,level1Item);
+		waitElementClickable(driver, AbstractPageUI.DYNAMIC_LEVEL2_TOP_MENU_LINK,level1Item, level2Item);
+		clickToElement(driver, AbstractPageUI.DYNAMIC_LEVEL2_TOP_MENU_LINK,level1Item, level2Item);
+	}
+	
 	public void uploadMultipleFiles(WebDriver driver, String... filenames) {
 		String filePath = System.getProperty("user.dir") + getDirectorySlash("uploadFiles");
 		String fileFullPath = "";
@@ -538,6 +553,44 @@ public abstract class AbstractPage {
 		sendKeysToElement(driver, AbstractPageUI.UPLOAD_FILE_TYPE, fileFullPath);
 
 	}
+	
+	public static void waitForFileToDownload(String fileName, int timeWaitInsecond) {
+       
+        File dir = new File(GlobalConstants.DOWNLOAD_FILES_PATH);
+        File[] dirContents = dir.listFiles();
+
+        for (File eachfile: dirContents ) {
+            if (eachfile.getName().contains(fileName)) {
+                break;
+            }else {
+                try {
+					Thread.sleep(timeWaitInsecond*1000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+            }
+        }
+    }
+	
+	public static Boolean isFileDownloaded(String fileName) {
+        boolean flag = false;        
+        File dir = new File(GlobalConstants.DOWNLOAD_FILES_PATH);
+        File[] files = dir.listFiles();
+        if (files.length == 0 || files == null) {
+            System.out.println("The directory is empty");
+            flag = false;
+        } else {
+            for (File listFile : files) {
+                if (listFile.getName().contains(fileName)) {
+                    System.out.println(fileName + " is present");
+                    break;
+                }
+                flag = true;
+            }
+        }
+        return flag;
+    }
 
 	public String getDirectorySlash(String folderName) {
 		if (isMac()) {

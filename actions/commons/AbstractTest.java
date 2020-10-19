@@ -1,6 +1,9 @@
 package commons;
 
+import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -18,11 +21,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public abstract class AbstractTest {
 	protected static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<WebDriver>();
-	//private WebDriver driver;
+	// private WebDriver driver;
 	private long longTimeOut = 30;
-	
+
 	protected final Log log;
-	
+
 	protected AbstractTest() {
 		log = LogFactory.getLog(getClass());
 	}
@@ -37,14 +40,21 @@ public abstract class AbstractTest {
 		} else if (browser == Browser.CHROME) {
 //			System.setProperty("webdriver.chrome.driver", ".\\browserDrivers\\chromedriver.exe");
 			WebDriverManager.chromedriver().setup();
-			setDriver(new ChromeDriver());
+			HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+			chromePrefs.put("profile.default_content_settings.popups", 0);
+			chromePrefs.put("download.default_directory", ".\\downloadedFiles");
+
+			ChromeOptions options = new ChromeOptions();
+			options.setExperimentalOption("prefs", chromePrefs);
+
+			setDriver(new ChromeDriver(options));
 		} else if (browser == Browser.CHROMEHEADLESS) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("headless");
 			options.addArguments("window-size=1366x768");
 			setDriver(new ChromeDriver(options));
-		}else {
+		} else {
 			throw new RuntimeException("Please input correct browser name.");
 		}
 
@@ -58,15 +68,20 @@ public abstract class AbstractTest {
 		Browser browser = Browser.valueOf(browserName.toUpperCase());
 
 		if (browser == Browser.FIREFOX) {
-			//System.setProperty("webdriver.gecko.driver", ".\\browserDrivers\\geckodriver.exe");
+			// System.setProperty("webdriver.gecko.driver", ".\\browserDrivers\\geckodriver.exe");
 			WebDriverManager.firefoxdriver().setup();
 			setDriver(new FirefoxDriver());
 		} else if (browser == Browser.CHROME) {
-			//System.setProperty("webdriver.chrome.driver", ".\\browserDrivers\\chromedriver.exe");
+			// System.setProperty("webdriver.chrome.driver", ".\\browserDrivers\\chromedriver.exe");
 			WebDriverManager.chromedriver().setup();
-			setDriver(new ChromeDriver());
+			Map<String, Object> prefs = new HashMap<String, Object>();
+			prefs.put("download.default_directory", GlobalConstants.DOWNLOAD_FILES_PATH);
+			ChromeOptions options = new ChromeOptions();
+			options.setExperimentalOption("prefs", prefs);
+
+			setDriver(new ChromeDriver(options));
 		} else if (browser == Browser.EDGE) {
-			//System.setProperty("webdriver.edge.driver", ".\\browserDrivers\\chromedriver.exe");
+			// System.setProperty("webdriver.edge.driver", ".\\browserDrivers\\chromedriver.exe");
 			WebDriverManager.edgedriver().setup();
 			setDriver(new EdgeDriver());
 		} else {
@@ -78,20 +93,20 @@ public abstract class AbstractTest {
 		getDriver().get(appURL);
 		return getDriver();
 	}
-	
+
 	protected void removeDriver() {
 		getDriver().quit();
 		threadLocalDriver.remove();
 	}
-	
+
 	public static WebDriver getDriver() {
 		return threadLocalDriver.get();
 	}
-	
+
 	private void setDriver(WebDriver driver) {
 		threadLocalDriver.set(driver);
 	}
-	
+
 	private boolean checkTrue(boolean condition) {
 		boolean pass = true;
 		try {
@@ -158,15 +173,16 @@ public abstract class AbstractTest {
 		Random random = new Random();
 		return random.nextInt();
 	}
-	
+
 	public void sleepInSeconds(int timeout) {
 		try {
-			Thread.sleep(timeout*1000);
+			Thread.sleep(timeout * 1000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
+
 	protected void closeBrowserAndDriver(WebDriver driver) {
 
 		try {

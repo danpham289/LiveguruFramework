@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="LiveGuru" parallel="false">
 
-	<parameter name="url" value="http://live.demoguru99.com/" />
+	<parameter name="userUrl" value="http://live.demoguru99.com/" />
+	<parameter name="adminUrl" value="http://live.demoguru99.com/index.php/backendlogin" />
 	<listeners>
  		<listener class-name="commons.MethodListener" />
 		<listener class-name="reportConfig.ExtentListener" /> 
@@ -12,10 +13,10 @@
 	</listeners>
 
 	<test name="RUN ON CHROME">
-		<parameter name="browser" value="CHROMEHEADLESS" />
+		<parameter name="browser" value="CHROME" />
 		<classes>
 <!-- 			<class name="com.liveguru.commons.Common_01_Register_User" /> -->
-			<class name="com.liveguru.user.TC08_TC10" />
+			<class name="com.liveguru.admin.TS02_Invoice_Printed" />
 		</classes>
 	</test>
 

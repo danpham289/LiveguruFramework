@@ -18,15 +18,16 @@ public class SearchResultPageObject extends AbstractPage {
 
 	public void printProductNamesAndPrices() {
 		sleepInSecond(5);
-		waitElementVisible(driver, SearchResultPageUI.PRODUCTS_NAME_LIST);
+		waitElementsVisible(driver, SearchResultPageUI.PRODUCTS_NAME_LIST);
+		log.info(finds(driver,SearchResultPageUI.PRODUCTS_NAME_LIST).get(0).getText());
 //		int productsNumber = 0;
-//		productsNumber = finds(driver, SearchResultPageUI.PRODUCTS_LIST).size();
+//		productsNumber = finds(driver, SearchResultPageUI.PRODUCTS_NAME_LIST).size();
 //		log.info(productsNumber);
 //		for (int i=0;i<productsNumber;i++) {
 //			log.info("Product Name is "+finds(driver,SearchResultPageUI.PRODUCTS_NAME_LIST).get(i).getText()+" with price "+finds(driver,SearchResultPageUI.PRODUCTS_PRICE_LIST).get(i).getText()+"\n");
 //		}
 		
-		log.info("Product Name is "+getElementText(driver, SearchResultPageUI.PRODUCTS_NAME_LIST)+" with price "+getElementText(driver, SearchResultPageUI.PRODUCTS_PRICE_LIST));
+//		log.info("Product Name is "+getElementText(driver, SearchResultPageUI.PRODUCTS_NAME_LIST)+" with price "+getElementText(driver, SearchResultPageUI.PRODUCTS_PRICE_LIST));
 	}
 
 	

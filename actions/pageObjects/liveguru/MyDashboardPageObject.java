@@ -40,6 +40,11 @@ public class MyDashboardPageObject extends AbstractPage  {
 		return PageGeneratorManager.getAddNewAddressPageObject(driver);
 	}
 
+	public boolean isAccountInfoSavedMessageDisplayed() {
+		waitElementVisible(driver, MyDashboardPageUI.ACCOUNT_INFO_SAVED_MESSAGE);
+		return isElementDisplayed(driver, MyDashboardPageUI.ACCOUNT_INFO_SAVED_MESSAGE);
+	}
+
 //	public void clickToMyAccountLink() {
 //		waitElementClickable(driver, AbstractPageUI.DYNAMIC_FOOTER_PAGE_LINK, "My Account");
 //		clickToElement(driver, AbstractPageUI.DYNAMIC_FOOTER_PAGE_LINK, "My Account");

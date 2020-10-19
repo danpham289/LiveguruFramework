@@ -36,6 +36,12 @@ public class LoginUserPageObject extends AbstractPage{
 		clickToElement(driver, LoginUserPageUI.LOGIN_BUTTON);
 		return PageGeneratorManager.getMyDashboardPageObject(driver);
 	}
+
+	public boolean isInvalidLoginMessageDisplayed() {
+		waitElementVisible(driver, LoginUserPageUI.INVALID_LOGIN_MESSAGE);
+		return isElementDisplayed(driver, LoginUserPageUI.INVALID_LOGIN_MESSAGE);
+	}
+	
 	
 
 

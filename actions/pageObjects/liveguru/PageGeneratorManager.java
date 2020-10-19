@@ -77,4 +77,10 @@ public class PageGeneratorManager {
 	public static SearchResultPageObject getSearchResultPageObject(WebDriver driver) {
 		return new SearchResultPageObject(driver);
 	}
+	public static CustomerInfomationPageObject getCustomerInfomationPageObject(WebDriver driver) {
+		return new CustomerInfomationPageObject(driver);
+	}
+	public static OrdersPageObject getOrdersPageObject(WebDriver driver) {
+		return new OrdersPageObject(driver);
+	}
 }

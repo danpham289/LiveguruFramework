@@ -46,4 +46,30 @@ public class ManageCustomersPageObject extends AbstractPage {
 
 	}
 
+	public boolean isNoRecordsTextDisplayed() {
+		waitElementVisible(driver, ManageCustomersPageUI.NO_RECORDS_TEXT);
+		return isElementDisplayed(driver,  ManageCustomersPageUI.NO_RECORDS_TEXT);
+	}
+
+	public CustomerInfomationPageObject clickToEditLinkByRowNumber(String rowNumber) {
+		waitElementVisible(driver, ManageCustomersPageUI.DYNAMIC_EDIT_LINK_AT_ROW_NUMBER,rowNumber);
+		clickToElement(driver, ManageCustomersPageUI.DYNAMIC_EDIT_LINK_AT_ROW_NUMBER,rowNumber);
+		return PageGeneratorManager.getCustomerInfomationPageObject(driver);
+	}
+
+	public boolean isCustomerDeletedSuccessMessageDisplayed() {
+		waitElementVisible(driver, ManageCustomersPageUI.CUSTOMER_DELETED_MESSAGE);
+		return isElementDisplayed(driver, ManageCustomersPageUI.CUSTOMER_DELETED_MESSAGE);
+	}
+
+	public void hoverMouseToSalesItem() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public OrdersPageObject clickToOrdersItem() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

@@ -11,5 +11,10 @@ public class AbstractPageUI {
 	public static final String MOBILE_LINK = "//a[text()='Mobile']";
 	public static final String TV_LINK = "//a[text()='TV']";
 	
+	public static final String DYNAMIC_LEVEL1_TOP_MENU_LINK = "//ul[@id='nav']//span[text()='%s']";
+	public static final String DYNAMIC_LEVEL2_TOP_MENU_LINK = "//ul[@id='nav']//span[text()='%s']/parent::a/following-sibling::ul//span[text()='%s']";
+	public static final String DYNAMIC_LEVEL3_TOP_MENU_LINK = "//ul[@id='nav']//span[text()='%s']/parent::a/following-sibling::ul//span[text()='%s']/parent::a/following-sibling::ul//span[text()='%s']";
+	public static final String DYNAMIC_LEVEL4_TOP_MENU_LINK = "//ul[@id='nav']//span[text()='%s']/parent::a/following-sibling::ul//span[text()='%s']/parent::a/following-sibling::ul//span[text()='%s']/parent::a/following-sibling::ul//span[text()='%s']";
+	
 
 }

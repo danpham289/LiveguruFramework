@@ -1804,3 +1804,35 @@
 2020-10-15 11:53:19,002 INFO  com.liveguru.user.TC08_TC10 - Step: Click 'Advance Search' link then navigate to Advance Search page
 2020-10-15 11:53:19,894 INFO  com.liveguru.user.TC08_TC10 - Step: Input Price 0 - 150 and click Search button
 2020-10-15 11:53:21,832 INFO  com.liveguru.user.TC08_TC10 - Print Product Name & Price in console
+2020-10-16 09:25:39,474 INFO  com.liveguru.user.TC08_TC10 - Precondition - 1: Open LiveGuru99 site
+2020-10-16 09:25:47,939 INFO  com.liveguru.user.TC08_TC10 - Step: Click TV menu
+2020-10-16 09:25:49,505 INFO  com.liveguru.user.TC08_TC10 - Step: Click 'SAMSUNG LCD' product detail then navigate to Product Detail page
+2020-10-16 09:25:51,370 INFO  com.liveguru.user.TC08_TC10 - Step: Click 'Add Your Review' link
+2020-10-16 09:25:52,410 INFO  com.liveguru.user.TC08_TC10 - Step: Click 'Submit Review' button
+2020-10-16 09:25:52,571 INFO  com.liveguru.user.TC08_TC10 - VP: Msg 'THIS IS A REQUIRED FIELD.' displays at 3 fields THOUGHT/YOUR REVIEW/YOUR NICKNAME
+2020-10-16 09:25:52,685 INFO  com.liveguru.user.TC08_TC10 -  -------------------------- PASSED -------------------------- 
+2020-10-16 09:25:52,796 INFO  com.liveguru.user.TC08_TC10 -  -------------------------- PASSED -------------------------- 
+2020-10-16 09:25:52,905 INFO  com.liveguru.user.TC08_TC10 -  -------------------------- PASSED -------------------------- 
+2020-10-16 09:25:52,905 INFO  com.liveguru.user.TC08_TC10 - Step: Input data into 3 fields THOUGHT/YOUR REVIEW/YOUR NICKNAME
+2020-10-16 09:25:53,478 INFO  com.liveguru.user.TC08_TC10 - Step: Click 'Submit Review' button
+2020-10-16 09:25:54,737 INFO  com.liveguru.user.TC08_TC10 - VP: Msg 'Your review has been accepted for moderation.' displays
+2020-10-16 09:25:54,846 INFO  com.liveguru.user.TC08_TC10 -  -------------------------- PASSED -------------------------- 
+2020-10-16 09:25:54,955 INFO  com.liveguru.user.TC08_TC10 - Step: Click 'Advance Search' link then navigate to Advance Search page
+2020-10-16 09:25:55,939 INFO  com.liveguru.user.TC08_TC10 - Step: Input Price 0 - 150 and click Search button
+2020-10-16 09:25:57,594 INFO  com.liveguru.user.TC08_TC10 - Print Product Name & Price in console
+2020-10-16 09:27:37,831 INFO  com.liveguru.user.TC08_TC10 - Precondition - 1: Open LiveGuru99 site
+2020-10-16 09:27:44,996 INFO  com.liveguru.user.TC08_TC10 - Step: Click TV menu
+2020-10-16 09:27:46,238 INFO  com.liveguru.user.TC08_TC10 - Step: Click 'SAMSUNG LCD' product detail then navigate to Product Detail page
+2020-10-16 09:27:47,998 INFO  com.liveguru.user.TC08_TC10 - Step: Click 'Add Your Review' link
+2020-10-16 09:27:48,986 INFO  com.liveguru.user.TC08_TC10 - Step: Click 'Submit Review' button
+2020-10-16 09:27:49,127 INFO  com.liveguru.user.TC08_TC10 - VP: Msg 'THIS IS A REQUIRED FIELD.' displays at 3 fields THOUGHT/YOUR REVIEW/YOUR NICKNAME
+2020-10-16 09:27:49,263 INFO  com.liveguru.user.TC08_TC10 -  -------------------------- PASSED -------------------------- 
+2020-10-16 09:27:49,395 INFO  com.liveguru.user.TC08_TC10 -  -------------------------- PASSED -------------------------- 
+2020-10-16 09:27:49,497 INFO  com.liveguru.user.TC08_TC10 -  -------------------------- PASSED -------------------------- 
+2020-10-16 09:27:49,498 INFO  com.liveguru.user.TC08_TC10 - Step: Input data into 3 fields THOUGHT/YOUR REVIEW/YOUR NICKNAME
+2020-10-16 09:27:50,057 INFO  com.liveguru.user.TC08_TC10 - Step: Click 'Submit Review' button
+2020-10-16 09:27:51,281 INFO  com.liveguru.user.TC08_TC10 - VP: Msg 'Your review has been accepted for moderation.' displays
+2020-10-16 09:27:51,390 INFO  com.liveguru.user.TC08_TC10 -  -------------------------- PASSED -------------------------- 
+2020-10-16 09:27:51,468 INFO  com.liveguru.user.TC08_TC10 - Step: Click 'Advance Search' link then navigate to Advance Search page
+2020-10-16 09:27:52,416 INFO  com.liveguru.user.TC08_TC10 - Step: Input Price 0 - 150 and click Search button
+2020-10-16 09:27:54,065 INFO  com.liveguru.user.TC08_TC10 - Print Product Name & Price in console
