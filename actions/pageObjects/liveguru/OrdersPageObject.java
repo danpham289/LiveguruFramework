@@ -37,7 +37,7 @@ public class OrdersPageObject extends AbstractPage {
 	public void clickToSubmitButton() {
 		waitElementClickable(driver, OrdersPageUI.SUBMIT_BUTTON);
 		clickToElement(driver, OrdersPageUI.SUBMIT_BUTTON);
-		downloadedInvoiceFileName = getDownloadedInvoiceFilename();
+		
 
 	}
 
@@ -52,8 +52,8 @@ public class OrdersPageObject extends AbstractPage {
 	}
 
 	public boolean isInvoiceFileDownloaded() {
-		waitForFileToDownload(downloadedInvoiceFileName, 3);	
-		return isFileDownloaded(downloadedInvoiceFileName);
+		waitForDownloadFileContainsNameCompleted(downloadedInvoiceFileName);
+		return (countFilesInDirectory() == 1)&&(isFileContain(downloadedInvoiceFileName));
 	}
 
 	public void selectItemInViewPerPageDropdown(String itemValue) {
@@ -93,5 +93,6 @@ public class OrdersPageObject extends AbstractPage {
 		return isElementDisplayed(driver, OrdersPageUI.DYNAMIC_SELECTED_ITEMS_MESSAGE,number);
 	}
 
-	private String downloadedInvoiceFileName;
+	private String downloadedInvoiceFileName = "invoice";
+	int longTimeOut = 5;
 }

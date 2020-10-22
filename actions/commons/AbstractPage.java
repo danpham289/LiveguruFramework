@@ -590,51 +590,120 @@ public abstract class AbstractPage {
 		}
 		fileFullPath = fileFullPath.trim();
 		// waitElementVisible(driver, AbstractPageUI.UPLOAD_FILE_TYPE);
-		System.out.println(fileFullPath);
 		sendKeysToElement(driver, AbstractPageUI.UPLOAD_FILE_TYPE, fileFullPath);
 
 	}
+	
 
-	public void waitForFileToDownload(String fileName, int timeWaitInsecond) {
-
-		File dir = new File(GlobalConstants.DOWNLOAD_FILES_PATH);
-		File[] dirContents = dir.listFiles();
-
-		for (File eachfile : dirContents) {
-			if (eachfile.getName().contains(fileName)) {
-				break;
-			} else {
-				try {
-					Thread.sleep(timeWaitInsecond * 1000);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+	public void waitForDownloadFileContainsNameCompleted(String fileName) {
+		int i = 0;
+		while (i < 30) {
+			boolean exist = isFileContain(fileName);
+			if (exist == true) {
+				i = 30;
 			}
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			i = i + 1;
 		}
 	}
 
-	public boolean isFileDownloaded(String fileName) {
-		System.out.println(fileName);
-		boolean flag = false;
-		File dir = new File(GlobalConstants.DOWNLOAD_FILES_PATH);
-		File[] files = dir.listFiles();
-		if (files.length == 0 || files == null) {
-			System.out.println("The directory is empty");
-			flag = false;
-		} else {
-			for (File listFile : files) {
-				if (listFile.getName().equals(fileName)) {
-					System.out.println(listFile.getName() + " is present");
+	public boolean isFileContain(String fileName) {
+		try {
+			boolean flag = false;
+			File dir = new File(GlobalConstants.DOWNLOAD_FILES_PATH);
+			File[] files = dir.listFiles();
+			if (files == null || files.length == 0) {
+				flag = false;
+			}
+			
+			for (int i = 0; i < files.length; i++) {
+				System.out.println("file name is "+files[i].getName());
+				if (files[i].getName().contains(fileName)) {
 					flag = true;
-					break;
-				}else {
-					flag = false;
 				}
-				
+			}
+			return flag;
+		} catch (Exception e) {
+			System.out.print(e.getMessage());
+			return false;
+		}
+	}
+	
+//	public void deleteFileContainName(String fileName) {
+//		if(isFileContain(fileName)) {
+//		deleteContainName(fileName);
+//		}
+//	}
+//
+//	public void deleteContainName(String fileName) {
+//		try {
+//			String files;
+//			File file = new File(GlobalConstants.DOWNLOAD_FILES_PATH);
+//			File[] listOfFiles = file.listFiles();
+//			for (int i = 0; i < listOfFiles.length; i++) {
+//				if (listOfFiles[i].isFile()) {
+//					files = listOfFiles[i].getName();
+//					if (files.contains(fileName)) {
+//						new File(listOfFiles[i].toString()).delete();
+//					}
+//				}
+//			}
+//		} catch (Exception e) {
+//			System.out.print(e.getMessage());
+//		}
+//	}
+	
+//	public boolean isFileDownloaded(String fileName) {
+//		System.out.println(fileName);
+//		boolean flag = false;
+//		File dir = new File(GlobalConstants.DOWNLOAD_FILES_PATH);
+//		File[] files = dir.listFiles();
+//		if (files.length == 0 || files == null) {
+//			System.out.println("The directory is empty");
+//			flag = false;
+//		} else {
+//			for (File listFile : files) {
+//				if (listFile.getName().contains(fileName)) {
+//					System.out.println(listFile.getName() + " is present");
+//					flag = true;
+//					break;
+//				}else {
+//					flag = false;
+//				}
+//				
+//			}
+//		}
+//		return flag;
+//	}
+	
+	public void deleteAllFileInFolder() {
+		try {
+			File file = new File(GlobalConstants.DOWNLOAD_FILES_PATH);
+			File[] listOfFiles = file.listFiles();
+			for (int i = 0; i < listOfFiles.length; i++) {
+				if (listOfFiles[i].isFile()) {
+					new File(listOfFiles[i].toString()).delete();
+				}
+			}
+		} catch (Exception e) {
+			System.out.print(e.getMessage());
+		}
+	}
+	
+	public int countFilesInDirectory() {
+		File file = new File(GlobalConstants.DOWNLOAD_FILES_PATH);
+		int i = 0;
+		for (File listOfFiles : file.listFiles()) {
+			if (listOfFiles.isFile()) {
+				i++;
 			}
 		}
-		return flag;
+		System.out.println("files number in folder is "+i);
+		return i;
 	}
 
 	public String getDirectorySlash(String folderName) {

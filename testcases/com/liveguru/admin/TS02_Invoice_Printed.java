@@ -72,6 +72,9 @@ public class TS02_Invoice_Printed extends AbstractTest{
 		log.info("Step: Select 'Print Voices' in Actions dropdown");
 		ordersPage.selectItemInActionsDropdown("Print Invoices");
 		
+		log.info("Step: Delect all files in downloadFiles folder");
+		ordersPage.deleteAllFileInFolder();
+		
 		log.info("Step: Click Submit button");
 		ordersPage.clickToSubmitButton();
 		
