@@ -26,4 +26,15 @@ public class ProductDetailPageObject extends AbstractPage {
 		return PageGeneratorManager.getProductReviewsPageObject(driver);
 	}
 
+	public void clickToReviewsTab() {
+		waitElementClickable(driver, ProductDetailPageUI.REVIEWS_TAB);
+		clickToElement(driver, ProductDetailPageUI.REVIEWS_TAB);
+		
+	}
+
+	public String getReviewLinkTextByIndex(String index) {
+		waitElementVisible(driver, ProductDetailPageUI.DYNAMIC_REVIEW_LINK_BY_INDEX,index);
+		return getElementText(driver, ProductDetailPageUI.DYNAMIC_REVIEW_LINK_BY_INDEX,index);
+	}
+
 }

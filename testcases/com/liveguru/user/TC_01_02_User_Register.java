@@ -31,7 +31,7 @@ public class TC_01_02_User_Register extends AbstractTest {
 	String password = "111111";
 	String registerSuccessMessage = "Thank you for registering with Main Website Store.";
 
-	@Parameters({ "browser", "url" })
+	@Parameters({ "browser", "userUrl" })
 	@BeforeClass
 	public void beforeClass(String browserName, String appURL) {
 		log.info("Precondition: Open LiveGuru99 site");

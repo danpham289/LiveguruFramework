@@ -15,6 +15,7 @@ public class AbstractPageUI {
 	public static final String DYNAMIC_LEVEL2_TOP_MENU_LINK = "//ul[@id='nav']//span[text()='%s']/parent::a/following-sibling::ul//span[text()='%s']";
 	public static final String DYNAMIC_LEVEL3_TOP_MENU_LINK = "//ul[@id='nav']//span[text()='%s']/parent::a/following-sibling::ul//span[text()='%s']/parent::a/following-sibling::ul//span[text()='%s']";
 	public static final String DYNAMIC_LEVEL4_TOP_MENU_LINK = "//ul[@id='nav']//span[text()='%s']/parent::a/following-sibling::ul//span[text()='%s']/parent::a/following-sibling::ul//span[text()='%s']/parent::a/following-sibling::ul//span[text()='%s']";
+	public static final String LOADING_ICON = "//div[@id='loading-mask']";
 	
 
 }

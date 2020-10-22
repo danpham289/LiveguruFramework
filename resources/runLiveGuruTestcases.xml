@@ -6,7 +6,7 @@
 	<listeners>
  		<listener class-name="commons.MethodListener" />
 		<listener class-name="reportConfig.ExtentListener" /> 
-		<listener class-name="reportConfig.AllureTestListener" /> 
+<!-- 		<listener class-name="reportConfig.AllureTestListener" />  -->
 		<listener class-name="org.uncommons.reportng.HTMLReporter" /> 
  		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> 
 
@@ -17,6 +17,7 @@
 		<classes>
 <!-- 			<class name="com.liveguru.commons.Common_01_Register_User" /> -->
 			<class name="com.liveguru.admin.TS02_Invoice_Printed" />
+<!-- 			<class name="com.liveguru.user.TC08_TC10" /> -->
 		</classes>
 	</test>
 
@@ -25,7 +26,7 @@
 <!-- 		<classes> -->
 <!-- 			<class name="com.liveguru.commons.Common_01_Register_User" /> -->
 <!-- 			<class name="com.liveguru.user.TC03_TC04_TC05_TC06_Mobile" /> -->
-<!-- 			<class name="com.liveguru.user.TC07_TC08_TV" /> -->
+<!-- 			<class name="com.liveguru.user.TC08_TC10" /> -->
 <!-- 		</classes> -->
 <!-- 	</test> -->
 

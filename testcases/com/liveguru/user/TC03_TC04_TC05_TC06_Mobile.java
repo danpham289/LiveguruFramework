@@ -34,7 +34,7 @@ public class TC03_TC04_TC05_TC06_Mobile extends AbstractTest {
 	MyDashboardPageObject myDashboardPage;
 	String couponCode = "GURU50";
 
-	@Parameters({"browser","url"})
+	@Parameters({"browser","userUrl"})
 	@BeforeClass
 	public void beforeClass(String browserName, String appURL) {
 		log.info("Precondition - 1a: Open LiveGuru99 site");

@@ -48,7 +48,7 @@ public class TC07_TC09_TV extends AbstractTest {
 	String city= "DN";
 
 	
-	@Parameters({"browser","url"})
+	@Parameters({"browser","userUrl"})
 	@BeforeClass
 	public void beforeClass(String browserName, String appURL) {
 		log.info("Precondition - 1: Open LiveGuru99 site");

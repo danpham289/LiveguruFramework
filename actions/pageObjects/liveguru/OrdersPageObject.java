@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
+import pageUIs.liveguru.AbstractPageUI;
 import pageUIs.liveguru.OrdersPageUI;
 
 public class OrdersPageObject extends AbstractPage {
@@ -24,7 +25,7 @@ public class OrdersPageObject extends AbstractPage {
 	public void clickToSearchButton() {
 		waitElementClickable(driver, OrdersPageUI.SEARCH_BUTTON);
 		clickToElement(driver, OrdersPageUI.SEARCH_BUTTON);
-		waitElementInvisible(driver, OrdersPageUI.LOADING_ICON);
+		waitElementInvisible(driver, AbstractPageUI.LOADING_ICON);
 	}
 
 	public void selectItemInActionsDropdown(String itemValue) {
@@ -36,6 +37,7 @@ public class OrdersPageObject extends AbstractPage {
 	public void clickToSubmitButton() {
 		waitElementClickable(driver, OrdersPageUI.SUBMIT_BUTTON);
 		clickToElement(driver, OrdersPageUI.SUBMIT_BUTTON);
+		downloadedInvoiceFileName = getDownloadedInvoiceFilename();
 
 	}
 
@@ -50,9 +52,46 @@ public class OrdersPageObject extends AbstractPage {
 	}
 
 	public boolean isInvoiceFileDownloaded() {
-		waitForFileToDownload("Invoice", 3);
-		
-		return isFileDownloaded("Invoice");
+		waitForFileToDownload(downloadedInvoiceFileName, 3);	
+		return isFileDownloaded(downloadedInvoiceFileName);
 	}
 
+	public void selectItemInViewPerPageDropdown(String itemValue) {
+		waitElementVisible(driver, OrdersPageUI.VIEW_PER_PAGE_DROPDOWN);
+		selectItemInDropdown(driver, OrdersPageUI.VIEW_PER_PAGE_DROPDOWN, itemValue);
+		waitElementInvisible(driver, AbstractPageUI.LOADING_ICON);
+	}
+
+	public int countItemsInView() {
+		waitElementVisible(driver, OrdersPageUI.ROWS_IN_TABLE);
+		return countElementNumber(driver, OrdersPageUI.ROWS_IN_TABLE);
+	}
+
+	public void clickToSelectVisibleLink() {
+		waitElementVisible(driver, OrdersPageUI.SELECT_VISIBLE_LINK);
+		clickToElement(driver, OrdersPageUI.SELECT_VISIBLE_LINK);
+	}
+
+	public boolean isCheckboxesInTableSelected(int checkboxesNumber) {
+		boolean flag = false;
+		for(int i = 1;i<=checkboxesNumber;i++) {
+			flag = isElementSelected(driver, OrdersPageUI.DYNAMIC_CHECKBOX_BY_ROWNUMBER,String.valueOf(i));
+			if(flag==false) {
+				break;
+			}
+		}
+		return flag;
+	}
+
+	public void clickToUnselectVisibleLink() {
+		waitElementVisible(driver, OrdersPageUI.UNSELECT_VISIBLE_LINK);
+		clickToElement(driver, OrdersPageUI.UNSELECT_VISIBLE_LINK);		
+	}
+
+	public boolean isItemsSelectedMessageByNumberDisplayed(String number) {
+		waitElementVisible(driver, OrdersPageUI.DYNAMIC_SELECTED_ITEMS_MESSAGE,number);
+		return isElementDisplayed(driver, OrdersPageUI.DYNAMIC_SELECTED_ITEMS_MESSAGE,number);
+	}
+
+	private String downloadedInvoiceFileName;
 }

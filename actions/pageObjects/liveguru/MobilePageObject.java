@@ -57,4 +57,10 @@ public class MobilePageObject extends AbstractPage {
 		return isElementDisplayed(driver, MobilePageUI.DYNAMIC_PRODUCT_ADDED_TO_COMPARE_LIST_MSG, product);
 	}
 
+	public ProductDetailPageObject clickToProductDetailLinkByProductName(String productName) {
+		waitElementClickable(driver, MobilePageUI.DYNAMIC_PRODUCT_LINK, productName);
+		clickToElement(driver, MobilePageUI.DYNAMIC_PRODUCT_LINK, productName);
+		return PageGeneratorManager.getProductDetailPageObject(driver);
+	}
+
 }

@@ -83,4 +83,13 @@ public class PageGeneratorManager {
 	public static OrdersPageObject getOrdersPageObject(WebDriver driver) {
 		return new OrdersPageObject(driver);
 	}
+	public static PendingReviewsPageObject getPendingReviewsPageObject(WebDriver driver) {
+		return new PendingReviewsPageObject(driver);
+	}
+	public static ReviewDetailsPageObject getReviewDetailsPageObject(WebDriver driver) {
+		return new ReviewDetailsPageObject(driver);
+	}
+	public static InvoicesPageObject getInvoicesPageObject(WebDriver driver) {
+		return new InvoicesPageObject(driver);
+	}
 }

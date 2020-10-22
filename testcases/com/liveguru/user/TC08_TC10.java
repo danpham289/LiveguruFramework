@@ -38,17 +38,15 @@ public class TC08_TC10 extends AbstractTest {
 	String thought= "Good product but high price \n fast ship ";
 	String review= "Good";
 	String nickname= "Test";
-
 	
-	@Parameters({"browser","url"})
+	@Parameters({"browser","userUrl"})
 	@BeforeClass
 	public void beforeClass(String browserName, String appURL) {
 		log.info("Precondition - 1: Open LiveGuru99 site");
 		driverManager = DriverFactory.getManager(browserName);
 		driver = driverManager.getDriver();
 		driver.get(appURL);
-		homePage = PageGeneratorManager.getHomePageOject(driver);
-		
+		homePage = PageGeneratorManager.getHomePageOject(driver);		
 	}
 
 	@Test
@@ -92,8 +90,7 @@ public class TC08_TC10 extends AbstractTest {
 		advancedSearchPage.inputToPriceTextbox("0");
 		advancedSearchPage.inputToPriceToTextbox("150");
 		searchResultPage = advancedSearchPage.clickToSearchButton();
-		
-		
+				
 		log.info("Print Product Name & Price in console");
 		searchResultPage.printProductNamesAndPrices();
 		
@@ -101,17 +98,16 @@ public class TC08_TC10 extends AbstractTest {
 		searchResultPage.openFooterPageByName(driver, "Advanced Search");
 		advancedSearchPage = PageGeneratorManager.getAdvancedSearchPageObject(driver);
 		
-		log.info("Step: Input Price 0 - 150 and click Search button");
+		log.info("Step: Input Price 151 - 1000 and click Search button");
 		advancedSearchPage.inputToPriceTextbox("151");
 		advancedSearchPage.inputToPriceToTextbox("1000");
 		searchResultPage = advancedSearchPage.clickToSearchButton();
-		
-		
+				
 		log.info("Print Product Name & Price in console");
 		searchResultPage.printProductNamesAndPrices();
 	}
 
-//	@AfterClass(alwaysRun = true)
+	@AfterClass(alwaysRun = true)
 	public void afterClass() {
 		closeBrowserAndDriver(driver);
 	}
