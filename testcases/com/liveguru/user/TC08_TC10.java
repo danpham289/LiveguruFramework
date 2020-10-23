@@ -46,7 +46,7 @@ public class TC08_TC10 extends AbstractTest {
 		driverManager = DriverFactory.getManager(browserName);
 		driver = driverManager.getDriver();
 		driver.get(appURL);
-		homePage = PageGeneratorManager.getHomePageOject(driver);		
+		homePage = PageGeneratorManager.getHomePageObject(driver);		
 	}
 
 	@Test

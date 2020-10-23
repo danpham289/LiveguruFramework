@@ -89,7 +89,7 @@ public class TS03_Product_Review_Mechanism extends AbstractTest{
 		
 		log.info("Step: Open LiveGuru99 user site");
 		driver.get(userUrl);
-		homePage = PageGeneratorManager.getHomePageOject(driver);
+		homePage = PageGeneratorManager.getHomePageObject(driver);
 		
 		log.info("Step: Click Mobile menu");
 		mobilePage = homePage.clickToMobileMenu(driver);

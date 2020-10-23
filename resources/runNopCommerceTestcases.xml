@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NopCommerce" parallel="false">
+
+	<parameter name="userUrl" value="https://demo.nopcommerce.com/" />
+	<parameter name="adminUrl" value="https://admin-demo.nopcommerce.com/login?ReturnUrl=/admin/" />
+	<listeners>
+ 		<listener class-name="commons.MethodListener" />
+		<listener class-name="reportConfig.ExtentListener" /> 
+		<listener class-name="reportConfig.AllureTestListener" /> 
+		<listener class-name="org.uncommons.reportng.HTMLReporter" /> 
+ 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> 
+
+	</listeners>
+
+	<test name="RUN ON CHROME">
+		<parameter name="browser" value="CHROME" />
+		<classes>
+			<class name="com.nopcommerce.commons.Common_01_Register_User" />
+<!-- 			<class name="com.nopcommerce.user.Register_01_Register_With_Valid_Data" /> -->
+			<class name="com.nopcommerce.user.Order_01_Add_Edit_Remove_Product_From_Cart" />
+		</classes>
+	</test>
+
+</suite> 

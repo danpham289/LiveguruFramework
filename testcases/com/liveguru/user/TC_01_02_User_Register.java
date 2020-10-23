@@ -36,7 +36,7 @@ public class TC_01_02_User_Register extends AbstractTest {
 	public void beforeClass(String browserName, String appURL) {
 		log.info("Precondition: Open LiveGuru99 site");
 		driver = getBrowserDriver(browserName, appURL);
-		homePage = PageGeneratorManager.getHomePageOject(driver);
+		homePage = PageGeneratorManager.getHomePageObject(driver);
 		
 	}
 

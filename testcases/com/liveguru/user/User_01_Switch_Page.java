@@ -39,7 +39,7 @@ public class User_01_Switch_Page extends AbstractTest {
 		driverManager = DriverFactory.getManager(browserName);
 		driver = driverManager.getDriver();
 		driver.get(appURL);
-		homePage = PageGeneratorManager.getHomePageOject(driver);
+		homePage = PageGeneratorManager.getHomePageObject(driver);
 
 	}
 

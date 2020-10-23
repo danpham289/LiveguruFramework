@@ -38,13 +38,13 @@ import pageObjects.liveguru.TVPageObject;
 import pageUIs.liveguru.AbstractPageUI;
 
 public abstract class AbstractPage {
-	
+
 	protected final Log log;
 
 	protected AbstractPage() {
 		log = LogFactory.getLog(getClass());
 	}
-	
+
 	public void openPageUrl(WebDriver driver, String pageUrl) {
 		driver.get(pageUrl);
 	}
@@ -276,6 +276,12 @@ public abstract class AbstractPage {
 			element.click();
 		}
 	}
+	public void checkToCheckbox(WebDriver driver, String locator, String... dynamicValue) {
+		element = find(driver, getDynamicLocator(locator, dynamicValue));
+		if (!element.isSelected()) {
+			element.click();
+		}
+	}
 
 	public void uncheckToCheckbox(WebDriver driver, String xpathValue) {
 		element = find(driver, xpathValue);
@@ -299,7 +305,7 @@ public abstract class AbstractPage {
 	public boolean isElementSelected(WebDriver driver, String xpathValue) {
 		return find(driver, xpathValue).isSelected();
 	}
-	
+
 	public boolean isElementSelected(WebDriver driver, String locator, String... dynamicValue) {
 		return find(driver, getDynamicLocator(locator, dynamicValue)).isSelected();
 	}
@@ -581,7 +587,14 @@ public abstract class AbstractPage {
 		waitElementClickable(driver, AbstractPageUI.DYNAMIC_LEVEL4_TOP_MENU_LINK, level1Item, level2Item, level3Item, level4Item);
 		clickToElement(driver, AbstractPageUI.DYNAMIC_LEVEL4_TOP_MENU_LINK, level1Item, level2Item, level3Item, level4Item);
 	}
-
+	
+	public void openSubMenuPageInNopCommerceByItems(WebDriver driver, String level1Item, String level2Item) {
+		waitElementVisible(driver, pageUIs.nopcommerce.AbstractPageUI.DYNAMIC_LEVEL1_TOP_MENU_LINK, level1Item);
+		hoverMouseToElement(driver, pageUIs.nopcommerce.AbstractPageUI.DYNAMIC_LEVEL1_TOP_MENU_LINK, level1Item);
+		waitElementClickable(driver, pageUIs.nopcommerce.AbstractPageUI.DYNAMIC_LEVEL2_TOP_MENU_LINK, level1Item, level2Item);
+		clickToElement(driver, pageUIs.nopcommerce.AbstractPageUI.DYNAMIC_LEVEL2_TOP_MENU_LINK, level1Item, level2Item);
+	}
+	
 	public void uploadMultipleFiles(WebDriver driver, String... filenames) {
 		String filePath = System.getProperty("user.dir") + getDirectorySlash("uploadFiles");
 		String fileFullPath = "";
@@ -593,7 +606,6 @@ public abstract class AbstractPage {
 		sendKeysToElement(driver, AbstractPageUI.UPLOAD_FILE_TYPE, fileFullPath);
 
 	}
-	
 
 	public void waitForDownloadFileContainsNameCompleted(String fileName) {
 		int i = 0;
@@ -619,9 +631,9 @@ public abstract class AbstractPage {
 			if (files == null || files.length == 0) {
 				flag = false;
 			}
-			
+
 			for (int i = 0; i < files.length; i++) {
-				System.out.println("file name is "+files[i].getName());
+				System.out.println("file name is " + files[i].getName());
 				if (files[i].getName().contains(fileName)) {
 					flag = true;
 				}
@@ -632,54 +644,7 @@ public abstract class AbstractPage {
 			return false;
 		}
 	}
-	
-//	public void deleteFileContainName(String fileName) {
-//		if(isFileContain(fileName)) {
-//		deleteContainName(fileName);
-//		}
-//	}
-//
-//	public void deleteContainName(String fileName) {
-//		try {
-//			String files;
-//			File file = new File(GlobalConstants.DOWNLOAD_FILES_PATH);
-//			File[] listOfFiles = file.listFiles();
-//			for (int i = 0; i < listOfFiles.length; i++) {
-//				if (listOfFiles[i].isFile()) {
-//					files = listOfFiles[i].getName();
-//					if (files.contains(fileName)) {
-//						new File(listOfFiles[i].toString()).delete();
-//					}
-//				}
-//			}
-//		} catch (Exception e) {
-//			System.out.print(e.getMessage());
-//		}
-//	}
-	
-//	public boolean isFileDownloaded(String fileName) {
-//		System.out.println(fileName);
-//		boolean flag = false;
-//		File dir = new File(GlobalConstants.DOWNLOAD_FILES_PATH);
-//		File[] files = dir.listFiles();
-//		if (files.length == 0 || files == null) {
-//			System.out.println("The directory is empty");
-//			flag = false;
-//		} else {
-//			for (File listFile : files) {
-//				if (listFile.getName().contains(fileName)) {
-//					System.out.println(listFile.getName() + " is present");
-//					flag = true;
-//					break;
-//				}else {
-//					flag = false;
-//				}
-//				
-//			}
-//		}
-//		return flag;
-//	}
-	
+
 	public void deleteAllFileInFolder() {
 		try {
 			File file = new File(GlobalConstants.DOWNLOAD_FILES_PATH);
@@ -693,7 +658,7 @@ public abstract class AbstractPage {
 			System.out.print(e.getMessage());
 		}
 	}
-	
+
 	public int countFilesInDirectory() {
 		File file = new File(GlobalConstants.DOWNLOAD_FILES_PATH);
 		int i = 0;
@@ -702,7 +667,7 @@ public abstract class AbstractPage {
 				i++;
 			}
 		}
-		System.out.println("files number in folder is "+i);
+		System.out.println("files number in folder is " + i);
 		return i;
 	}
 
@@ -728,17 +693,17 @@ public abstract class AbstractPage {
 	}
 
 	public boolean isPriceSortedByDescending(WebDriver driver, String xpathValue) {
-		
+
 		ArrayList<Float> arraylist = new ArrayList<Float>();
-		
+
 		elements = finds(driver, xpathValue);
-		
+
 		for (WebElement element : elements) {
-			arraylist.add(Float.parseFloat(element.getText().replace("$", "").replace("," , "").trim()));
+			arraylist.add(Float.parseFloat(element.getText().replace("$", "").replace(",", "").trim()));
 		}
 		System.out.println("--- Price not sorted ----");
 		for (Float number : arraylist) {
-			
+
 			System.out.println(number);
 		}
 		ArrayList<Float> sortedlist = new ArrayList<Float>();
@@ -747,26 +712,27 @@ public abstract class AbstractPage {
 		}
 		Collections.sort(sortedlist);
 		Collections.reverse(sortedlist);
-		
+
 		System.out.println("--- Price sorted----");
 		for (Float number : sortedlist) {
-			
+
 			System.out.println(number);
 		}
 		return arraylist.equals(sortedlist);
 	}
+
 	public boolean isPriceSortedByAscending(WebDriver driver, String xpathValue) {
-		
+
 		ArrayList<Float> arraylist = new ArrayList<Float>();
-		
+
 		elements = finds(driver, xpathValue);
-		
+
 		for (WebElement element : elements) {
-			arraylist.add(Float.parseFloat(element.getText().replace("$", "").replace("," , "").trim()));
+			arraylist.add(Float.parseFloat(element.getText().replace("$", "").replace(",", "").trim()));
 		}
 		System.out.println("--- Price not sorted ----");
 		for (Float number : arraylist) {
-			
+
 			System.out.println(number);
 		}
 		ArrayList<Float> sortedlist = new ArrayList<Float>();
@@ -774,14 +740,15 @@ public abstract class AbstractPage {
 			sortedlist.add(child);
 		}
 		Collections.sort(sortedlist);
-		
+
 		System.out.println("--- Price sorted----");
 		for (Float number : sortedlist) {
-			
+
 			System.out.println(number);
 		}
 		return arraylist.equals(sortedlist);
 	}
+
 	public boolean isNumberSortedByDescending(WebDriver driver, String xpathValue) {
 
 		ArrayList<Long> arraylist = new ArrayList<Long>();
@@ -970,18 +937,20 @@ public abstract class AbstractPage {
 		date = DateUtils.addSeconds(date, -1);
 		return date;
 	}
-	
-	public String getDownloadedInvoiceFilename() {		
+
+	public String getDownloadedInvoiceFilename() {
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
 		Date date = getCurrentDateTimeInApp();
-		String dateInString="";
+		String dateInString = "";
 		try {
-			dateInString=formatter.format(date);
+			dateInString = formatter.format(date);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return "invoice"+dateInString.replace(" ", "_")+".pdf";
-	}	
+		return "invoice" + dateInString.replace(" ", "_") + ".pdf";
+	}
+
+
 	
 	private long longTimeOut = 30;
 	private WebDriverWait explicitWait;

@@ -59,7 +59,7 @@ public class TS01_Check_Account_Create_Success extends AbstractTest {
 	public void TC01_Check_Account_Created_Success_In_Admin(String browserName, String userUrl, String adminUrl) {
 		log.info("Precondition: Open LiveGuru99 user site");
 		driver = getBrowserDriver(browserName, userUrl);		
-		homePage = PageGeneratorManager.getHomePageOject(driver);
+		homePage = PageGeneratorManager.getHomePageObject(driver);
 		log.info("Precondition: Register new account in User page");
 		log.info("Precondition: Click My Account -> open Login page");
 		loginPage = homePage.clickToMyAccountLink();
@@ -112,7 +112,7 @@ public class TS01_Check_Account_Create_Success extends AbstractTest {
 	public void TC02_Check_Update_Account_Info_Success_In_Admin(String browserName, String userUrl, String adminUrl) {
 		log.info("Precondition: Open LiveGuru99 user site");
 		driver = getBrowserDriver(browserName, userUrl);		
-		homePage = PageGeneratorManager.getHomePageOject(driver);
+		homePage = PageGeneratorManager.getHomePageObject(driver);
 		
 		log.info("Precondition: Login by new account registered above");
 		homePage.clickToAccountMenu();
@@ -191,7 +191,7 @@ public class TS01_Check_Account_Create_Success extends AbstractTest {
 		
 		log.info("Step: Open LiveGuru99 user site");
 		driver = getBrowserDriver(browserName, userUrl);		
-		homePage = PageGeneratorManager.getHomePageOject(driver);
+		homePage = PageGeneratorManager.getHomePageObject(driver);
 		
 		log.info("Step: Login by deleted account");
 		homePage.clickToAccountMenu();

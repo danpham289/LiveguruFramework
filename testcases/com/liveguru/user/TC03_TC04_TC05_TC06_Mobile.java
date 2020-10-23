@@ -39,7 +39,7 @@ public class TC03_TC04_TC05_TC06_Mobile extends AbstractTest {
 	public void beforeClass(String browserName, String appURL) {
 		log.info("Precondition - 1a: Open LiveGuru99 site");
 		driver = getBrowserDriver(browserName, appURL);
-		homePage = PageGeneratorManager.getHomePageOject(driver);
+		homePage = PageGeneratorManager.getHomePageObject(driver);
 		
 		log.info("Precondition - 1b: Login");
 //		homePage.clickToAccountMenu();

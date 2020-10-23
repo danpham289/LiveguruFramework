@@ -55,7 +55,7 @@ public class TC07_TC09_TV extends AbstractTest {
 		driverManager = DriverFactory.getManager(browserName);
 		driver = driverManager.getDriver();
 		driver.get(appURL);
-		homePage = PageGeneratorManager.getHomePageOject(driver);
+		homePage = PageGeneratorManager.getHomePageObject(driver);
 		
 		log.info("Precondition - 1b: Login");
 		homePage.clickToAccountMenu();

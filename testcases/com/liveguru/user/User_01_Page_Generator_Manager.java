@@ -39,7 +39,7 @@ public class User_01_Page_Generator_Manager extends AbstractTest {
 		driverManager = DriverFactory.getManager(browserName);
 		driver = driverManager.getDriver();
 		driver.get(appURL);
-		homePage = PageGeneratorManager.getHomePageOject(driver);
+		homePage = PageGeneratorManager.getHomePageObject(driver);
 
 	}
 

@@ -19,7 +19,7 @@ public class MyDashboardPageObject extends AbstractPage  {
 		clickToElement(driver, MyDashboardPageUI.ACCOUNT_ICON);
 		waitElementClickable(driver, MyDashboardPageUI.LOGOUT_LINK);
 		clickToElement(driver, MyDashboardPageUI.LOGOUT_LINK);
-		return PageGeneratorManager.getHomePageOject(driver);
+		return PageGeneratorManager.getHomePageObject(driver);
 	}
 
 
