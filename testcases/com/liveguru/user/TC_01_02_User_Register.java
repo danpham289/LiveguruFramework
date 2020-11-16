@@ -25,11 +25,11 @@ public class TC_01_02_User_Register extends AbstractTest {
 	MyAddressBookPageObject myAddressBookPage;
 	AccountInformationPageObject accountInformationPage;
 
-	String firstName = "Dan";
-	String lastName = "Pham";
-	String email = "dan" + randomNumber() + "@mailinator.com";
-	String password = "111111";
-	String registerSuccessMessage = "Thank you for registering with Main Website Store.";
+	String firstName ;
+	String lastName ;
+	String email ;
+	String password ;
+	String registerSuccessMessage ;
 
 	@Parameters({ "browser", "userUrl" })
 	@BeforeClass
@@ -37,6 +37,11 @@ public class TC_01_02_User_Register extends AbstractTest {
 		log.info("Precondition: Open LiveGuru99 site");
 		driver = getBrowserDriver(browserName, appURL);
 		homePage = PageGeneratorManager.getHomePageObject(driver);
+		firstName = "Dan";
+		lastName = "Pham";
+		email = "dan" + randomNumber() + "@mailinator.com";
+		password = "111111";
+		registerSuccessMessage = "Thank you for registering with Main Website Store.";
 		
 	}
 

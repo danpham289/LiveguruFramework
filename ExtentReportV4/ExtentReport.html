@@ -45,7 +45,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Oct 23, 2020 04:55:05 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Oct 29, 2020 10:22:23 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -127,14 +127,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>TC01_Add_Product_To_Cart</span>
-						<span class='test-time'>Oct 23, 2020 04:54:58 PM</span>
+						<span class='test-time'>Oct 29, 2020 10:21:44 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 23, 2020 04:54:58 PM</span>
-	<span class='label end-time'>Oct 23, 2020 04:55:05 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+88ms</span>
+	<span class='label start-time'>Oct 29, 2020 10:21:44 AM</span>
+	<span class='label end-time'>Oct 29, 2020 10:22:23 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 38s+991ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -148,30 +148,19 @@
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:55:05 PM</td>
+				<td class='timestamp'>10:22:23 AM</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/cart" class="ico-cart">...</a> is not clickable at point (1797, 22). Other element would receive the click: <p class="content">...</p>
-  (Session info: chrome=85.0.4183.121)
+						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (593b697c2cd949d8b54de7eb31a3c9c2)] -> xpath: //div[@id='flyout-cart']/div[@class='mini-shopping-cart']] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'DN-AAVN-WS-635', ip: '192.168.79.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\pndan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64662}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 02fca8e496021d930275b86a6733c0ce
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at commons.AbstractPage.clickToElement(AbstractPage.java:146)
-	at commons.AbstractPage.clickToShoppingCartLinkInNopCommerce(AbstractPage.java:955)
-	at com.nopcommerce.user.Order_01_Add_Edit_Remove_Product_From_Cart.TC01_Add_Product_To_Cart(Order_01_Add_Edit_Remove_Product_From_Cart.java:73)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\pndan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49711}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 593b697c2cd949d8b54de7eb31a3c9c2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.AbstractPage.waitElementVisible(AbstractPage.java:431)
+	at pageObjects.nopcommerce.BuildComputerDetailsPageObject.isShoppingCartPopupDisplayed(BuildComputerDetailsPageObject.java:59)
+	at com.nopcommerce.user.Order_01_Add_Edit_Remove_Product_From_Cart.TC01_Add_Product_To_Cart(Order_01_Add_Edit_Remove_Product_From_Cart.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -246,7 +235,7 @@ Session ID: 02fca8e496021d930275b86a6733c0ce
 			<ul id='exception-collection' class='exception-collection'>
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.ElementClickInterceptedException</span>
+						<span class='exception-name'>org.openqa.selenium.TimeoutException</span>
 						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
 					</div>
 					<div class='exception-content hide'>
@@ -261,31 +250,20 @@ Session ID: 02fca8e496021d930275b86a6733c0ce
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 23, 2020 04:54:58 PM</td>
+										<td>Oct 29, 2020 10:21:44 AM</td>
 										<td class='linked' test-id='1'>TC01_Add_Product_To_Cart</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/cart" class="ico-cart">...</a> is not clickable at point (1797, 22). Other element would receive the click: <p class="content">...</p>
-  (Session info: chrome=85.0.4183.121)
+											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (593b697c2cd949d8b54de7eb31a3c9c2)] -> xpath: //div[@id='flyout-cart']/div[@class='mini-shopping-cart']] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'DN-AAVN-WS-635', ip: '192.168.79.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\pndan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64662}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 02fca8e496021d930275b86a6733c0ce
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at commons.AbstractPage.clickToElement(AbstractPage.java:146)
-	at commons.AbstractPage.clickToShoppingCartLinkInNopCommerce(AbstractPage.java:955)
-	at com.nopcommerce.user.Order_01_Add_Edit_Remove_Product_From_Cart.TC01_Add_Product_To_Cart(Order_01_Add_Edit_Remove_Product_From_Cart.java:73)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\pndan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49711}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 593b697c2cd949d8b54de7eb31a3c9c2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.AbstractPage.waitElementVisible(AbstractPage.java:431)
+	at pageObjects.nopcommerce.BuildComputerDetailsPageObject.isShoppingCartPopupDisplayed(BuildComputerDetailsPageObject.java:59)
+	at com.nopcommerce.user.Order_01_Add_Edit_Remove_Product_From_Cart.TC01_Add_Product_To_Cart(Order_01_Add_Edit_Remove_Product_From_Cart.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -348,19 +326,19 @@ Session ID: 02fca8e496021d930275b86a6733c0ce
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 23, 2020 04:55:05 PM</div>
+					<div class='panel-lead'>Oct 29, 2020 10:22:23 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 23, 2020 04:55:05 PM</div>
+			 		<div class='panel-lead'>Oct 29, 2020 10:22:23 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 0s+59ms</div>
+					<div class='panel-lead'>0h 0m 0s+68ms</div>
 				</div>
 			</div>
 		</div>
@@ -403,7 +381,7 @@ Session ID: 02fca8e496021d930275b86a6733c0ce
 		</script>
 		<script>
 			var timeline = {
-			        "TC01_Add_Product_To_Cart":7.088
+			        "TC01_Add_Product_To_Cart":38.991
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
